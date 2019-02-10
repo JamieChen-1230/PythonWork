@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea id="content"></textarea>
+<button onclick="submitContent();">提交</button>
+</body>
+<script src="/static/plugins/kindeditor/kindeditor-all-min.js"></script>
+<script>
+    var editor;
+    // KindEditor.ready() 等同於 jquery的$(function)
+    KindEditor.ready(function (K) {
+        editor = K.create(
+            "#content",  // 找到textarea
+            {
+                resizeType: 1,  // 允許拉大對話框
+                allowPreviewEmoticons: true,  // 表情右上角預覽
+                allowImageUpload: true,  // 允許本地上傳
+                // 功能列
+                items: [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link'],
+                uploadJson: "/receive.html",
+            }
+        );
+    });
+
+    function submitContent() {
+        // editor.html();
+
+    }
+
+</script>
+</html>

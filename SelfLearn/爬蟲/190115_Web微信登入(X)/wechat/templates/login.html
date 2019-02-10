@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img id="qcode" src="https://login.weixin.qq.com/qrcode/{{ qcode }}">
+
+</body>
+<script src="/static/jquery-3.3.1.js"></script>
+<script>
+    // 頁面加載完後執行
+    $(function () {
+        checkLogin();
+    });
+
+    function checkLogin() {
+        $.ajax({
+            url: "/check-login.html/",
+            type: "GET",
+            dataType: "JSON",
+            success: function (arg) {
+                if (arg.code == 408){
+                    checkLogin();
+                } else if (arg.code == 201){
+                    $("#qcode").attr("src", arg.data);
+                    checkLogin();
+                }
+            }
+        })
+    }
+</script>
+</html>

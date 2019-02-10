@@ -1,0 +1,91 @@
+一、Project目錄
+    - App(repository): 資料庫
+    - App(web): 主站與個人博客
+    - App(backend): 後台管理
+    - utils: 工具包(放公共模塊)
+
+二、報障系統需求分析
+    - 報障
+        用戶:
+            提交報障單
+            自己的報障紀錄
+        處理者:
+            查看所有人的報障單
+            處理報障單
+
+    - 博客
+        主頁:
+            展示最新文章
+            展示最熱文章
+            展示最多評論文章
+            分類查看
+        個人博客:
+            個人主頁
+            個人文章(包含讚, 踩, 評論)
+            個人分類: 標籤、分類、時間
+            博客主題定製
+        後臺管理:
+            個人信息
+            個人標籤
+            個人分類
+            個人文章
+
+三、資料庫設計
+    用戶表: uid, username, pwd, email, img
+    博客表: bid, suffix, theme, title, summary, FK(用戶表, unique)=OneToOne(用戶表)
+    互粉表: id, 被粉人id(用戶表), 追蹤者id(用戶表)
+
+    報障單: uuid, title, detail, user(用戶表), processor(用戶表), status(包括待處理, 處理中, 已處理), 創建時間
+
+    分類表: caption, FK(博客表)   因為有博客才有分類
+    標籤表: caption, FK(博客表)   因為有博客才有標籤
+
+    文章表: id, title, summary, 創建時間, FK(分類表), M2M(標籤表)
+    文章詳細表: detail(文章表)
+    讚踩關係表: 文章id, 用戶id, 踩或讚   聯合唯一索引(文章id, 用戶id)
+    評論表: id, content, FK(文章表), FK(用戶表), 創建時間, parent_comment_id
+
+
+四、實作技巧
+    - 登入判斷:
+        <div class="pg-header">
+            {% if requset.session.username %}
+                <a>{{ request.session.username }}</a>
+            {% else %}
+                <a>登入</a><a>註冊</a>
+            {% endif %}
+        </div>
+
+    - 博客內文布局:
+        <div style="float: left">圖片</div> <div style="float: left">內文</div> => 圖片與內文分開
+        <a>圖片</a> 內文  => 文繞圖
+
+    - URL分類篩選:
+        url(r"^all/(?<article_type_id>/d+).html$", home.index, name="index")
+        url(r"^", home.index)
+
+        def home(request, args, kwargs)
+        index根據kwargs判斷是否分類查詢?
+        a. 生成分類菜單: 從類裡面的成員變量
+        b. 考慮是否選中: 根據article_type_id做if判斷
+        c. 根據條件取出數據: models.xxx.objects.filter(**kwargs)
+
+    - URL:
+        from django.urls import reverse
+        有分組名:
+            url(r"^all/(?<article_type_id>/d+).html$", home.index, name="index")
+            在HTML中: {% url "index" article_type_id=1 %}              => all/1.html
+            在views中: reverse("index", kwargs={"article_type_id":1})  => all/1.html
+        無分組名:
+            url(r"^all/(/d+).html$", home.index, name="index")
+            在HTML中: {% url "index" 1 %}           => all/1.html
+            在views中: reverse("index", args=(1,))  => all/1.html
+
+    - 分類查看+分頁:
+        網頁前綴:
+            透過 reverse("index", kwargs=kwargs) 獲得
+        頁碼:
+            分頁組件
+
+    - 註冊密碼一致認證:
+        通過form組件的clean實現

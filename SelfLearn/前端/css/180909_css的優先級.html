@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <!--!important > 優先級計算 > 繼承-->
+    <!--優先級計算：-->
+    <!--1內聯樣式表的權值最高style="" －－－－－－－－－－－－－1000-->
+    <!--2統計選擇符中的ID屬性個數。#id －－－－－－－－－－－－－100-->
+    <!--3統計選擇符中的CLASS屬性個數。.class －－－－－－－－－－10-->
+    <!--4統計選擇符中的HTML標籤名個數。p －－－－－－－－－－－－1-->
+    <style>
+        .c1{
+            background-color: red;
+        }
+        #i1{
+            background-color: rebeccapurple;
+        }
+        div{
+            background-color: yellow;
+        }
+
+        /*111*/
+        #div1 .div2 div{
+            color: greenyellow;
+        }
+
+        /*但若加了!important就變最高*/
+        /*10*/
+        .div3{
+            color: blue!important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="c1" id="i1" style="background-color: palevioletred">div1</div>
+
+<div id="div1">
+    <div class="div2">
+        <div class="div3">
+            嵌套優先級
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

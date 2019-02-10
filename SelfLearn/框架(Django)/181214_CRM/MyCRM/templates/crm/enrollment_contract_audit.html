@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+
+{% block right-content-container %}
+<h2 class="page-header">合同審核</h2>
+
+<form method="post" onsubmit="BeforeFormSubmit(this)">
+    {% csrf_token %}
+    {% for field in customer_form %}
+    <div class="form-group col-lg-6">
+        <label class="col-sm-2 control-label">{{ field.label }}</label>
+        <div class="col-sm-10">
+            {{ field }}
+            <span style="color: red">{{ field.errors.0 }}</span>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% for field in enrollment_form %}
+    <div class="form-group col-lg-6">
+        <label class="col-sm-2 control-label">{{ field.label }}</label>
+        <div class="col-sm-10">
+            {{ field }}
+            <span style="color: red">{{ field.errors.0 }}</span>
+        </div>
+    </div>
+    {% endfor %}
+
+    <input type="submit" class="btn btn-success pull-right" value="審核通過">
+</form>
+<script>
+    function BeforeFormSubmit(this_ele) {
+        // $(":disabled") 找出所有有disabled屬性的標籤
+        $(":disabled").removeAttr("disabled");
+    }
+</script>
+{% endblock %}

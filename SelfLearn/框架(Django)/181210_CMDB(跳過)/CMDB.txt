@@ -1,0 +1,119 @@
+運維自動化項目:
+    減少人工干預，降低人員成本
+    - 資產管理
+    - 操作管理
+
+CMDB資產採集方式:
+    - agent:
+        讓每一台客戶端都裝上一個agent程序，透過此程序在固定時間收集本台機器的資訊傳向一API，然後再透過此API向資料庫進行
+        更新，達成自動更新之目的。
+        優點: 快
+        缺點: 每台客戶端都必須裝上agent，且維護時需把每一台都一一的更新
+        工具: subprocess
+    - ssh:
+        有一個仲介商透過SSH向每個客戶端請求數據，並將這些數據傳向一API，然後再透過此API向資料庫進行更新。
+        優點: 無agent
+        缺點: 慢
+        工具: paramiko
+    - saltstack:
+        有一個仲介商裝上saltstack-master，每個客戶端則裝上saltstack-slave，仲介商透過此向客戶端請求數據，並將這些數據傳
+        向一API，然後再透過此API向資料庫進行更新。
+        優點: 快且開發成本低
+        缺點: 必須依賴第三方工具saltstack
+        工具: saltstack
+    - puppet:
+        有一個仲介商裝上puppet-master，每個客戶端則裝上puppet-slave，客戶端每隔一段時間透過salve主動向仲介商傳送數據，然
+        後仲介商將這些數據傳向一API，然後再透過此API向資料庫進行更新。
+        優點: 不慢且巨簡單
+        缺點: 須用ruby語言編寫且必須依賴第三方工具puppet
+        工具: puppet
+
+CMDB:
+    - 實現運維自動化的基礎
+    - 資產(網卡、記憶體、硬碟等)管理
+    
+    功能：
+        - Agent或中控機
+           - 字典套字典 =》 數據
+           - 認證API
+                a. 時間超時
+                b. 訪問記錄
+                c. 加密後進行比較
+                ====> Tornado：源碼中來了 <==== 
+        - API
+        - 後台管理（10分鐘完成CURD）
+            - 對於數據庫表數據進行增刪改查
+              ==》 組件：基本增刪改查 《===  
+            
+    作業：
+        - CMDB採集資產信息示例
+        - Django
+            URL - views  CBV方式
+            # 提交到API的數據結構
+            
+          
+          server_info = plugins.get_server_info(hostname)
+          # 序列化成字符串
+          server_json = Json.dumps(server_info.data)
+          response = requests.post(
+                    url="http//ww.....",
+                    json=server_json
+                )
+        
+    預習：
+        數據庫表結構
+        - API驗證
+        - 保存資產數據；保存資產變更記錄
+    
+    
+    
+    作業：
+    
+        前提：
+            1. Agent匯報數據格式
+                {
+                    『status』: '',
+                    'hostname':「ｓｓｄｆ」
+                    "data":{
+                        'disk': {status"...}
+                    }
+                }
+            2. 數據庫表結構
+            
+            3. 
+            
+            
+    
+    
+        # ========》 server_obj服務器對像 ；server_info  《==========
+        # 硬盤 或 網卡 或 內存
+        # 硬盤：增刪改
+        # 1. server_obj反向關聯硬盤表，獲取數據庫中硬盤信息
+        # [
+        #     {'slot': "#1", 'size': '100'},
+        #     {'slot': "#2", 'size': '60'},
+        #     {'slot': "#3", 'size': '88'},
+        # ]
+        # old_list = ['#1','#2','#3']
+        # 2. server_info['disk'] 新匯報的硬盤數據
+        # {
+        #     "#1":{'slot': "#1", 'size': '90'},
+        #     "#4":{'slot': "#4", 'size': '40'},
+        # }
+        # new_list = ['#1','#4']
+        #3. 更新['#1'] 刪除['#2','#3'] 增加 ['#4']
+
+        #4. # 增加 ['#4']
+    
+    
+    CMDB總結：
+        1. 三種採集資產方式
+           唯一標識
+           
+        2. API
+           API驗證（tornado源碼，加密cookie+時間限制+訪問記錄）
+           數據庫表結構
+           
+        3. 後台管理
+            告別CURD，公共組件（前端+後端配置）
+    

@@ -1,0 +1,71 @@
+templates:
+    - base.html: css, js等
+    - index.html: 繼承base.html, 並開始佈局
+        -- 動態菜單:
+            知識點(反向查找):
+                ForeignKey: 表名(小寫)_set
+                OneToOneField: 表名(小寫)
+                程式:
+                    {% for role in request.user.userprofile.role.select_related %}
+                        {% for menu in role.menus.select_related %}
+                        <li><a href="{% if menu.url_type == 0 %}{{ menu.url_name }}{% else %}{% url menu.url_name %}{% endif %}">{{ menu.name }}</a></li>
+                        {% endfor %}
+                    {% endfor %}
+    - login.html: 登入頁面, 繼承index.html
+    crm(業務系統):
+        - dashboard: 首頁, 繼承index.html
+    student(學員系統):
+
+
+App:
+    - kingadmin(管理系統):
+        - views.py:
+            - def acc_login(request): 用戶登入
+            - def acc_logout(request): 用戶登出
+            - def app_index(request): 管理頁面首頁
+            - def model_obj_list(request, app_name, model_name): 各表內容(增刪改查)頁面
+                - def get_filter_result(request, querysets): 回傳篩選過後的資料列表與篩選條件
+
+        - app_setup.py:
+            - def kingadmin_auto_discover(): 抓取項目中的各個App的kingadmin.py並執行
+                知識點(conf):
+                    可以使用conf.settings抓到當前系統的settings.py文件
+                    程式:
+                        from django import conf
+                        conf.settings.INSTALLED_APPS
+                知識點(__import__()):
+                    用於動態導入模塊
+                    程式:
+                        mod = __import__("%s.kingadmin" % app_name)
+
+        - sites.py: 自定義Admin類
+            - class AdminSite(object):
+                - def __init__(self): 建構子
+                - def register(self, model_class, admin_class=BaseKingAdmin): 註冊Admin表至kingAdmin
+                    知識點(表._meta):
+                        - models.xxx表._meta.app_label: 獲取xxx表的App名稱
+                            程式:
+                                app_name = model_class._meta.app_label
+                        - models.xxx表._meta.model_name: 獲取xxx表的表名
+                            程式:
+                                model_name = model_class._meta.model_name
+                    知識點(Python優化):
+                        在多處from kingadmin.sites import site時，不會重複實例化，讓enabled_admins能達到共用效果
+
+        - kingadmin_tags.py: 給model_obj_list.html使用的simple_tag
+            - def build_table_row(obj, admin_class): 依照list_display的欄位生成一條資料
+                知識點(表._meta):
+                    models.xxx表._meta.fields: 獲取xxx表的所有字段對象
+                    models.xxx表._meta.get_field("status"): 獲取xxx表的status字段對象
+                        程式:
+                            column_obj = admin_class.model._meta.get_field(column_name)
+                知識點(字段對象屬性):
+                    xx字段對象.choices: 返回choices屬性值
+                    程式:
+                        column_obj.choices
+                知識點(make_safe):
+                    讓後端過去的html標籤能生效
+                    程式:
+                        mark_safe(ele)
+            - def build_filter_ele(filter_column, admin_class): 生成欲篩選欄位之選項
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/baseByAjax.html/" method="post" id="fm">
+    <p>{{ obj.username.label }} {{ obj.username }}</p>
+    <p>{{ obj.age.label }} {{ obj.age }}</p>
+    <p id="err"></p>
+    <!--不能使用<button></button>-->
+    <input type="button" id="btn" value="提交">
+</form>
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            $.ajax({
+                url: "/baseByAjax.html/",
+                type: "POST",
+                data: $("#fm").serialize(),
+                dataType: "JSON",
+                success: function (arg) {
+                    // arg: 狀態、錯誤信息
+                    if (arg.status == "ok") {
+                        window.location.href = 'https://www.youtube.com/?gl=TW&hl=zh-tw';
+                    }
+                    else {
+                        $('#err').text(arg.msg['age']);
+                    }
+                },
+            })
+        });
+    });
+
+</script>
+</html>

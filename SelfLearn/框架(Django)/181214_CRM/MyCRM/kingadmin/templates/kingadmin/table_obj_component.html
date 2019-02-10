@@ -1,0 +1,91 @@
+{% load kingadmin_tags %}
+
+<form class="form-horizontal" method="post" onsubmit="SelectedBeforeSubmit()">
+    {% csrf_token %}
+    {% for field in form_obj %}
+    <div class="form-group">
+        <label class="col-sm-2 control-label">{{ field.label }}</label>
+        <div class="col-sm-10">
+            {% if field.name in admin_class.filter_horizontal %}
+                <div class="col-lg-5">
+                    <p>未選擇</p>
+                    <input type="search" class="form-control" oninput="OptionSearch(this)" placeholder="Search">
+                    <select multiple class="form-control" id="id_{{ field.name }}_from">
+                        <!--as available_m2m_data 表示把回傳的obj_list傳給available_m2m_data這個變量-->
+                        {% get_available_m2m_data field.name form_obj admin_class form_add as available_m2m_data %}
+                        {% for obj in available_m2m_data %}
+                            <option value="{{ obj.id }}"
+                                    ondblclick="MoveSelectedOption(this, 'id_{{ field.name }}_to')">
+                                {{ obj }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <p><a onclick="MoveAllSelectedOption('id_{{ field.name }}_from', 'id_{{ field.name }}_to')">Choose All</a></p>
+                </div>
+                <div class="col-lg-5">
+                    <p>已選擇</p>
+                    <select tag="selected_m2m" multiple class="form-control" id="id_{{ field.name }}_to" name="{{ field.name }}">
+                        {% get_selected_m2m_data field.name form_obj admin_class form_add as selected_m2m_data %}
+                        {% for obj in selected_m2m_data %}
+                            <option value="{{ obj.id }}"
+                                    ondblclick="MoveSelectedOption(this, 'id_{{ field.name }}_from')">
+                                {{ obj }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <p><a onclick="MoveAllSelectedOption('id_{{ field.name }}_to', 'id_{{ field.name }}_from')">Remove All</a></p>
+                </div>
+            {% else %}
+                {{ field }}
+            {% endif %}
+            <span style="color: red">{{ field.errors.0 }}</span>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-2">
+            {% if obj_id %}
+                <a class="btn btn-danger" href="{% url 'model_obj_delete' app_name model_name obj_id %}">Delete</a>
+            {% endif %}
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>
+
+
+<script>
+    function MoveSelectedOption(this_ele, target_id) {
+        var from_id = $(this_ele).parent().attr("id");
+        var new_option = "<option value='"+ $(this_ele).val() +"' ondblclick=MoveSelectedOption(this,'"+ from_id+"')>" + $(this_ele).text() + "</option>";
+        $("#"+target_id).append(new_option);
+        $(this_ele).remove();
+    }
+
+    function MoveAllSelectedOption(from_id, target_id) {
+        var from_ele = $("#"+from_id);
+        from_ele.children().each(function () {
+            // console.log($(this)[0].style.display);
+            if ($(this)[0].style.display != "none"){
+                MoveSelectedOption(this ,target_id)
+            }
+        })
+    }
+
+    function OptionSearch(this_ele) {
+        // console.log($(this_ele).next())
+        var search_val = $(this_ele).val();
+        $(this_ele).next().children().each(function () {
+            if ($(this).text().toLowerCase().search(search_val.toLowerCase()) != -1){
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        })
+    }
+
+    function SelectedBeforeSubmit() {
+        $("select[tag='selected_m2m'] option").prop("selected", true);
+    }
+
+</script>

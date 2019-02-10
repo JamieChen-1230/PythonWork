@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /* *代表全部 */
+        /**{*/
+            /*color: red;*/
+        /*}*/
+
+        /*根據標籤渲染*/
+        /*div{*/
+            /*color: red;*/
+        /*}*/
+
+        /*根據id(id具唯一性，不能重複)渲染*/
+        /*#id_p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*根據class(可以重複)渲染*/
+        /*.class_p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*組合選擇器(多種限制連在一起，代表需符合所有限制才渲染)*/
+        /*div.class_p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*多元素選擇器(多種限制中間加逗號，代表符合其中一項就渲染)*/
+        /*#id_p,div{*/
+            /*color: gold;*/
+        /*}*/
+
+        /*後代選擇器(多種限制中間加空格，代表對class='div1'中嵌套的div渲染)*/
+        /*.div1 div{*/
+            /*color: blue;*/
+        /*}*/
+
+        /*後代選擇器-2(孫子級別也算後代)*/
+        /*.div1 p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*子代選擇器(多種限制中間加>，只能找到兒子級別)*/
+        /*.div1>p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*相鄰選擇器(必須相鄰且向下，中間不能有其他標籤)*/
+        /*.div1 + p{*/
+            /*background-color: aqua;*/
+        /*}*/
+
+        /*----------屬性選擇器----------*/
+        /*[jamie]{*/
+            /*color: rebeccapurple;*/
+        /*}*/
+
+        /*完全匹配*/
+        /*[jamie='nb']{*/
+            /*background-color: red;*/
+        /*}*/
+        /*p[jamie]{*/
+            /*background-color: rebeccapurple;*/
+        /*}*/
+
+        /*~=代表只須符合用空格分開中的其中一個值就好*/
+        /*[jamie~='sb2']{*/
+            /*color: palevioletred;*/
+        /*}*/
+
+        /* *=模糊匹配 */
+        /*[jamie*='b']{*/
+            /*color: palevioletred;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+hello body
+<div>hello div</div>
+<p id="id_p">hello p id_p</p>
+<p class="class_p">hello p class_p</p>
+<div class="class_p">hello div class_p</div>
+<a href="">hello a</a>
+
+<p>before div1 p</p>
+<div class="div1">
+    <div class="div2">
+        <p>divdivp</p>
+        <div>divdivdiv</div>
+    </div>
+    <p>divp</p>
+    <div class="div3">divdiv</div>
+</div>
+
+<p>after div1 p</p>
+
+<!--屬性選擇器-->
+<!--屬性中的空格代表兩個值(jamie=sb和sb2)-->
+<div jamie="sb sb2">hello jamie="sb"</div>
+<div jamie="nb">hello jamie="nb"</div>
+<p jamie="nb">hello jamie="nb"</p>
+<div>hello</div>
+
+</body>
+</html>

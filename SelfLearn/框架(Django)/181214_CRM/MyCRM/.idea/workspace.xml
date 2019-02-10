@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e82d302a-a446-4acc-bd6c-0b77acc08709" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/templates/article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/templates/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MyCRM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/EdmureBlog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/dataSources.ids" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/dataSources/afa700f8-76d7-41ac-b75d-72ffbb3cbd5d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/dataSources/afa700f8-76d7-41ac-b75d-72ffbb3cbd5d/storage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/dictionaries/wupeiqi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/EdmureBlog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/EdmureBlog/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/EdmureBlog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/EdmureBlog/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/Monaco.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/auth/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/forms/article.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/templatetags/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/backend/views/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/debug副本.readme.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0002_auto_20170109_0933.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0003_auto_20170109_0935.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0004_auto_20170109_0937.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0005_auto_20170110_0013.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0006_auto_20170110_0015.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0007_auto_20170110_0016.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0008_blog_site.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0009_auto_20170110_0209.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0010_article_read_count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0011_blog_title.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0012_auto_20170113_0619.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0013_auto_20170113_0620.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0014_article_article_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/0015_auto_20170217_0241.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/repository/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/account.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/backend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/commons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/edmure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/row-avatar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/theme/chengguan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/theme/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/css/theme/warm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/imgs/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/imgs/avatar/20130809170025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/imgs/avatar/3bb1516e-3144-487b-8fa1-9ebaf5f6c915" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/imgs/avatar/3dc069be-3db7-4912-9846-b0214a7a9d2e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/imgs/avatar/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/imgs/o_Warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/js/accordion(1).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/js/jquery-1.12.4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/kindeditor-all-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/kindeditor-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/kindeditor-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/kindeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/lang/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/lang/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/anchor/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/autoheight/autoheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/baidumap/baidumap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/baidumap/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/baidumap/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/clearhtml/clearhtml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/code/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/code/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/code/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/emoticons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/101.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/102.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/103.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/104.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/105.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/106.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/107.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/108.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/109.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/110.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/111.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/112.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/113.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/114.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/115.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/116.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/117.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/118.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/119.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/121.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/122.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/123.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/124.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/125.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/126.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/127.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/128.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/129.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/130.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/131.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/132.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/133.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/134.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/72.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/73.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/74.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/75.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/76.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/77.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/78.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/79.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/80.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/81.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/82.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/83.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/84.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/85.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/86.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/87.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/88.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/89.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/90.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/91.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/92.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/93.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/94.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/95.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/96.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/97.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/98.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/99.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/emoticons/images/static.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/filemanager/filemanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/filemanager/images/file-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/filemanager/images/file-64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/filemanager/images/folder-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/filemanager/images/folder-64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/filemanager/images/go-up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/flash/flash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/image/images/align_left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/image/images/align_right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/image/images/align_top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/image/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/insertfile/insertfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/lineheight/lineheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/link/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/map/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/media/media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/multiimage/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/multiimage/images/select-files-en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/multiimage/images/select-files-zh_CN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/multiimage/images/swfupload.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/multiimage/multiimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/pagebreak/pagebreak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/plainpaste/plainpaste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/preview/preview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/quickformat/quickformat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/table/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/template/html/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/template/html/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/template/html/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/plugins/wordpaste/wordpaste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/common/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/common/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/common/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/common/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/common/media.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/common/rm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/default/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/default/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/default/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/qq/editor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/qq/qq.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/static/plugins/kindeditor/themes/simple/simple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_add_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_base_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_edit_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_no_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/backend_tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/cunzhang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/home_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/home_layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/home_summary_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/home_title_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/include/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/templates/xiaoyun.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/utils/check_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/utils/pagination.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/utils/xss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/forms/account.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/forms/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/views/account.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/EdmureBlog/web/views/home.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/repository/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/repository/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/templates/home_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/templates/home_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/web/views/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181115_報障系統/reportingsystem/web/views/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181206_權限管理/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181206_權限管理/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181206_權限管理/mysite/rbac/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/rbac/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181206_權限管理/mysite/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/rbac/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../181206_權限管理/mysite/rbac/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../181206_權限管理/mysite/rbac/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-83705631">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="425" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="425" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCRM/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="123" column="34" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crm/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+              <folding>
+                <marker date="1544791077628" expanded="true" signature="63:80" ph="..." />
+                <marker date="1544791077628" expanded="true" signature="116:121" ph="..." />
+                <marker date="1544791077628" expanded="true" signature="175:180" ph="..." />
+                <marker date="1544791077628" expanded="true" signature="240:245" ph="..." />
+                <marker date="1544791077628" expanded="true" signature="416:444" ph="..." />
+                <marker date="1544791077628" expanded="true" signature="474:498" ph="..." />
+                <marker date="1544791077628" expanded="true" signature="527:553" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCRM/urls.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MyCRM/settings.py" />
+        <option value="$PROJECT_DIR$/crm/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="310" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCRM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyCRM" type="Python.DjangoServer" factoryName="Django server">
+      <module name="MyCRM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e82d302a-a446-4acc-bd6c-0b77acc08709" name="Default Changelist" comment="" />
+      <created>1544789811566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544789811566</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MyCRM/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCRM/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="123" column="34" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding>
+            <marker date="1544791077628" expanded="true" signature="63:80" ph="..." />
+            <marker date="1544791077628" expanded="true" signature="116:121" ph="..." />
+            <marker date="1544791077628" expanded="true" signature="175:180" ph="..." />
+            <marker date="1544791077628" expanded="true" signature="240:245" ph="..." />
+            <marker date="1544791077628" expanded="true" signature="416:444" ph="..." />
+            <marker date="1544791077628" expanded="true" signature="474:498" ph="..." />
+            <marker date="1544791077628" expanded="true" signature="527:553" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*先寫大的整體再慢慢往裡面寫*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-family: "Times New Roman";
+            font-size: 12px;
+        }
+
+        /*-----------------head部分開始-----------------*/
+        .header-box{
+            background: #2459A2;
+            height: 44px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .head-content{
+            width: 1016px;
+            height: 44px;
+            line-height: 44px;
+            background: #2459A2;
+            /*margin: 0 auto;表標籤置中*/
+            margin: 0 auto;
+            position: relative;
+        }
+        .head-content .logo{
+            display: inline-block;
+            background: url("https://cloud.chouti.com/images/logo.png");
+            width: 121px;
+            height: 23px;
+            float: left;
+            margin-top: 11px;
+        }
+        .head-content .action-menu{
+            float: left;
+            margin-left: 7px;
+        }
+
+        .head-content .action-menu a.tb{
+            display: inline-block;
+            color: gray;
+            margin-left: -3px;
+            padding: 0 13px 0 16px;
+        }
+        .head-content .action-menu a.tb:hover{
+            color: white;
+            background: #396bb3;
+        }
+        .head-content .action-menu a.active, .head-content .action-menu a.active:hover{
+            color: white;
+            background: #204982;
+        }
+
+        .head-content .key-search{
+            float: right;
+            margin-top: 5px;
+        }
+        .head-content .key-search .search-txt{
+            float: left;
+            width: 91px;
+            height: 25px;
+            border-width: 1px;
+            padding: 2px 2px 2px 5px;
+        }
+        .head-content .key-search a{
+            display: inline-block;
+            width: 31px;
+            height: 31px;
+            background: #f4f4f4;
+        }
+        .head-content .key-search a span{
+            display: inline-block;
+            width: 11px;
+            height: 13px;
+            background: url("https://cloud.chouti.com/images/icon.png") no-repeat 0 -197px;
+            margin-left: 10px;
+            margin-top: -50px;
+        }
+
+        .head-content .action-nav{
+            /*若使用position: absolute;就不用在用display: inline-block;就可編輯長寬*/
+            position: absolute;
+            right: 131px;
+
+        }
+        .head-content .action-nav a{
+            display: inline-block;
+            margin: 0 5px 0 5px;
+            padding: 0 20px 0 20px;
+            color: white;
+        }
+        .head-content .action-nav a:hover{
+            background: #396bb3;
+        }
+        /*-----------------head部分結束-----------------*/
+
+        /*-----------------content-L(top-area)部分開始-----------------*/
+        .main-content-box{
+            background: lightgray;
+            padding-top: 44px;
+        }
+        .main-content{
+            background: white;
+            margin: 0 auto;
+            width: 1016px;
+            height: auto!important;
+            /*最小長度*/
+            min-height: 700px;
+            overflow: hidden;
+        }
+        .main-content .content-L{
+            float: left;
+            width: 627px;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        .main-content .content-R{
+            float: left;
+            width: 386px;
+        }
+        .main-content .footer-box{
+            clear: both;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .news{
+            width: 350px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .content-L .top-area{
+            border-bottom: 1px solid #b4b4b4;
+            height: 30px;
+        }
+        .content-L .top-area .child-nav{
+            float: left;
+        }
+        .top-area .child-nav a{
+            display: inline-block;
+            width: 60px;
+            height: 26px;
+            line-height: 26px;
+            color: #369;
+            text-align: center;
+        }
+
+        .top-area .pub_btn{
+            float: right;
+        }
+        .top-area .pub_btn span{
+            display: inline-block;
+            width: 100px;
+            height: 26px;
+            line-height: 26px;
+            background: #84a42b;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .time{
+            float: right;
+        }
+        .time p{
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+            line-height: 26px;
+            color: #390;
+            text-align: center;
+        }
+        .time p.active{
+            color: #b4b4b4;
+        }
+        /*-----------------content-L(top-area)部分結束-----------------*/
+
+        /*-----------------content-L(content-list)部分開始-----------------*/
+        .content-list .item{
+            border-bottom: 1px solid #b4b4b4;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .content-list .item .part1 a{
+            line-height: 16px;
+        }
+        .content-list .item .part1:hover{
+            text-decoration: underline;
+        }
+        .content-list .item .part2{
+            padding-top: 10px;
+            color: #99aecd;
+        }
+        .content-list .item .part2 .recommend{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+        }
+        .content-list .item .part2 .recommend:hover{
+            text-decoration: #d757ff underline;
+        }
+        .part2 b,.part2 i{
+            vertical-align: center;
+            font-size: 14px;
+            padding-left: 10px ;
+        }
+        /*-----------------content-L(content-list)部分結束-----------------*/
+
+        /*-----------------content-L(page-area)部分開始-----------------*/
+
+        /*-----------------content-L(page-area)部分結束-----------------*/
+        .page-area{
+            margin-left: 70px;
+        }
+        .page-area ul li{
+            display: inline-block;
+        }
+        .page-area ul li span{
+            display: inline-block;
+            width: 20px;
+            height: 34px;
+            line-height: 34px;
+        }
+        .page-area ul li a{
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            color: #369;
+            line-height: 34px;
+            border: 1px solid #e1e1e1;
+            text-align: center;
+        }
+        .page-area ul li a.page-next{
+            width: 50px;
+        }
+        .page-area ul li a:hover{
+            color: white;
+            background: #369;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-box">
+    <div class="head-content">
+        <a href="#" class="logo"></a>
+
+        <div class="action-menu">
+            <a href="#" class="tb active">全部</a>
+            <a href="#" class="tb">42區</a>
+            <a href="#" class="tb">段子</a>
+            <a href="#" class="tb">圖片</a>
+            <a href="#" class="tb">你問我答</a>
+        </div>
+
+        <div class="key-search">
+            <form action="/">
+                <input type="text" class="search-txt">
+                <a href="#" class="i">
+                    <span class="ico"></span>
+                </a>
+            </form>
+        </div>
+
+        <div class="action-nav">
+            <a href="#" class="register-btn">註冊</a>
+            <a href="#" class="login-btn">登入</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="main-content-box">
+    <div class="main-content">
+        <div class="content-L">
+            <div class="top-area">
+                <div class="child-nav">
+                    <a href="#" class="hot">最熱</a>
+                    <a href="#" class="new">最新</a>
+                    <a href="#" class="people">人類發布</a>
+                </div>
+                <a href="#" class="pub_btn">
+                    <span>+ 發布</span>
+                </a>
+                <div class="time">
+                    <p class="active">即時排序</p>
+                    <p>1日</p>
+                    <p>12小時</p>
+                </div>
+
+            </div>
+            <div class="content-list">
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="part1">
+                        <h1>沒文化真好</h1>
+                        <a href="#">一、飯局上認識了一位大哥，席間從閒聊轉到基因食品問題，大哥很真誠地勸大家不要再吃基改食品，因為對孩子的傷害太大了。
+                            他舉自己為例，前不久兒子和他做親子鑑定，兩人基因不匹配，就是因為孩子吃太多基改食品，所以把基因都改變了！
+                            我們一聽全懵了，問他這些知識都是聽誰說的？
+                            他驕傲地說，是他很有學問的老婆告訴他的！
+                            當下感悟到：沒文化，真幸福啊！
+                        </a>
+                    </div>
+                    <div class="part2">
+                        <a href="#" class="recommend">
+                            <b>3</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>4</b>
+                        </a>
+                        <a href="#" class="recommend">
+                            <b>5</b>
+                        </a>
+                        <a href="#">
+                            <b>私藏</b>
+                        </a>
+
+                        <span class="left time-into">
+                            <a href="#" class="time-a">
+                                <b>4分鐘前</b>
+                            </a>
+                            <i>入熱榜</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="page-area">
+                <ul>
+                    <li><span class="current-page">1</span></li>
+                    <li><a href="#" class="page-a">2</a></li>
+                    <li><a href="#" class="page-a">3</a></li>
+                    <li><a href="#" class="page-a">4</a></li>
+                    <li><a href="#" class="page-a">5</a></li>
+                    <li><a href="#" class="page-a">6</a></li>
+                    <li><a href="#" class="page-a">7</a></li>
+                    <li><a href="#" class="page-a">8</a></li>
+                    <li><a href="#" class="page-a">9</a></li>
+                    <li><a href="#" class="page-a">10</a></li>
+                    <li><a href="#" class="page-a page-next">下一頁</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-R">
+            <div class="news">news</div>
+            <div class="news">news</div>
+            <div class="news">news</div>
+            <div class="news">news</div>
+        </div>
+
+        <div class="footer-box">
+            <h1>-----------------------------------我是footer-----------------------------------</h1>
+            <h1>-----------------------------------我是footer-----------------------------------</h1>
+            <h1>-----------------------------------我是footer-----------------------------------</h1>
+            <h1>-----------------------------------我是footer-----------------------------------</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

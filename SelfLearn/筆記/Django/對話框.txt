@@ -1,0 +1,10 @@
+Ajax偷偷向後台發請求：
+    - 下載jQuery
+    - $.ajax({
+        url:'/classes.html',
+        type:'get',
+        data:{'user': 'root'},  # ajax的get能這樣傳數據，不用再網址?nid
+        success:func(arg){
+            # 回調函數，arg是服務端返回的數據
+        }
+      })

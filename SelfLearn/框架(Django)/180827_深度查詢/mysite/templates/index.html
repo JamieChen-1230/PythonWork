@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="outer">
+    <div class="head">標題</div>
+    <div class="content">
+        <a href="/addbook/">添加數據</a>
+        <a href="/updatebook/">修改數據</a>
+        <a href="/deletebook/">刪除數據</a>
+        <a href="/searchbook/">查詢數據</a>
+    </div>
+    <div class="search">
+        {% for i in book_list %}
+        <div>
+            <p>{{ i.name }} {{ i.author }} {{ i.price }}</p>
+        </div>
+        {% endfor %}
+        <p>{{ ret }}</p>
+    </div>
+</div>
+</body>
+</html>

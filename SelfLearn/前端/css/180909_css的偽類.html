@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*a:link（沒有接觸過的鏈接）,用於定義了鏈接的常規狀態。*/
+        a:link{
+            color: red;
+        }
+        /*a:visited（訪問過的鏈接）,用於閱讀文章，能清楚的判斷已經訪問過的鏈接。*/
+        a:visited {
+            color: blue;
+        }
+        /*a:hover（鼠標放在鏈接上的狀態）,用於產生視覺效果。*/
+        a:hover {
+            color: green;
+        }
+        /*a:active（在鏈接上按下鼠標時的狀態）,用於表現鼠標按下時的鏈接狀態。*/
+        a:active {
+            color: yellow;
+        }
+
+        .box{
+            width: 100px;
+        }
+
+        .top,.under{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+
+        /*hover懸浮*/
+        /*.top:hover{*/
+            /*background-color: red;*/
+        /*}*/
+        /*.box .top:hover{*/
+            /*background-color: red;*/
+        /*}*/
+        /*.box:hover .top{*/
+            /*background-color: red;*/
+        /*}*/
+
+        /*after 在之後額外加入元素*/
+        /*.box:after{*/
+            /*content: '歡迎a';*/
+        /*}*/
+
+        /*before 在之前額外加入元素*/
+        /*.box:before{*/
+            /*content: '歡迎b';*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+<a href="180909_css的偽類.html">hello-world</a>
+<div class="box">
+    <div class="top"></div>
+    <div class="under"></div>
+</div>
+
+</body>
+</html>

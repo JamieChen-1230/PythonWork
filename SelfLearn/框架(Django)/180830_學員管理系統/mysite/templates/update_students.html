@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/update_students.html" method="post">
+        <p><input type="text" name="nid" value="{{ obj_stu.id }}" style="display: none"></p>
+        <p><input type="text" name="user" value="{{ obj_stu.name }}"></p>
+        <p><input type="text" name="age" value="{{ obj_stu.age }}"></p>
+        <p>
+            {% if obj_stu.gender %}
+                男：<input type="radio" name="gender" value="1" checked="checked">
+                女：<input type="radio" name="gender" value="0">
+            {% else %}
+                男：<input type="radio" name="gender" value="1">
+                女：<input type="radio" name="gender" value="0"  checked="checked">
+            {% endif %}
+        </p>
+        <p>
+            <select name="cs">
+                {% for cls in list_cls %}
+                    {% if obj_stu.cs_id == cls.id %}
+                        <option value="{{ cls.id }}" selected="selected">{{ cls.name }}</option>
+                    {% else %}
+                        <option value="{{ cls.id }}">{{ cls.name }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </p>
+
+        <p><input type="submit" value="提交"></p>
+    </form>
+</body>
+</html>

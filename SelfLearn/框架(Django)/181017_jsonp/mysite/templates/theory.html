@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" onclick="theory();" value="跨域Ajax原理"/>
+<div id="content"></div>
+
+</body>
+<script src="/static/jquery-3.3.1.js/"></script>
+<script>
+    function theory() {
+        {#等同於創建<script src="http://www.jxntv.cn/data/jmd-jxtv2.html?callback=list&_=1454376870403"><script>#}
+        var tag = document.createElement("script");
+        // 必須加callback，而類型是依照對方函數名決定
+        tag.src = "http://www.jxntv.cn/data/jmd-jxtv2.html?callback=list";
+        // 加載完後立即刪除
+        document.head.appendChild(tag);
+        document.head.removeChild(tag);
+    }
+
+    // 此網站是通過list函數調用
+    function list(arg) {
+        console.log(arg);
+        $.each(arg.data, function (x,y) {
+            var item = arg.data[x];
+            var date = "<p>" + item.week + "<\p>";
+            $("#content").append(date);
+            $.each(item.list, function (x,y) {
+                var temp = "<a href='"+ item.list[x].link +"'>" + item.list[x].name + "<\a><br>"
+                $("#content").append(temp);
+            })
+            $('#content').append("<hr/>");
+        })
+    }
+</script>
+</html>

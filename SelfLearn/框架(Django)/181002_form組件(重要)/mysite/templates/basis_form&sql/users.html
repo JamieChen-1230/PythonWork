@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="/app01/add_user.html/">添加</a>
+<ul>
+    {% for user in user_list %}
+    <li>{{ user.id }} - {{ user.username }} - {{ user.email }} <a href="/app01/edit_user.html_{{ user.id }}/">編輯</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

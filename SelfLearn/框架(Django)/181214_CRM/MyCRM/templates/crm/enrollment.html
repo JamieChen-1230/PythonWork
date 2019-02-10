@@ -1,0 +1,128 @@
+{% extends "index.html" %}
+
+{% block extra-css %}
+<link href="/static/plugins/dropzone/dropzone.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h3>學員在線報名</h3>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            學員資料
+        </div>
+        <div class="panel-body">
+            <form class="form" method="post" onsubmit="return BeforeFormSubmit(this)">
+                {% csrf_token %}
+                {{ customer_form.errors }}
+                {% for field in customer_form %}
+                <div class="form-group col-lg-6">
+                    <label class="col-sm-2 control-label">{{ field.label }}</label>
+                    <div class="col-sm-10">
+                        {{ field }}
+                        <span style="color: red">{{ field.errors.0 }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="form-group col-lg-6">
+                    <label class="col-sm-2 control-label">報名班級</label>
+                    <div class="col-sm-10">
+                        {{ enrollment_obj.class_grade }}
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label class="col-sm-2 control-label">學費</label>
+                    <div class="col-sm-10">
+                        {{ enrollment_obj.class_grade.course.price }}
+                    </div>
+                </div>
+
+                <pre style="height: 400px">{{ enrollment_obj.class_grade.contract_template.content }}</pre>
+                <input type="checkbox" name="contract_agreed">我已認真閱讀並同意
+
+                <div class="form-group">
+                    <div>
+                        <input type="submit" value="提交" class="btn btn-success">
+                    </div>
+                </div>
+            </form>
+
+            <p>已上傳文件列表</p>
+            <ul id="uploaded_files">
+                {% for file in uploaded_files %}
+                <li>{{ file }}</li>
+                {% endfor %}
+            </ul>
+
+            <!--dropzone表單-->
+            <form id="myAwesomeDropzone" action="{% url 'enrollment_file_upload' enrollment_obj.id %}" class="dropzone">
+                <div class="fallback">
+                    <input name="file" type="file" multiple/>
+                </div>
+            </form>
+
+        </div>
+        <div class="panel-footer">
+            <!--<pre>會照格式排列 666-->
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function BeforeFormSubmit(this_ele) {
+        // $(":disabled") 找出所有有disabled屬性的標籤
+        $(":disabled").removeAttr("disabled");
+
+        if ($("#uploaded_files").children().length == 0){
+            alert("請上傳證件信息");
+            return false
+        }
+
+        if (!$("input[name='contract_agreed']").prop("checked")){
+            alert("請先閱讀合同並同意!")
+            return false
+        }
+        return true
+    }
+</script>
+{% endblock %}
+
+{% block extra-js %}
+<script src="/static/plugins/dropzone/dropzone.js"></script>
+<script>
+    Dropzone.options.myAwesomeDropzone = {
+        paramName: "file", // The name that will be used to transfer the file
+        maxFilesize: 2, // 文件大小限制(MB)
+        maxFiles: 2, // 文件數量限制
+        parallelUploads: 1,  // 同步上傳數量
+        accept: function (file, done) {
+            // 文件檔名限制
+            if (file.name == "justinbieber.jpg") {
+                done("Naha, you don't.");
+            }
+            else {
+                done();
+            }
+        }
+    };
+
+    $(function () {
+        // Now that the DOM is fully loaded, create the dropzone, and setup the
+        // event listeners
+        // 防止重複創新物件
+        Dropzone.options.myAwesomeDropzone = false;
+        var myDropzone = new Dropzone("#myAwesomeDropzone");
+        myDropzone.on("success", function (file, response) {
+            /* Maybe display some more file information on your page */
+            console.log(response);
+            var response = JSON.parse(response);
+            if (!response.status){
+                alert(response.err_msg);
+            } else {  // 顯示添加的已上傳文件
+                $("#uploaded_files").append("<li>"+file.name+"</li>");
+            }
+        });
+    })
+</script>
+{% endblock %}

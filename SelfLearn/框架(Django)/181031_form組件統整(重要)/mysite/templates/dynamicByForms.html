@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/dynamicByForms.html/" method="post" novalidate>
+    {% csrf_token %}
+    <p>{{ obj.username.label }} {{ obj.username }} {{ obj.errors.username.0 }}</p>
+    <p>{{ obj.age.label }} {{ obj.age }} {{ obj.errors.age.0 }}</p>
+    <input type="submit" value="添加">
+</form>
+
+</body>
+</html>

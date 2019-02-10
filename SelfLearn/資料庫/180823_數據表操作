@@ -1,0 +1,71 @@
+-- -------創建表-------：
+-- create table tab_name(
+--       field1 type [完整性約束條件] ,
+--       field2 type,
+--       ...
+--       fieldn type
+-- ) [ character set xxx ];
+CREATE TABLE employee(
+        id TINYINT PRIMARY KEY AUTO_INCREMENT,
+        name VARCHAR(25),
+        gender BOOLEAN,
+        age INT DEFAULT 19,
+        department VARCHAR(20),
+        salary DOUBLE(7,2)
+);
+--約束:
+-- primary key (非空且唯一)：能夠唯一區分出當前記錄的字段稱為主鍵
+-- unique：唯一
+-- not null：非空
+-- default：默認值
+-- auto_increment：主鍵字段必須是數字類型且會自動增加
+-- 外鍵約束foreign key
+
+
+-- -------查看表信息-------：
+--    desc tab_name → 查看表結構
+--    show columns from tab_name → 查看表結構
+--    show tables → 查看當前數據庫中的所有的表
+--    show create table tab_name → 查看當前數據庫表建表語句
+
+
+-- -------修改表結構-------：
+--增加一列
+--alter table tab_name add 列名 type［完整性約束條件］［first｜after字段名］;
+alter table employee add birthday DATE NOT NULL;
+
+--添加多列
+alter table employee
+    add addr varchar (20),
+    add birth varchar (20) after name;
+
+--刪除一列
+--alter table tab_name drop 列名;
+alter table employee drop birth;
+
+--刪除多列
+alter table employee
+    drop addr,
+    drop birthday;
+
+--修改一列類型
+--alter table tab_name modify 列名 類型 [完整性約束條件]［first｜after字段名］;
+alter table employee modify age tinyint default 20 after id;
+
+--修改列名
+--alter table tab_name change 列名 新列名 類型 [完整性約束條件]［first｜after字段名］;
+alter table employee change department depart varchar(30) default 28 first;
+
+--修改表名
+--rename table 表名 to 新表名;
+rename table employee to employees;
+
+--修改表所用的字符集
+alter table employee character set gbk;
+
+
+-- -------刪除表-------
+--drop table tab_name;
+
+-- -------複製表-------
+create table test (select * from employee);

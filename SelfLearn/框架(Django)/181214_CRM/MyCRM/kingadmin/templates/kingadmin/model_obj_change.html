@@ -1,0 +1,15 @@
+{% extends "kingadmin/index.html" %}
+{% load kingadmin_tags %}
+
+{% block right-content-container %}
+<ol class="breadcrumb">
+    <li><a href="/kingadmin/">Home</a></li>
+    <li><a href="/kingadmin/{{ app_name }}/">{{ app_name }}</a></li>
+    <li><a href="/kingadmin/{{ app_name }}/{{ model_name }}">{% get_model_verbose_name admin_class %}</a></li>
+    <li class="active">Edit {{ form_obj.instance }}</li>
+</ol>
+
+<div>
+    {% include "kingadmin/table_obj_component.html" %}
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "home_layout.html" %}
+
+{% block content %}
+<div class="summary-list">
+    {% for article in article_list %}
+    <div class="summary-item">
+        <div class="summary-title">
+            <a href="/{{ blog.site }}/{{ article.nid }}.html">{{ article.title }}</a>
+        </div>
+        <div class="summary-content">
+            {{ article.summary }}
+        </div>
+        <div class="summary-footer">
+            <span>{{ article.create_time|date:"Y-m-d H:i:s" }}</span>
+            <span>{{ article.blog.user.nickname }}</span>
+            <span>閱讀({{ article.read_count }})</span>
+            <a>評論({{ article.comment_count }})</a>
+            {% if blog_id == blog.nid %}
+            <a href="/backend/edit-article-{{ article.nid }}.html">編輯</a>
+            {% endif %}
+        </div>
+        <hr class="shadowLine">
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

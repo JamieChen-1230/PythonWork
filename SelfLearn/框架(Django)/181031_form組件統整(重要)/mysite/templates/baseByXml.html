@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/baseByXml.html/" method="post" id="fm">
+    {% csrf_token %}
+    <p>{{ obj.username.label }} {{ obj.username }}</p>
+    <p>{{ obj.age.label }} {{ obj.age }}</p>
+    <p id="err"></p>
+    <!--不能使用<button></button>-->
+    <input type="button" value="提交" id="btn">
+</form>
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/baseByXml.html/");
+            xhr.onreadystatechange = function () {
+                // 狀態值
+                // 0-未初始化，尚未调用open()方法；
+                // 1-启动，调用了open()方法，未调用send()方法；
+                // 2-发送，已经调用了send()方法，未接收到响应；
+                // 3-接收，已经接收到部分响应数据；
+                // 4-完成，已经接收到全部响应数据；
+                if (xhr.readyState == 4) {
+                    // xhr.responseText: 狀態、錯誤信息
+                    console.log(JSON.parse(xhr.responseText));  // 須先將json格式轉換成物件
+                    if (JSON.parse(xhr.responseText).status == "ok") {
+                        window.location.href = 'https://www.youtube.com/?gl=TW&hl=zh-tw';
+                    }
+                    else {
+                        $('#err').text(JSON.parse(xhr.responseText).msg['age']);
+                    }
+                }
+            };
+            var data = $("#fm").serialize();
+            // 要看傳輸內容設置請求頭
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset-UTF-8');
+            xhr.send(data);
+        });
+    })
+</script>
+</html>

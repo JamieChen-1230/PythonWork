@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style type="text/css">
+        *{
+            margin:0;padding:0;
+        }
+        .container{
+            border:1px solid red;
+            width:300px;
+        }
+        #box1{
+            background-color:green;
+            float:left;
+            width:100px;
+            height:100px;
+        }
+        #box2{
+            background-color:deeppink;
+            float:right;
+            width:100px;
+            height:100px;
+        }
+        #box3{
+            background-color:pink;
+            height:40px;
+        }
+        .clearfix:after{
+            /*內容為空*/
+            content: ".";
+            /*加入的這個元素轉換為塊級元素*/
+            display: block;
+            /*清除左右兩邊浮動*/
+            clear: both;
+            /*可見度設為隱藏。它和display:none是不同的。visibility:hidden仍佔據空間，只是看不到而已*/
+            visibility: hidden;
+            /*行高為0*/
+            line-height: 0;
+            /*高度為0*/
+            height: 0;
+            font-size:0;
+        }
+</style>
+</head>
+<body>
+<!--
+clear語法：
+clear : none | left | right | both
+none :默認值。允許兩邊都可以有浮動對象
+left :不允許左邊有浮動對象
+right :不允許右邊有浮動對象
+both :不允許有浮動對象-->
+
+<!--注意：clear屬性只會對自身起作用，而不會影響其他元素。
+如果一個元素的右側有一浮動對象，而這個元素設置了不允許右邊有浮動對象，即clear：right，則這個元素會自動下移一格，達到本元素右邊沒有浮動對象的目的。-->
+
+<!--清除浮動方法二，加上clearfix-->
+<div class="container clearfix">
+    <div id="box1">box1 向左浮动</div>
+    <div id="box2">box2 向右浮动</div>
+    <!--清除浮動方法一(不好)-->
+    <!--<div style="clear: both"></div>-->
+</div>
+<div id="box3">box3</div>
+
+</body>
+</body>
+</html>

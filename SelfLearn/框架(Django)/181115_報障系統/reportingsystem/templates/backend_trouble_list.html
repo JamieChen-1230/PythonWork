@@ -1,0 +1,71 @@
+{% extends "backend_layout.html" %}
+{% block title %}報障管理{% endblock %}
+{% block css %}{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb" style="margin-bottom: 0;">
+    <li><a href="/backend/trouble-list.html">報障管理</a></li>
+    <li><a href="/backend/trouble-kill-list.html">處理報障管理</a></li>
+    <li class="active">報障列表</li>
+</ol>
+
+<div class="clearfix"
+     style="height: 36px;line-height: 36px;padding: 0 15px;border-top: 1px solid #dddddd;background-color: #f1f0f0">
+    <i class="fa fa-table" aria-hidden="true"></i>
+    報障列表({{ data_count }})
+    <a target="_blank" href="/backend/add-trouble.html"
+       style="display: inline-block; margin-left:10px; padding:0 10px; background-color: #428bca;color: #ffffff;">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        創建報障章
+    </a>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>標題</th>
+        <th>狀態</th>
+        <th>創建時間</th>
+        <th>處理者</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in result %}
+    <tr>
+        <td><a href="/backend/trouble-detail-{{ row.id }}.html">{{ row.title }}</a></td>
+        <!--django提供: 取出status對應的中文字段-->
+        <td>{{ row.get_status_display }}</td>
+        <td>{{ row.create_time }}</td>
+        <td>
+            {{ row.processor.nickname }}
+            {% if row.status == 3 %}
+            <a class="btn btn-primary btn-xs" href="/backend/trouble-solution-{{ row.id }}.html">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                解決方案
+            </a>
+            {% endif %}
+        </td>
+        <td>
+            <a class="btn btn-danger btn-xs" href="/backend/remove-trouble-{{ row.id }}.html">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                刪除
+            </a>
+            |
+            <a class="btn btn-primary btn-xs" href="/backend/edit-trouble-{{ row.id }}.html">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                編輯
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!--<div class="clearfix">-->
+    <!--<ul class="pagination right" style="margin-top: 0">-->
+        <!--{{ page_str }}-->
+    <!--</ul>-->
+<!--</div>-->
+{% endblock %}
+
+{% block js %} {% endblock %}

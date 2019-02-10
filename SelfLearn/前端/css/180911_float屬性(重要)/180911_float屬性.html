@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            /*float如果上面的標籤在正常文檔流中，那麼此被float的標籤則會在原地浮起；
+            若上面也是被float的標籤那麼就會緊跟在上一個標籤旁*/
+            float: left;
+        }
+        .div2{
+            width: 200px;
+            height: 100px;
+            background: fuchsia;
+            float: left;
+        }
+        .div3{
+            width: 100px;
+            height: 200px;
+            background: red;
+            float: left;
+        }
+        .div4{
+            width: 200px;
+            height: 200px;
+            background: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+<!--block元素通常被現實為獨立的一塊，獨占一行，多個block元素會各自新起一行，
+默認block元素寬度自動填滿其父元素寬度。block元素可以設置width、height、margin、padding屬性；-->
+<!--inline元素不會獨占一行，多個相鄰的行內元素會排列在同一行里，
+直到一行排列不下，才會新換一行，其寬度隨元素的內容而變化。-->
+<!--文檔流：指的是元素排版佈局過程中，元素會自動從左往右，從上往下的流式排列。-->
+
+<!--脫離文檔流；將元素從普通的佈局排版中拿走，其他盒子在定位時，會當脫離文檔流的元素不存在而進行定位。
+只有絕對定位absolute和浮動float才會脫離文檔流-->
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+
+</body>
+</html>

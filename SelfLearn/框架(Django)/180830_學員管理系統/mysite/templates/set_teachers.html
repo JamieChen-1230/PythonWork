@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/set_teachers.html?nid={{ obj_cls.id }}">
+    {#multiple多選#}
+    <select multiple name="ct">
+        {% for t in list_t %}
+            {% if t in list_cls_t %}
+                <option value="{{ t.id }}" selected="selected">{{ t.name }}</option>
+            {% else %}
+                <option value="{{ t.id }}">{{ t.name }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

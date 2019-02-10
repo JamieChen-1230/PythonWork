@@ -1,0 +1,430 @@
+Scrapy框架:
+    功能:
+        - 下載頁面
+        - 解析
+        - 併發
+        - 深度(循環、遞歸等)
+
+    安裝(windows):
+        a. pip3 install wheel
+        b. 下载twisted http://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted
+        c. 进入下载目录，执行 pip3 install Twisted‑17.1.0‑cp35‑cp35m‑win_amd64.whl
+        d. pip3 install scrapy
+        e. 下载并安装pywin32：https://sourceforge.net/projects/pywin32/files/
+
+    使用:
+        1. 指定初始url
+        2. 解析響應內容
+            - 給調度器做深度
+            - 給pipeline做持久化；item做格式化
+
+    命令:
+        scrapy startproject xxx
+        cd xxx
+        scrapy genspider ooo ooo.com
+        scrapy crawl ooo
+
+    程式碼:
+        a. name不能省略
+        b. start_urls: 起始URL網址
+        c. allowed_domains: 允許爬取的域名
+        d. 重寫start_request方法，指定初始處理請求的函數
+        e. response: 為響應對象
+            response.url
+            response.text
+            response.body
+            response.meta = {包含了很多，包括當前深度(depth)等}
+
+        f. 採集數據:
+            hxs = Selector(response=response).xpath()
+            // 表示子孫中
+            .// 表當前對象的子孫中
+            / 兒子
+            /div 兒子中的div標籤
+            /div[@class="li"] 兒子中的div標籤且id="li"
+            /div[@id="li"] 兒子中的div標籤且class="li"
+            /div[@id="li"][@class="li"] 雙條件:兒子中的div標籤且class="li"且class="li"
+            //div/text() 獲取div標籤的文本
+            //a/@href 獲取a標籤的href屬性
+            //a[contains(@href, '/all/hot/recent/')]  找到href裡有包含/all/hot/recent/的所有a標籤
+            //a[starts-with(@href, '/all/hot/recent/')]  找到href開頭為/all/hot/recent/的所有a標籤
+            //a[re:test(@href, '/all/hot/recent/\d+')] 用正則找到href為/all/hot/recent/\d+的所有a標籤
+            obj.extract() 列表中的每一個對象轉為字符串 => 返回整個列表
+            obj.extract_first() 列表中的每一個對象轉為字符串 => 返回列表的第一個元素
+
+        g. yield Request(url=url, callback=self.parse): 將url加入調度器
+        h. yield Item(...): 移交給pipeline
+        i. pipeline:
+            class MyscrapyPipeline(object):
+                def from_crawler(cls, crawler):
+                    crawler.settings.get("settings裡的配置文件名稱必須大寫 ex:DB")
+                def process_item(self, item, spider):
+                    ...(可用spider進行if判斷，判斷哪些爬蟲要進行這個pipeline)
+                    return item 表示要交給下一個pipeline繼續執行
+                    raise DropItem() 丟棄，不交給下一個pipeline
+                def close_spider(self, spider):
+                    # 爬蟲結束執行時調用
+                    ...
+                def open_spider(self, spider):
+                    # 爬蟲開始執行時調用
+                    ...
+
+            並且需到settings裡去註冊:
+                ITEM_PIPELINES = {
+                    # 都會被執行，數字越大就越優先執行
+                    'myscrapy.pipelines.MyscrapyPipeline': 400,
+                    'myscrapy.pipelines.MyscrapyPipeline2': 300,
+                }
+
+
+        j.  自定義filter，若要自定義需到settings裡註冊(DUPEFILTER_CLASS = "myscrapy.duplication.MyFilter")
+        class MyFilter(object):
+            def __init__(self):  # 2. 對象初始化
+                self.visited_set = set()
+            # -------這些方法是必須要有的且不能改名稱-------
+            @classmethod
+            def from_settings(cls, settings):  # 1. 創建對象
+                """
+                obj = MyFilter.from_settings()
+                """
+                return cls()
+
+            def request_seen(self, request):  # 4.檢查
+                """檢測當前url是否存在"""
+                if request.url in self.visited_set:
+                    return True
+                self.visited_set.add(request.url)
+                return False
+
+            def open(self):  # 3.開始爬取
+                print("open")
+
+            def close(self, reason): # 5.結束爬取
+                print("close")
+
+            def log(self, request, spider):
+                pass
+            # -------這些方法是必須要有的且不能改名稱-------
+
+        k. cookie
+            """創建CookieJar對象"""
+            cookie_obj = CookieJar()
+            """獲取cookies"""
+            cookie_obj.extract_cookies(response, response.request)
+            self.cookie = cookie_obj._cookies  # 存到成員變量中
+
+        l. 擴展
+            settings:
+                EXTENSIONS = {
+                    "chouti_like_up.extensions.MyExtend": 300,
+                }
+            程式:
+                class MyExtend:
+                def __init__(self, crawler):
+                    self.crawler = crawler
+                    # 在指定信號上註冊操作
+                    self.crawler.signals.connect(self.start, signals.engine_started)  # signals.xxx 信號
+                    self.crawler.signals.connect(self.start, signals.spider_closed)
+
+                @classmethod
+                def from_crawler(cls, crawler):
+                    return cls(crawler)
+
+                # ---------操作---------
+                def start(self):
+                    print("signals.engine_started.start....")
+
+                def close(self):
+                    print("spider close.....")
+
+        m. 代理伺服器
+            settings:
+                DOWNLOADER_MIDDLEWARES = {
+                   'chouti_like_up.middlewares.ChoutiLikeUpDownloaderMiddleware': 543,  # 默認但推薦用自定義的
+                   "xxx.xxx.ProxyMiddleware"
+                }
+            創建類:
+                def to_bytes(text, encoding=None, errors='strict'):
+                    if isinstance(text, bytes):
+                        return text
+                    if not isinstance(text, six.string_types):
+                        raise TypeError('to_bytes must receive a unicode, str or bytes '
+                                        'object, got %s' % type(text).__name__)
+                    if encoding is None:
+                        encoding = 'utf-8'
+                    return text.encode(encoding, errors)
+
+                class ProxyMiddleware(object):
+                    def process_request(self, request, spider):
+                        PROXIES = [
+                            # {ip端口, 帳密}，以下為舉例
+                            {'ip_port': '111.11.228.75:80', 'user_pass': ''},
+                            {'ip_port': '120.198.243.22:80', 'user_pass': ''},
+                        ]
+                        proxy = random.choice(PROXIES)
+                        if proxy['user_pass'] is not None:
+                            request.meta['proxy'] = to_bytes（"http://%s" % proxy['ip_port']）
+                            encoded_user_pass = base64.encodestring(to_bytes(proxy['user_pass']))
+                            request.headers['Proxy-Authorization'] = to_bytes('Basic ' + encoded_user_pass)
+                            print "**************ProxyMiddleware have pass************" + proxy['ip_port']
+                        else:
+                            print "**************ProxyMiddleware no pass************" + proxy['ip_port']
+                            request.meta['proxy'] = to_bytes("http://%s" % proxy['ip_port'])
+
+        n. Https證書(自定義)
+            settings:
+                DOWNLOADER_HTTPCLIENTFACTORY = "scrapy.core.downloader.webclient.ScrapyHTTPClientFactory"
+                DOWNLOADER_CLIENTCONTEXTFACTORY = "xxx.xxx.MySSLFactory"
+            程式碼:
+                from scrapy.core.downloader.contextfactory import ScrapyClientContextFactory
+                from twisted.internet.ssl import (optionsForClientTLS, CertificateOptions, PrivateCertificate)
+
+                class MySSLFactory(ScrapyClientContextFactory):  # 繼承原類並修改getCertificateOptions方法
+                    def getCertificateOptions(self):
+                        from OpenSSL import crypto
+                        # 以後只要把文件放在這就可
+                        v1 = crypto.load_privatekey(crypto.FILETYPE_PEM, open('/Users/wupeiqi/client.key.unsecure', mode='r').read())
+                        v2 = crypto.load_certificate(crypto.FILETYPE_PEM, open('/Users/wupeiqi/client.pem', mode='r').read())
+                        return CertificateOptions(
+                            privateKey=v1,  # pKey对象
+                            certificate=v2,  # X509对象
+                            verify=False,
+                            method=getattr(self, 'method', getattr(self, '_ssl_method', None))
+
+        o. 下載中間件
+        settings:
+            DOWNLOADER_MIDDLEWARES = {
+               # 'chouti_like_up.middlewares.ChoutiLikeUpDownloaderMiddleware': 543,
+                'chouti_like_up.middlewares.DownMiddleware1': 500,  # 自定義
+                'chouti_like_up.middlewares.DownMiddleware2': 600,  # 自定義
+            }
+        執行順序(先經過下載中間件入口 => 下載中間件出口 => 爬蟲程式):
+            DownMiddleware1.request
+            DownMiddleware2.request
+            DownMiddleware2.response
+            DownMiddleware1.response
+            爬蟲中間件入口
+            spider
+            爬蟲中間件出口
+        程式碼:
+            class DownMiddleware1(object):
+                def process_request(self, request, spider):
+                    """
+                    请求需要被下载时，经过所有下载器中间件的process_request调用
+                    :param request:
+                    :param spider:
+                    :return:
+                        None,继续后续中间件去下载；(後面的做，默認為None)
+                        Response对象，停止process_request的执行，开始执行process_response(我做完就好)
+                        Request对象，停止中间件的执行，将Request重新调度器
+                        raise IgnoreRequest异常，停止process_request的执行，开始执行process_exception(忽略此請求)
+                    """
+                    print("DownMiddleware1.request")
+                    return None
+
+                def process_response(self, request, response, spider):
+                    """
+                    spider处理完成，返回时调用
+                    :param response:
+                    :param result:
+                    :param spider:
+                    :return:
+                        Response 对象：转交给其他中间件process_response
+                        Request 对象：停止中间件，request会被重新调度下载
+                        raise IgnoreRequest 异常：调用Request.errback
+                    """
+                    print("DownMiddleware1.response")
+                    return response
+
+                def process_exception(self, request, exception, spider):
+                    '''
+                    当下载处理器(download handler)或 process_request() (下载中间件)抛出异常時執行
+                    :param response:
+                    :param exception:
+                    :param spider:
+                    :return:
+                        None：继续交给后续中间件处理异常；
+                        Response对象：停止后续process_exception方法
+                        Request对象：停止中间件，request将会被重新调用下载
+                    '''
+                    return None
+
+        p. 爬蟲中間件
+        settings:
+            SPIDER_MIDDLEWARES = {
+               # 'chouti_like_up.middlewares.ChoutiLikeUpSpiderMiddleware': 543,
+                'chouti_like_up.middlewares.SpiderMiddleware': 500,  # 自定義
+            }
+        執行順序(先經過下載中間件入口 => 下載中間件出口 => 爬蟲程式):
+            下載中間件
+            process_spider_input
+            spider
+            process_spider_output
+        程式碼:
+            class SpiderMiddleware(object):
+                def process_spider_input(self, response, spider):
+                    """
+                    下载完成，执行，然后交给parse处理
+                    :param response:
+                    :param spider:
+                    :return:
+                    """
+                    print("process_spider_input")
+
+                def process_spider_output(self, response, result, spider):
+                    """
+                    spider处理完成，返回时调用
+                    :param response:
+                    :param result:
+                    :param spider:
+                    :return: 必须返回包含 Request 或 Item 对象的可迭代对象(iterable)
+                    """
+                    print("process_spider_output")
+                    return result
+
+                def process_spider_exception(self, response, exception, spider):
+                    """
+                    异常调用
+                    :param response:
+                    :param exception:
+                    :param spider:
+                    :return: None,继续交给后续中间件处理异常；含 Response 或 Item 的可迭代对象(iterable)，交给调度器或pipeline
+                    """
+                    return None
+
+                def process_start_requests(self, start_requests, spider):
+                    """
+                    爬虫启动时调用
+                    :param start_requests:
+                    :param spider:
+                    :return: 包含 Request 对象的可迭代对象
+                    """
+                    return start_requests
+
+    配置文件(settings):
+        # 爬蟲名
+        BOT_NAME = 'chouti_like_up'
+        # 爬蟲應用路徑
+        SPIDER_MODULES = ['chouti_like_up.spiders']
+        NEWSPIDER_MODULE = 'chouti_like_up.spiders'
+        # 客戶端USER_AGENT請求頭: 讓別人知道我們是哪一個爬蟲程式，通常會偽裝成瀏覽器
+        USER_AGENT = 'chouti_like_up (+http://www.yourdomain.com)'
+            偽裝成瀏覽器:
+                USER_AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+        # 是否遵守爬蟲規則，理論上應該遵守，但通常會用False，不然很多不能爬
+        ROBOTSTXT_OBEY = True
+        # 總併發請求數(默認為16)，有些網站會限制併發數
+        CONCURRENT_REQUESTS = 32
+        # 下載延遲，有些網站會限制太頻繁的訪問
+        DOWNLOAD_DELAY = 3
+        # 每一個域名的併發數
+        CONCURRENT_REQUESTS_PER_DOMAIN = 16
+        # 每一個IP的併發數
+        CONCURRENT_REQUESTS_PER_IP = 16
+        # 返回response時是否攜帶cookies，默認為True
+        COOKIES_ENABLED = True
+        # 是否在DEBUG模式顯示cookie等相關內容
+        COOKIES_DEBUG = True
+        # 是否允許監聽爬蟲，默認為True
+        TELNETCONSOLE_ENABLED = False
+        # 設置默認請求頭，也可在yield Request裡設置專屬請求頭
+        DEFAULT_REQUEST_HEADERS = {
+           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+           'Accept-Language': 'en',
+        }
+        # 智能請求設定，因為如果我們的訪問太規律，可能會被發現是爬蟲
+            是否啟用
+            AUTOTHROTTLE_ENABLED = True
+            第一個請求延遲幾秒
+            AUTOTHROTTLE_START_DELAY = 5
+            每個請求最大延遲量
+            AUTOTHROTTLE_MAX_DELAY = 60
+            平均每秒併發數
+            AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+            是否顯示DEBUG
+            AUTOTHROTTLE_DEBUG = False
+            自動限速算法:
+                from scrapy.contrib.throttle import AutoThrottle
+                自動限速設置
+                1. 獲取最小延遲DOWNLOAD_DELAY
+                2. 獲取最大延遲AUTOTHROTTLE_MAX_DELAY
+                3. 設置初始下載延遲AUTOTHROTTLE_START_DELAY
+                4. 當請求下載完成後，獲取其"連接"時間latency，即：請求連接到接受到響應頭之間的時間
+                5. 用於計算的... AUTOTHROTTLE_TARGET_CONCURRENCY
+                target_delay = latency / self.target_concurrency
+                new_delay = (slot.delay + target_delay) / 2.0  # 這裡的slot.delay表示上一次的延遲時間
+                new_delay = max(target_delay, new_delay)
+                new_delay = min(max(self.mindelay, new_delay), self.maxdelay)
+                slot.delay = new_delay
+        # 爬蟲深度限制，0為不限制
+        DEPTH_LIMIT = 3
+        # 遵循深度優先(0)or廣度優先(1)
+        DEPTH_PRIORITY = 0 或 1
+        # 設置pipeline(持久化)
+        ITEM_PIPELINES = {
+           'chouti_like_up.pipelines.ChoutiLikeUpPipeline': 300,
+        }
+        # 設置extensions(擴展)，用於信號調用
+        EXTENSIONS = {
+            "chouti_like_up.extensions.MyExtend": 300,
+        }
+        # 設置Request的filter
+        DUPEFILTER_CLASS = "myscrapy.duplication.MyFilter"  # 自定義yield Request裡的filter
+        # 緩存設置
+            使否啟用
+            HTTPCACHE_ENABLED = True
+            緩存策略:
+                所有請求接存到緩存:
+                HTTPCACHE_POLICY = "scrapy.extensions.httpcache.DummyPolicy"
+                根據Http響應頭: Cache-Control、Last-Modified等判斷是否緩存
+                HTTPCACHE_POLICY = "scrapy.extensions.httpcache.RFC2616Policy"
+            緩存超時時間
+            HTTPCACHE_EXPIRATION_SECS = 0
+            緩存路徑
+            HTTPCACHE_DIR = 'httpcache'
+            要忽略哪些狀態碼 EX:404
+            HTTPCACHE_IGNORE_HTTP_CODES = []
+            用什麼方式存緩存
+            HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+        # 代理伺服器
+        DOWNLOADER_MIDDLEWARES = {
+            # 越小越先執行
+           'chouti_like_up.middlewares.ChoutiLikeUpDownloaderMiddleware': 543,  # 默認但推薦用自定義的
+           "xxx.xxx.xxx"
+        }
+        # HTTPS證書(默認)
+        DOWNLOADER_HTTPCLIENTFACTORY = "scrapy.core.downloader.webclient.ScrapyHTTPClientFactory"
+        DOWNLOADER_CLIENTCONTEXTFACTORY = "scrapy.core.downloader.contextfactory.ScrapyClientContextFactory"
+        # 下載中間件
+        DOWNLOADER_MIDDLEWARES = {
+           # 'chouti_like_up.middlewares.ChoutiLikeUpDownloaderMiddleware': 543,
+            'chouti_like_up.middlewares.DownMiddleware1': 500,  # 自定義
+            'chouti_like_up.middlewares.DownMiddleware2': 600,  # 自定義
+        }
+        # 爬蟲中間件
+        SPIDER_MIDDLEWARES = {
+           # 'chouti_like_up.middlewares.ChoutiLikeUpSpiderMiddleware': 543,
+            'chouti_like_up.middlewares.SpiderMiddleware': 500,  # 自定義
+        }
+        # 自訂製命令
+        COMMANDS_MODULE = "chouti_like_up.commands"
+
+    自訂製命令:
+        1.在spiders同級創建任意目錄，如：commands
+        2.在其中創建crawlall.py 文件（此處文件名就是自定義的命令）
+            from scrapy.commands import ScrapyCommand
+            from scrapy.utils.project import get_project_settings
+
+            class Command(ScrapyCommand):
+                requires_project = True
+                def syntax(self):
+                    return '[options]'
+                def short_desc(self):
+                    return 'Runs all of the spiders'
+                def run(self, args, opts):
+                    spider_list = self.crawler_process.spiders.list()
+                    for name in spider_list:
+                        self.crawler_process.crawl(name, **opts.__dict__)
+                    self.crawler_process.start()
+        3.在settings.py 中添加配置COMMANDS_MODULE = '項目名稱.目錄名稱'
+        4.在項目目錄執行命令：scrapy crawlall

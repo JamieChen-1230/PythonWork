@@ -1,0 +1,63 @@
+{% extends "backend_layout.html" %}
+
+{% block title %}標籤管理{% endblock %}
+
+{% block css %} {% endblock %}
+
+{% block content %}
+<ol class="breadcrumb" style="margin-bottom: 0;">
+    <li><a href="/backend/tag.html">標籤管理</a></li>
+    <li class="active">標籤列表</li>
+</ol>
+
+<div style="padding: 20px 30px">
+    <form class="form-inline" action="/backend/add-tag.html" method="post">
+        <div class="form-group">
+            <label>標籤: </label>
+            <input type="text" class="form-control" placeholder="標籤名" name="title">
+        </div>
+        <button type="submit" class="btn btn-default" style="margin-left: 10px">添加</button>
+    </form>
+</div>
+
+<div class="clearfix"
+     style="height: 36px;line-height: 36px;padding: 0 15px;border-top: 1px solid #dddddd;background-color: #f1f0f0">
+    <i class="fa fa-table" aria-hidden="true"></i>
+    標籤列表({{ data_count }})
+</div>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>標籤標題</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in result %}
+    <tr nid="{{ row.nid }}">
+        <td>{{ row.title }}</td>
+        <td>
+            <a class="btn btn-danger btn-xs" href="/backend/remove-tag.html?nid={{ row.nid }}">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                刪除
+            </a>
+            |
+            <a class="btn btn-primary btn-xs" href="/backend/edit-tag-{{ row.nid }}.html">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                編輯
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<div class="clearfix">
+    <ul class="pagination right" style="margin-top: 0">
+        {{ page_str }}
+    </ul>
+</div>
+{% endblock %}
+
+{% block js %} {% endblock %}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .w{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .item{
+            width: 25%;
+            float: left;
+        }
+        .item img{
+            width: 100%;
+        }
+        .item .person{
+            margin: 10px 5px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+
+<div>校花網</div>
+<div class="w" id="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+/*    $(function () {
+        initImg();
+        scrollEvent();
+    });
+
+    // 全局變量盡量不要用，因為有可能會跟其他函數的參數產生衝突
+    // NID起始值
+    var NID = 0;
+    // 須紀錄下一次圖片最後放到哪個位置，這樣才知道要從哪一排繼續放
+    var NEXTLOCATION = 0;
+
+    function initImg() {
+        $.ajax({
+            url: "/get_imgs.html",
+            type: "GET",
+            data: {"nid": NID},
+            dataType: "JSON",
+            success: function (arg) {
+                var img_list = arg.data;
+                $.each(img_list, function (index, dic) {
+                    //console.log(index, dic);
+                    var remainder = (index+NEXTLOCATION) % 4;
+                    console.log(remainder);
+                    var tag = document.createElement("img");
+                    tag.src = "/" + dic.src;
+                    var tag2 = document.createElement("p");
+                    tag2.innerText=dic.title;
+
+                    // eq()第幾個
+                    $("#container").children().eq(remainder).append(tag);
+                    $("#container").children().eq(remainder).append(tag2);
+                    // 當循環到最後一個圖片時，將圖片ID給NID
+                    if (index+1==img_list.length){
+                        NID = dic.id;
+                        NEXTLOCATION = remainder+1;
+                    }
+                })
+            }
+        })
+    }
+
+    // 當滾輪到最底部時，執行initImg()
+    function scrollEvent() {
+        // 滾動時會觸發scroll
+        $(window).scroll(function () {
+            // 什麼時候算到達底部
+            // 文檔(body)高度 = 滾動條可滑動的高度 + 窗口(顯示頁面)高度
+            var docHeight = $(document).height();
+            var windowHeight = $(window).height();
+            var scrollHeight = $(window).scrollTop();
+            // console.log(docHeight, windowHeight, scrollHeight);
+            if (windowHeight+scrollHeight+1 >= docHeight){
+                initImg();
+            }
+        })
+    }
+*/
+    // 不使用全局變量實現 => 創造一個函數
+    $(function () {
+       var obj = new ScrollImg();
+       obj.initImg();
+       obj.scrollEvent();
+    });
+
+    function ScrollImg() {
+        // 如果用obj去調用，此時ScrollImg函式中的this=obj
+        this.nid = 0;
+        this.nextLocation = 0;
+        this.initImg = function () {
+            // 為了區別兩者的this，所以把我們要用的this(obj)設為that
+            var that = this;
+            $.ajax({
+                url: "/get_imgs.html/",
+                type: "GET",
+                // 這邊的this還是等於obj
+                data: {"nid": this.nid},
+                dataType: "JSON",
+                // 此時不能使用this.nid因為這是另一個函式，不知道是被誰調用，所以兩者的this並不相同
+                success: function (arg) {
+                    var img_list = arg.data;
+                    $.each(img_list, function (index, dic) {
+                        var remainder = (index+that.nextLocation) % 4;
+                        var div = document.createElement("div");
+                        div.setAttribute("class", "person");
+                        var img = document.createElement("img");
+                        img.src = dic.src;
+                        div.appendChild(img);
+                        var title = document.createElement("h3");
+                        title.innerHTML = dic.title;
+                        div.appendChild(title);
+                        var summary = document.createElement("p");
+                        summary.innerHTML = dic.summary;
+                        div.appendChild(summary);
+
+
+                        // eq()第幾個
+                        $("#container").children().eq(remainder).append(div);
+                        // 當循環到最後一個圖片時，將圖片ID給NID，並記住下次圖片位置
+                        if (index+1 == img_list.length){
+                            that.nid = dic.id;
+                            that.nextLocation = remainder+1;
+                        }
+                    })
+                }
+            })
+        };
+        // 當滾輪到最底部時，再次執行initImg()
+        this.scrollEvent = function () {
+            var that = this;
+            // 此時不能使用this.nid因為這是另一個函式，不知道是被誰調用，所以兩者的this並不相同
+            $(window).scroll(function () {
+                // 什麼時候算到達底部
+                // 文檔(body)高度 = 滾動條可滑動的高度 + 窗口(顯示頁面)高度
+                var docHeight = $(document).height();
+                var windowHeight = $(window).height();
+                var scrollHeight = $(window).scrollTop();
+                // console.log(docHeight, windowHeight, scrollHeight);
+                if (windowHeight+scrollHeight+1 >= docHeight){
+                    // 此時不能使用this.nid因為這又是另一個函式，所以兩者的this並不相同
+                    that.initImg();
+                }
+            })
+        };
+    }
+
+</script>
+</html>

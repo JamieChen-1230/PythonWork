@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.css"/>
+    <!--主題訂製-->
+    <link rel="stylesheet" href="/static/css/theme/{{ blog.theme }}.css"/>
+    <!--<link rel="stylesheet" href="/static/css/theme/default.css"/>-->
+    {% block css %}{% endblock %}
+</head>
+<body>
+<div class="pg-header">
+    <div class="title">{{ blog.title }}</div>
+    <div class="menu-list">
+        <a class="menu-item" href="/">首頁</a>
+        <a class="menu-item" href="/{{ blog.site }}.html">博客首頁</a>
+        <a class="menu-item" href="/backend/index.html">管理</a>
+    </div>
+</div>
+
+<div class="pg-body">
+    <div class="body-menu">
+        <div class="notice">
+            <div class="notice-header">公告</div>
+            <div class="notice-body">
+                <ul>
+                    <li>暱稱: {{ blog.user.nickname }}</li>
+                    <li>信箱: {{ blog.user.email }}</li>
+                    <li>粉絲數: {{ blog.user.fans.count }}</li>
+                    <li>關注數: {{ blog.user.f.count }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tags">
+            <div class="tags-header">標籤</div>
+            <div class="tags-body">
+                <ul>
+                    {% for tag in tag_list %}
+                    <!--tag.article_set 反向查詢-->
+                    <li><a href="/{{ blog.site }}/tag/{{ tag.nid }}.html">{{ tag.title }}({{ tag.article_set.count }})</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="types">
+            <div class="types-header">分類</div>
+            <div class="types-body">
+                <ul>
+                    {% for category in category_list %}
+                    <!--category.article_set 反向查詢-->
+                    <li><a href="/{{ blog.site }}/category/{{ category.nid }}.html">{{ category.title }}({{ category.article_set.count }})</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="dates">
+            <div class="dates-header">時間</div>
+            <div class="dates-body">
+                <ul>
+                    {% for date in date_list %}
+                        <li><a href="/{{ blog.site }}/date/{{ date.ctime }}.html">{{ date.ctime }}({{ date.num }})</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+
+</body>
+{% block js %}{% endblock %}
+</html>

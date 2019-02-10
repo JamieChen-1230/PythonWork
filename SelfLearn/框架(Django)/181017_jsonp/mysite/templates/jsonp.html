@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" onclick="AjaxRequest()" value="跨域Ajax"/>
+<div id="container"></div>
+
+<script src="/static/jquery-3.3.1.js/"></script>
+<script>
+    function AjaxRequest() {
+        // 用此方法會自動增加並刪除<script>標籤，且也會自動生成回調函數
+        $.ajax({
+            url: 'http://www.jxntv.cn/data/jmd-jxtv2.html',
+            type: 'GET',
+            // jsonp可用來跨越同源策略
+            dataType: 'jsonp',
+            // 須為callback(默認)
+            jsonp: 'callback',
+            // 根據他人網頁要求之函式，此網站為list。(可通常做得好的話，輸入任意值都能返回)
+            jsonpCallback: 'list',
+            success: function (data) {
+                $.each(data.data, function (i) {
+                    var item = data.data[i];
+                    var str = "<p>" + item.week + "</p>";
+                    $('#container').append(str);
+                    $.each(item.list, function (j) {
+                        var temp = "<a href='" + item.list[j].link + "'>" + item.list[j].name + " </a><br/>";
+                        $('#container').append(temp);
+                    });
+                    $('#container').append("<hr/>");
+                })
+            }
+        });
+    }
+</script>
+</body>
+</html>

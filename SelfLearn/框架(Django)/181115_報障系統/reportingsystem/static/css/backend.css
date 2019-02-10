@@ -1,0 +1,117 @@
+.pg-header {
+    height: 48px;
+    line-height: 48px;
+    background-color: #d8d5d5;
+    min-width: 1024px; /*當頁面縮小到小於1024px時底下會出現滾動條，這樣頁面才不會亂版*/
+}
+
+.pg-header .logo{
+    color: white;
+    background-color: #777;
+    font-size: 28px;
+    width: 200px;
+    text-align: center;
+}
+
+.pg-header .hl-menu .item,.pg-header .hr-menu .item{
+    height: 48px;
+    display: inline-block;
+    color: black;
+    padding: 0 10px;
+}
+
+.pg-header .hl-menu .item:hover,.pg-header .hr-menu .item:hover{
+    background-color: #cdcaca;
+}
+
+.pg-header .hl-menu .item-set{
+    display: inline-block;
+    position: relative;
+}
+
+.pg-header .hl-menu .item-set:hover .sets{
+    display: block;
+    width: 100px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.pg-header .hl-menu .item-set:hover .sets a{
+    display: block;
+    color: rgba(0, 0, 0, .50);
+    padding-left: 5px;
+}
+
+.pg-header .hl-menu .item-set:hover .sets a:hover{
+    background-color: #f1f0f0;
+}
+
+.pg-header .avatar{
+    z-index: 1;
+    display: inline-block;
+    float: right;
+}
+
+.pg-header .avatar img{
+    border-radius: 50%;
+}
+
+.pg-header .avatar .sets{
+    display: none;
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 48px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.pg-header .avatar:hover .sets{
+    z-index: 1;
+    display: block;
+}
+
+.pg-header .avatar .sets a{
+    line-height: 30px;
+    display: block;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, .80);
+}
+
+.pg-header .avatar .sets a:hover{
+    border-left: 3px solid #cdcaca;
+}
+
+.pg-body .menu{
+    position: absolute;
+    left: 0;
+    top: 52px;
+    bottom: 0;
+    width: 198px;
+    border: 1px solid rgba(0, 0, 0, .35);
+}
+
+.pg-body .content{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    left: 200px;
+    top: 52px;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, .35);
+    overflow: scroll;
+}
+
+.pg-body .menu .menu-item{
+    display: block;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 35px;
+    border-bottom: rgba(0, 0, 0, .15) 1px dashed;
+}
+
+.pg-body .menu .menu-item:hover{
+    border-left: #1c5a9c 4px solid;
+}

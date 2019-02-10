@@ -1,0 +1,115 @@
+HTTP協議：協議詳細規定了瀏覽器和萬維網服務器之間互相通信的規則。
+    ◇ 請求協議：客戶端→服務端
+    ◇ 響應協議：服務端→客戶端
+    ◇ HTTP是無狀態協議，FTP是有狀態
+        無狀態協議：一次請求(當你查詢網頁是服務端單次返回給你的網頁，所以當返回頁面後幾秒就斷開連線)
+
+請求協議：
+    格式：
+        請求首行：請求方式請求路徑協議和版本，例如：GET /index.html HTTP/1.1
+        請求頭信息：請求頭名稱:請求頭內容，即為key:value格式，例如：Host:localhost
+            ◇ Request Headers(字典形式)
+                Accept:告訴服務端本瀏覽器可以接受的內容類型
+                Accept-Encoding:可接受的內容壓縮格式
+                Accept-Language:語言
+                Connection:是否保持連線狀態
+                Cookie:
+                Host:欲訪問的域名(網址)
+                User-Agent:用戶本身信息(操作系統、瀏覽器等等)
+        空行：用來與請求體分隔開
+        請求體：GET沒有請求體(數據都反映在url上)，只有POST有請求體。
+            ◇ 數據(EX:登入的帳密)
+
+    GET 請求：　
+        * HTTP默認的請求方法就是GET
+        * 沒有請求體
+        * 數據必須在1K之內
+        * GET請求數據會暴露在瀏覽器的地址欄中
+        常用的操作：
+            1.在瀏覽器的地址欄中直接給出URL，那麼就一定是GET請求
+            2.點擊頁面上的超鏈接也一定是GET請求
+            3.提交表單時，表單默認使用GET請求，但可以設置為POST
+
+    POST 請求：
+        * 數據不會出現在地址欄中
+        * 數據的大小沒有上限
+        * 有請求體
+        * 請求體中如果存在中文，會使用URL編碼
+
+響應協議：
+    格式：
+        響應首行：
+        響應頭信息：
+            HTTP/1.1 200 OK → 響應協議為HTTP1.1 ，狀態碼為200 ，表示請求成功
+                200 ：請求成功，瀏覽器會把響應體內容（通常是html）顯示在瀏覽器中
+                404 ：請求的資源沒有找到，說明客戶端錯誤的請求了不存在的資源
+                500 ：請求資源找到了，但服務器內部出現了錯誤
+                302 ：重定向，當響應碼為302 時，表示服務器要求瀏覽器重新再發一個請求，服務器會發送一個響應頭Location，它指定了新請求的URL地址
+            Server:WSGIServer/0.2 CPython/3.5.2 → 服務器的版本信息
+            Content-Type: text/html;charset=UTF-8 → 響應體使用的編碼為UTF-8
+            Content-Length: 724 → 響應體為724 字節
+            Set-Cookie: JSESSIONID=C97E2B4C55553EAB46079A4F263435A4; Path=/hello → 響應給客戶端的Cookie
+            Date: Wed, 25 Sep 2012 04:15:03 GMT → 響應的時間，這可能會有8小時的時區
+            Refresh: 3;url=http://www.baidu.com → 自動刷新響應頭，瀏覽器會在3 秒之後請求http://www.baidu.com
+        空行：
+        響應體：
+
+
+
+MVC：把Web應用分為模型(Mel),控制器(Control),視圖(View)三層
+    ◇ 模型負責業務對象與數據庫的對象(ORM)
+    ◇ 視圖負責與用戶的交互(頁面)
+        → html文件
+        → response給客戶
+    ◇ 控制器(C)接受用戶的輸入調用模型和視圖完成用戶的請求
+        → 分配網址對應網頁
+        → 接收客戶request
+
+Django：
+    創建project → django- admin startproject mysite
+    創建APP → python mannage.py startapp app01
+    啟動項目 → python manage.py runserver 127.0.0.1:8090
+    生成同步數據庫的腳本 → python manage.py makemigrations
+    同步數據庫 → python manage.py migrate
+
+資料庫表與表之關係：
+    一對多(多對一)：兩張表即可
+    多對多：三張表(兩個一對多)
+    一對一：最少一張表
+
+添加之後能查看sql運行狀況：
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console':{
+            'level':'DEBUG',
+            'class':'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['console'],
+            'propagate': True,
+            'level':'DEBUG',
+        },
+    }
+}
+LOGGING
+
+◇ Queryset每次要用時需重新賦值，不然他會抓緩存的值
+◇ 當queryset非常巨大時，cache會成為問題，所以要使他變成跌代器：
+    objs = Book.objects.all().iterator()
+    # iterator()可以一次只從數據庫獲取少量數據，這樣可以節省內存
+    for obj in objs:
+         print (obj.name)
+    # BUT,再次遍歷沒有打印,因為迭代器已經在上一次遍歷(next)到最後一次了,沒得遍歷了
+    for obj in objs:
+         print (obj.name)
+
+    # 當然，使用iterator()方法來防止生成cache，意味著遍歷同一個queryset時會重複執行查詢。所以使
+    # 用iterator()的時候要當心，確保你的代碼在操作一個大的queryset時沒有重複執行查詢
+
+Cookie的工作原理是：
+由服務器產生內容，瀏覽器收到請求後保存在本地；
+當瀏覽器再次訪問時，瀏覽器會自動帶上cookie，這樣服務器就能通過cookie的內容來判斷這個是“誰”了。

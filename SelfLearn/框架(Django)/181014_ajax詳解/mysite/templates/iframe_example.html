@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 2px 10px;
+            background-color: coral;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h3>試做抽屜圖片上傳</h3>
+    <iframe id="iframe2" name="ifra2" style="display: none"></iframe>
+    <form id="fm2" action="/receive_example.html/" method="post" enctype="multipart/form-data" target="ifra2">
+        <!--使用onchange讓選擇檔案按鈕結合上傳-->
+        <input type="file" id="Forgedimg" name="img" onchange="upload_Forged()">
+    </form>
+    <h3>預覽</h3>
+    <div id="preview"></div>
+    <!--<img src="/static/2.jpg">-->
+</div>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    function upload_Forged() {
+        document.getElementById('iframe2').onload = reloadIframe2;
+        document.getElementById('fm2').submit();
+    }
+
+    function reloadIframe2() {
+        var content = this.contentWindow.document.body.innerHTML;
+        var obj = JSON.parse(content);
+        if (obj.status) {
+            console.log(obj.data);
+            var tag = document.createElement('img');
+            tag.src = "/"+obj.data;
+            // 要先清空，不然前面的圖片不會消失
+            $('#preview').empty().append(tag);
+        }
+    }
+</script>
+</html>

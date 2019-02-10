@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    {% for row in posts.object_list %}
+    <li>{{ row.name }}--{{ row.age }}</li>
+    {% endfor %}
+</ul>
+
+{% if posts.has_previous %}
+<a href="/extend_pagination?p={{ posts.previous_page_number }}">上一頁</a>
+{% else %}
+<a href="#">上一頁</a>
+{% endif %}
+
+{% for i in  posts.paginator.page_num_range %}
+    {% if i == posts.number %}
+        <a style="font-size: larger" href="/extend_pagination?p={{ i }}">{{ i }}</a>
+    {% else %}
+        <a href="/extend_pagination?p={{ i }}">{{ i }}</a>
+    {% endif %}
+{% endfor %}
+
+{% if posts.has_next %}
+<a href="/extend_pagination?p={{ posts.next_page_number }}">下一頁</a>
+{% endif %}
+
+<span>
+    {{ posts.number }}/{{ posts.paginator.num_pages }}
+</span>
+
+</body>
+</html>

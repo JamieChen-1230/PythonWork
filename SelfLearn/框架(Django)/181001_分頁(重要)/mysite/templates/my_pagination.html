@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<ul>
+    {% for row in data_list %}
+    <li>{{ row.name }}--{{ row.age }}</li>
+    {% endfor %}
+</ul>
+<hr>
+
+
+<ul class="pagination">
+    <!--<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>-->
+    <!--<li><a href="#">1</a></li>-->
+    <!--<li><a href="#">2</a></li>-->
+    <!--<li><a href="#">3</a></li>-->
+    <!--<li><a href="#">4</a></li>-->
+    <!--<li><a href="#">5</a></li>-->
+    <!--<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>-->
+
+    <!-- | safe => 為了讓後台傳來的標籤能正常使用-->
+    {{ page_obj.page_str | safe}}
+</ul>
+
+</body>
+</html>

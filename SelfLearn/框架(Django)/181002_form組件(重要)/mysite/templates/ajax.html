@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" action="/ajax.html/" id="fm">
+    <p>{{ obj.user_id.label }} {{ obj.user_id }}</p>
+    <p>{{ obj.price.label }} {{ obj.price }}</p>
+    <p id="err"></p>
+    <input type="button" value="提交" id="btn">
+</form>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        $('#btn').click(function () {
+            $.ajax({
+                url: '/ajax.html/',
+                type: 'POST',
+                data: $('#fm').serialize(),
+                dataType: 'JSON',
+                success:function (arg) {
+                    // arg: 狀態、錯誤信息
+                    if (arg.status == 'ok'){
+                        window.location.href = 'https://www.youtube.com/?gl=TW&hl=zh-tw';
+                    }
+                    else {
+                        $('#err').text(arg.msg['price']);
+                    }
+                    console.log(arg);
+                }
+            })
+        });
+    });
+</script>
+</html>

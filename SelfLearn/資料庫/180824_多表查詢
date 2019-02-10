@@ -1,0 +1,82 @@
+-- ----------創建表----------
+--員工
+create table employee(
+      emp_id int auto_increment primary  key  not  null ,
+      emp_name varchar (50),
+      age int,
+      dept_id int
+      );
+insert into employee(emp_name,age,dept_id) values
+        ( 'A' , 19 , 200 ),
+        ( 'B' , 26 , 201 ),
+        ( 'C' , 30 , 201 ),
+        ( 'D' , 24 , 202 ),
+        ( 'E' , 20 , 200 ),
+        ( 'F' , 38 , 204 );
+--部門
+create table department(
+       dept_id int ,
+       dept_name varchar ( 100 )
+      );
+insert  into department values
+      ( 200 , '人事部' ),
+      ( 201 , '技術部' ),
+      ( 202 , '銷售部' ),
+      ( 203 , '財政部' );
+
+
+-- ----------笛卡爾積查詢----------
+--產生len(employee)*len(department)行(無意義)
+select * from employee, department;
+
+
+-- ----------內連接查詢----------
+--篩選出有意義的
+select * from employee, department where employee.dept_id = department.dept_id;
+select * from employee inner join department on employee.dept_id = department.dept_id;
+--進一步篩選
+select employee.emp_name, department.dept_name from employee, department
+       where employee.dept_id = department.dept_id;
+
+
+-- ----------外連接查詢----------
+--左外連接：在內連接的基礎上增加左邊有右邊沒有的結果
+select * from employee left join department on employee.dept_id = department.dept_id;
+
+--右外連接：在內連接的基礎上增加右邊有左邊沒有的結果
+select * from employee RIGHT JOIN department on employee.dept_id = department.dept_id;
+
+--全外連接：在內連接的基礎上增加左邊有右邊沒有的和右邊有左邊沒有的結果
+    --mysql不支持全外連接full JOIN
+    --mysql可以使用此種方式間接實現全外連接
+    --注意union(聯集)與union all的區別：union會去掉相同的紀錄
+select * from employee RIGHT JOIN department on employee.dept_id = department.dept_id
+UNION
+select * from employee LEFT JOIN department on employee.dept_id = department.dept_id;
+
+
+-- ----------複合條件連接查詢----------
+--查詢員工年齡大於等於25歲的部門
+select distinct department.dept_name from employee inner join department
+                            on employee.dept_id = department.dept_id
+                            and employee.age>25;
+
+
+-- ----------多表查詢之子查詢----------
+    -- 子查詢是將一個查詢語句嵌套在另一個查詢語句中。
+    -- 內層查詢語句的查詢結果，可以為外層查詢語句提供查詢條件。
+    -- 子查詢中可以包含：IN、NOT IN、ANY、ALL、EXISTS和NOT EXISTS等關鍵字
+    -- 還可以包含比較運算符：= 、 !=、> 、<等
+
+--查詢employee表，但dept_id必須在department表中出現過
+select * from employee
+         where dept_id IN
+         (select dept_id from department);
+
+--帶EXISTS關鍵字的子查詢
+    -- EXISTS關字鍵字表示存在。在使用EXISTS關鍵字時，內層查詢語句不返回查詢的記錄。
+    -- 而是返回一個真假值。Ture或False
+    -- 當返回Ture時，外層查詢語句將進行查詢；當返回值為False時，外層查詢語句不進行查詢
+select * from employee
+       WHERE EXISTS
+       (SELECT dept_name from department where dept_id = 203);

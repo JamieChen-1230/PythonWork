@@ -1,0 +1,64 @@
+{% extends "backend_layout.html" %}
+{% block title %}報障管理{% endblock %}
+{% block css %}{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb" style="margin-bottom: 0;">
+    <li><a href="/backend/trouble-list.html">報障管理</a></li>
+    <li><a href="/backend/trouble-kill-list.html">處理報障管理</a></li>
+    <li class="active">處理報障列表</li>
+</ol>
+
+<div class="clearfix"
+     style="height: 36px;line-height: 36px;padding: 0 15px;border-top: 1px solid #dddddd;background-color: #f1f0f0">
+    <i class="fa fa-table" aria-hidden="true"></i>
+    處理報障列表({{ data_count }})
+</div>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>標題</th>
+        <th>狀態</th>
+        <th>創建時間</th>
+        <th>提交者</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in result %}
+    <tr>
+        <td><a href="/backend/trouble-detail-{{ row.id }}.html">{{ row.title }}</a></td>
+        <!--django提供: 取出status對應的中文字段-->
+        <td>{{ row.get_status_display }}</td>
+        <td>{{ row.create_time }}</td>
+        <td>{{ row.user.nickname }}</td>
+        <td>
+            <!--<a class="btn btn-danger btn-xs" href="#">-->
+                <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                <!--刪除-->
+            <!--</a>-->
+            <!--|-->
+            <a class="btn btn-primary btn-xs" href="/backend/kill-trouble-{{ row.id }}.html">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                {% if row.status == 1 %}
+                接單並處理
+                {% elif row.status == 2 %}
+                處理
+                {% else %}
+                查看
+                {% endif %}
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!--<div class="clearfix">-->
+    <!--<ul class="pagination right" style="margin-top: 0">-->
+        <!--{{ page_str }}-->
+    <!--</ul>-->
+<!--</div>-->
+{% endblock %}
+
+{% block js %} {% endblock %}

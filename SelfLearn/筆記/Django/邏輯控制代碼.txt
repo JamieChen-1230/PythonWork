@@ -1,0 +1,79 @@
+◇ 變量(使用雙大括號來引用變量)：
+    <h1>{{ li }}</h1>
+    <!--透過.取出列表中的值-->
+    <h2>{{ li.0 }}</h2>
+
+    <h1>{{ d }}</h1>
+    <!--透過.取出字典中的值-->
+    <h2>{{ d.name }}</h2>
+    <h2>{{ d.age }}</h2>
+
+    <h1>{{ a1 }}</h1>
+    <!--透過.取出對象中的屬性-->
+    <h2>{{ a1.name }}</h2>
+
+
+◇ 標籤(tag)的使用(使用大括號和百分比的組合來表示使用tag)：
+------{%if%} 可以使用and, or, not來組織邏輯(但不允許and和or同時出現)------
+    {% if d.age > 20 %}
+        <p>大於20</p>
+    {% elif d.age == 20 %}
+        <p>等於20</p>
+    {% else %}
+        <p>小於20</p>
+    {% endif %}
+
+------{%for%}用來循環一個序列------
+(1)forloop.counter正計數、forloop.revcounter倒計數、forloop.first是否為第一次迴圈
+(2)使用empty關鍵字來進行為空時的跳轉
+    {% for i in li %}
+        <p>{{ forloop.counter }} : {{ i }}</p>
+    {% empty %}
+        <p>為空列表</p>
+    {% endfor %}
+
+------{%csrf_token%}用於生成csrf_token的標籤，用於防治跨站攻擊驗證------
+    <form action="{% url 'show_time' %}" method="post">
+        <p>用戶名<input type="text" name="user"></p>
+        <p><input type="submit"> </p>
+        {% csrf_token %}  # 會給予一個金鑰，讓post可以通行
+    </form>
+
+------{%load%}加載標籤庫------
+調用自定義filter
+a、在app中創建templatetags資料夾(必要的)
+b、創建任意 .py 文件，如：my_tags.py
+c、(在檔案開頭導入)在使用自定義simple_tag和filter的html文件中導入之前創建的my_tags.py  EX：{% load my_tags %}
+d、使用simple_tag和filter
+e、在settings中的INSTALLED_APPS配置當前app，不然django無法找到自定義的simple_tag
+
+------{%url%}:引用路由配置的地址------
+    <form action="{% url 'show_time' %}" method="post"></form>
+
+------{% with %}:用更簡單的變量名替代複雜的變量名------
+    {% with p=publish %} {{ p }} {% endwith %}
+
+------{%verbatim%}:禁止render------
+    {% verbatim %}
+        {{ li }}
+    {% endverbatim %}
+
+
+◇ 過濾器(filter)：
+------add：給變量加上相應的值------
+    {{ d.age|add:12 }}
+
+------capfirst：首字母大寫------
+    {{ test|capfirst }}
+
+------cut：從字符串中移除指定的字符------
+    {{ test2|cut:" " }}
+
+------date：格式化日期字符串------
+    {{ t|date:"Y-m-d" }}
+
+------default：如果值是False，就替換成設置的默認值，否則就是用本來的值------
+    {{ e|default:'空的' }}
+
+------default_if_none：如果值是None，就替換成設置的默認值，否則就使用本來的值------
+    {{ e|default_if_none:'空的' }}

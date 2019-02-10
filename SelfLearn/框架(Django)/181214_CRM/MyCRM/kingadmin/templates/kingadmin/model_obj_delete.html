@@ -1,0 +1,37 @@
+{% extends "kingadmin/index.html" %}
+{% load kingadmin_tags %}
+
+{% block right-content-container %}
+<ol class="breadcrumb">
+    <li><a href="/kingadmin/">Home</a></li>
+    <li><a href="/kingadmin/{{ app_name }}/">{{ app_name }}</a></li>
+    <li><a href="/kingadmin/{{ app_name }}/{{ model_name }}">{% get_model_verbose_name admin_class %}</a></li>
+    <li class="active">Delete {{ obj }}{% for obj in objs %}{{ obj }}, {% endfor %}</li>
+</ol>
+
+<div>
+    {% if obj %}
+        <h5>Are you sure to delete {{ obj }} ?</h5>
+        <h5>All of the following related items will be deleted:</h5>
+        {% display_all_related_obj obj as all_related %}
+        {{ all_related | safe }}
+    {% elif objs %}
+        <h5>Are you sure to delete {% for obj in objs %}{{ obj }}, {% endfor %} ?</h5>
+        <h5>All of the following related items will be deleted:</h5>
+        {% for obj in objs %}
+            {% display_all_related_obj obj as all_related %}
+            {{ all_related | safe }}
+        {% endfor %}
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <div class="col-sm-offset-9 col-sm-2">
+                <a class="btn btn-primary" href="/kingadmin/{{ app_name }}/{{ model_name }}/{{ obj.id }}/change/">Back</a>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>用戶列表</h1>
+<table id="tb">
+
+</table>
+
+</body>
+<script src="/static/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+       initData();
+    });
+    function initData() {
+        {#方法一#}
+        {#$.ajax({#}
+        {#    url: '/get_data/',#}
+        {#    type:'GET',#}
+        {#    success:function (arg) {#}
+        {#        $('#tb').append(arg);#}
+        {#    }#}
+        {# })#}
+
+        {#方法二#}
+        $.ajax({
+            url: '/get_data/',
+            type:'GET',
+            dataType: 'JSON',
+            success:function (arg) {
+                if (arg.status){
+                    {#反序列化#}
+                    {#queryset<obj, obj>#}
+                    {#var v = JSON.parse(arg.data);#}
+                    {#console.log(v);#}
+
+                    {#queryset<{},{}> or queryset<(),()>#}
+                    console.log(arg.data);
+                    $('#tb').append(arg.data);
+                }else {
+                    console.log(arg.data);
+                }
+            }
+        })
+    }
+</script>
+</html>

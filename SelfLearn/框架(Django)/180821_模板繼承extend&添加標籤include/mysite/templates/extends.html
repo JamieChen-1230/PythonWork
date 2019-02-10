@@ -1,0 +1,26 @@
+<!--extends繼承，繼承母版且須放在第一行-->
+{% extends "base.html" %}
+<!--{% load staticfiles %}-->
+
+<!--block不能重名-->
+{% block styles %}
+    <!--block.super繼承父類內容-->
+    {{ block.super }}
+
+    <!--額外新增內容-->
+    <style>
+        h2{
+            color:red;
+        }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+    {% for s in student_list %}
+        <h2>{{ s }}</h2>
+    {% endfor %}
+
+    <!--include添加-->
+    {% include 'includes.html' %}
+{% endblock %}

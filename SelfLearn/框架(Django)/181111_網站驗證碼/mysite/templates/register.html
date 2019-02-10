@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/register.html" method="post">
+        {% csrf_token %}
+        <p>
+            <input type="text" placeholder="用戶名" name="user">
+        </p>
+        <p>
+            <input type="password" placeholder="密碼" name="pwd">
+        </p>
+        <p>
+            <input type="text" placeholder="驗證碼" name="code">
+            <img src="/verification.html" onclick="changeImg(this);">
+        </p>
+        <input type="submit" value="提交">
+    </form>
+</body>
+<script>
+    function changeImg(ths) {
+        // 網址後加問號 = 用get再發一次請求
+        ths.src = ths.src + "?";
+    }
+</script>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 2px 10px;
+            background-color: coral;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div style="float: left">
+    <h1>Ajax全套</h1>
+    <h3>jQuery Ajax</h3>
+    <p>有同源機制，可用jsonp或cors克服</p>
+    <div>
+        <a class="btn" onclick="Ajax_jQuery();">點我</a>
+    </div>
+
+    <h3>XMLHttpRequest Ajax GET</h3>
+    <p>有同源機制，可用jsonp或cors克服</p>
+    <div>
+        <a class="btn" onclick="Ajax_XML_GET();">點我</a>
+    </div>
+
+    <h3>XMLHttpRequest Ajax POST</h3>
+    <p>有同源機制，可用jsonp或cors克服</p>
+    <div>
+        <a class="btn" onclick="Ajax_XML_POST();">點我</a>
+    </div>
+
+    <h3>Forged Ajax(兼容性最高)</h3>
+    <p>無同源機制，可直接發到別人的伺服器</p>
+    <div>
+        <div style="float: left">
+            <div>
+                <h5>學習iframe</h5>
+                <input id='url' placeholder="請輸入URL"><a onclick="test1();">查看</a>
+            </div>
+            <iframe id="i" style="height: 400px; width: 300px;" src=""></iframe>
+        </div>
+        <div style="float: left; margin-left: 15px">
+            <h5>Iframe+From表單</h5>
+            <!--用onload製作回調函數-->
+            <iframe id="iframe" name="ifra"></iframe>
+            <form id="fm" action="/receive.html/" method="post" target="ifra">
+                <input name="user" value="Forged Ajax">
+                <a class="btn" onclick="Ajax_Forged();">點我</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div style="float: left; margin-left: 30px">
+    <h1>文件上傳</h1>
+    <h3>jQuery Ajax</h3>
+    <input type="file" id="jQueryimg">
+    <a class="btn" onclick="upload_jQuery();">上傳</a>
+
+    <h3>XMLHttpRequest Ajax POST</h3>
+    <input type="file" id="XMLimg">
+    <a class="btn" onclick="upload_XML_POST();">上傳</a>
+
+    <h3>Forged Ajax(兼容性最高)</h3>
+    <!--用onload製作回調函數-->
+    <iframe id="iframe2" name="ifra2" style="display: none"></iframe>
+    <form id="fm2" action="/files_receive.html/" method="post" enctype="multipart/form-data" target="ifra2">
+        <input type="text" name="k1">
+        <input type="text" name="k2">
+        <input type="file" id="Forgedimg" name="img">
+        <a class="btn" onclick="upload_Forged();">上傳</a>
+    </form>
+</div>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    function Ajax_jQuery() {
+        $.ajax({
+            url: '/receive.html/',
+            type: 'GET',
+            data: {'name': 'Ajax_jQuery'},
+            success: function (arg) {
+                console.log(arg);
+            }
+        })
+    }
+
+    function Ajax_XML_GET() {
+        var xhr = new XMLHttpRequest();
+        // 創建連結
+        xhr.open('GET', '/receive.html/?name=Ajax_XML_GET');
+        // 回調函數必須在send上面設置
+        xhr.onreadystatechange = function () {
+            // 狀態值
+            // 0-未初始化，尚未调用open()方法；
+            // 1-启动，调用了open()方法，未调用send()方法；
+            // 2-发送，已经调用了send()方法，未接收到响应；
+            // 3-接收，已经接收到部分响应数据；
+            // 4-完成，已经接收到全部响应数据；
+            if (xhr.readyState == 4) {
+                console.log(xhr.responseText);
+            }
+        };
+        // 發送數據
+        xhr.send(null);
+    }
+
+    function Ajax_XML_POST() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/receive.html/');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                console.log(xhr.responseText);
+            }
+        };
+        // 要看傳輸內容設置請求頭
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset-UTF-8');
+        xhr.send("name=Ajax_XML_POST");
+    }
+
+    function test1() {
+        var url = $('#url').val();
+        $('#i').attr('src', url);
+    }
+
+    function Ajax_Forged() {
+        document.getElementById('iframe').onload = reloadIframe;
+        document.getElementById('fm').submit();
+    }
+
+    function reloadIframe() {
+        // 方式一(DOM)
+        // console.log(this);
+        // console.log(this.contentWindow); // 進入下一個html文檔
+        // console.log(this.contentWindow.document.body);
+        // console.log(this.contentWindow.document.body.innerHTML);
+
+        // 方式二(jQuery)
+        // console.log($(this).contents().find('body').html());
+
+        var content = this.contentWindow.document.body.innerHTML;
+        var obj = JSON.parse(content);
+        if (obj.status) {
+            alert(obj.message);
+        }
+    }
+
+    function upload_jQuery() {
+        var img = document.getElementById("jQueryimg").files[0];  // 第0個才是我們要的
+
+        var data = new FormData();
+        // 使用FormData可以傳送文件檔和一般值
+        data.append("k1", "v1");
+        data.append("k2", "v2");
+        data.append("img", img);
+
+        $.ajax({
+            url: '/files_receive.html/',
+            type: 'POST',
+            data: data,
+            success: function (arg) {
+                console.log(arg);
+            },
+            // FormData須加上下列兩個變數
+            processData: false,
+            contentType: false,
+        })
+    }
+
+    function upload_XML_POST() {
+        var img = document.getElementById("XMLimg").files[0]; // 第0個才是我們要的
+
+        var data = new FormData();
+        // 使用FormData可以傳送文件檔和一般值
+        data.append("k1", "v1");
+        data.append("k2", "v2");
+        data.append("img", img);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/files_receive.html/');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                console.log(xhr.responseText);
+            }
+        };
+        xhr.send(data);
+    }
+
+    function upload_Forged() {
+        document.getElementById('iframe2').onload = reloadIframe2;
+        document.getElementById('fm2').submit();
+    }
+
+    function reloadIframe2() {
+        // 方式一(DOM)
+        // console.log(this);
+        // console.log(this.contentWindow); // 進入下一個html文檔
+        // console.log(this.contentWindow.document.body);
+        // console.log(this.contentWindow.document.body.innerHTML);
+
+        // 方式二(jQuery)
+        // console.log($(this).contents().find('body').html());
+
+        var content = this.contentWindow.document.body.innerHTML;
+        var obj = JSON.parse(content);
+        if (obj.status) {
+            console.log(obj.message);
+        }
+    }
+</script>
+</html>

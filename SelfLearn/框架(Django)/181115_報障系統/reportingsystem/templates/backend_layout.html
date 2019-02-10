@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/commons.css">
+    <link rel="stylesheet" href="/static/css/backend.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.css"/>
+    {% block css %} {% endblock %}
+</head>
+<body>
+
+<!--第一步先把大區塊分出來-->
+<div class="pg-header">
+    <div class="logo left">EasyStack</div>
+    <div class="hl-menu left">
+        <a class="item" href="/">首頁</a>
+    </div>
+    <div class="hr-menu right">
+        <a class="item" href="#">
+            信息
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            <span class="badge bg-success">2</span>
+        </a>
+        <a class="item" href="#">
+            通知
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span class="badge bg-success">2</span>
+        </a>
+        <a class="item" href="#">
+            任務
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <span class="badge bg-danger">4</span>
+        </a>
+        <div class="avatar">
+            <a href="#" class="item">
+                <img src="/static/imgs/avatar/default.png">
+            </a>
+            <div class="sets">
+                <a href="/backend/base-info.html">個人信息</a>
+                <a href="/logout.html">登出</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pg-body">
+    <div class="menu">
+        {% if blog_id %}
+        <a class="menu-item" href="/backend/article-0-0.html">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>文章管理</span>
+        </a>
+        {% else %}
+        <a class="menu-item" style="background-color: #ddd; pointer-events: none;">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span style="font-size: 14px">文章管理(須先建立blog)</span>
+        </a>
+        {% endif %}
+
+        {% if blog_id %}
+        <a class="menu-item" href="/backend/category.html">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>分類管理</span>
+        </a>
+        {% else %}
+        <a class="menu-item" style="background-color: #ddd; pointer-events: none;">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span style="font-size: 14px">分類管理(須先建立blog)</span>
+        </a>
+        {% endif %}
+
+        {% if blog_id %}
+        <a class="menu-item" href="/backend/tag.html">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>標籤管理</span>
+        </a>
+        {% else %}
+        <a class="menu-item" style="background-color: #ddd; pointer-events: none;">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span style="font-size: 14px">標籤管理(須先建立blog)</span>
+        </a>
+        {% endif %}
+
+        <a class="menu-item" href="/backend/base-info.html">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>個人檔案</span>
+        </a>
+
+        <a class="menu-item" href="/backend/trouble-list.html">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>報障管理</span>
+        </a>
+
+        <a class="menu-item" href="/backend/trouble-report.html">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>統計報障</span>
+        </a>
+    </div>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</div>
+
+<div class="pg-footer"></div>
+
+</body>
+<script src="/static/js/jquery-1.12.4.js"></script>
+<!--<script>-->
+    <!--$("#tag").addClass("active");-->
+    <!--$("#tag").parent().removeClass("hide");-->
+<!--</script>-->
+{% block js %} {% endblock %}
+</html>

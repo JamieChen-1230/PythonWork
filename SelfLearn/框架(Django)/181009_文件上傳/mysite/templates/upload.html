@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<form action="/upload.html/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="user">
+{#    把原本樣式遮蓋掉#}
+    <div style="position: relative; margin: 5px">
+        <button type="button" class="btn btn-primary">文件上傳</button>
+        <input type="file" name="img" style="opacity: 0; top:5px; left: 3px; position: absolute; ">
+    </div>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

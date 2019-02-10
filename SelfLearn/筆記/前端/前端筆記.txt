@@ -1,0 +1,5 @@
+瀏覽器：本身就是一個解釋器
+
+cs模式----c:client   s:server
+bs模式----b:browser  s:server
+

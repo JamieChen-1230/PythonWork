@@ -1,0 +1,39 @@
+一. 爬蟲
+    1. 基本操作
+        - 登入任意網站(偽造瀏覽器的任何行為)
+    2. 性能相關
+        - 並發方案：
+            - 異步I/O： gevent/twisted/asyncio
+            - 自定義異步I/O模塊
+            - I/O多路複用：select
+    3. Scrapy框架
+        - 異步I/O： twisted
+            - 基於Scrapy源碼自定義爬蟲框架
+            - 使用Scrapy
+
+二. Tornado框架(異步非阻塞)
+    1. Tornado的基本使用
+        - 小示例
+        - 自定義組件
+    2. Tornado源碼剖析
+
+    3. 自定義異步非阻塞框架
+
+
+-------爬蟲基本操作-------
+    a. 爬蟲
+        - 定向(爬固定網站)
+        - 非定向
+    b.
+        - 頁面請求
+            網址
+        - 篩選：
+            正規表達式(python不用自己寫，套用模塊即可)
+        ------開源模塊------
+        1. requests
+            response = resquests.get("https://www.autohome.com.cn/news/")
+            response.text
+        2. beautifulsoup
+            soup = Beautifulsoup(response.text, features='html.parser')
+            soup.find(id = 'auto-channel-lazyload-article')
+

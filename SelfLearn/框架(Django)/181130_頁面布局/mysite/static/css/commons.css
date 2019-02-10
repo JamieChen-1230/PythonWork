@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.pg-header {
+    height: 48px;
+    line-height: 48px;
+    background-color: #2f72ab;
+    min-width: 1024px; /*當頁面縮小到小於1024px時底下會出現滾動條，這樣頁面才不會亂版*/
+}
+
+.pg-header .logo{
+    color: white;
+    background-color: #1c5a9c;
+    font-size: 28px;
+    width: 200px;
+    text-align: center;
+}
+
+.pg-header .hl-menu .item,.pg-header .hr-menu .item{
+    height: 48px;
+    display: inline-block;
+    color: white;
+    padding: 0 10px;
+}
+
+.pg-header .hl-menu .item:hover,.pg-header .hr-menu .item:hover{
+    background-color: #1c5a9c;
+}
+
+.pg-header .hl-menu .item-set{
+    display: inline-block;
+    position: relative;
+}
+
+.pg-header .hl-menu .item-set:hover .sets{
+    display: block;
+    width: 100px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.pg-header .hl-menu .item-set:hover .sets a{
+    display: block;
+    color: rgba(0, 0, 0, .50);
+    padding-left: 5px;
+}
+
+.pg-header .hl-menu .item-set:hover .sets a:hover{
+    background-color: #f1f0f0;
+}
+
+.pg-header .avatar{
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+.pg-header .avatar img{
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+.pg-header .avatar .sets{
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 48px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.pg-header .avatar:hover .sets{
+    display: block;
+}
+
+.pg-header .avatar .sets a{
+    display: block;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, .50);
+}
+
+.pg-header .avatar .sets a:hover{
+    background-color: #f1f0f0;
+}
+
+.pg-body .menu{
+    position: absolute;
+    left: 0;
+    top: 52px;
+    bottom: 0;
+    width: 198px;
+    border: 1px solid rgba(0, 0, 0, .35);
+}
+
+.pg-body .content{
+    position: absolute;
+    right: 0;
+    left: 210px;
+    top: 52px;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, .35);
+    overflow: scroll;
+}
+
+.pg-body .menu .item .item-title{
+    padding: 8px;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.pg-body .menu .item .item-title:hover{
+    background-color: rgba(0, 0, 0, .50);
+}
+
+.pg-body .menu .item .item-content a{
+    display: block;
+    padding: 3px 8px;
+}
+
+.pg-body .menu .item .item-content a:hover{
+    border-left: 3px solid #1c5a9c;
+}
+
+.pg-body .menu .item .item-content a.active{
+    border-left: 3px solid #1c5a9c;
+}

@@ -1,0 +1,38 @@
+{% extends "backend_layout.html" %}
+
+{% block title %}個人檔案{% endblock %}
+
+{% block css %}{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb" style="margin-bottom: 0;">
+    <li><a href="/backend/base-info.html">帳戶管理</a></li>
+    <li class="active">博客管理</li>
+</ol>
+
+<div style="padding: 20px 30px">
+    <h4>更改資料後重新登入即可生效~~~</h4>
+    <form action="/backend/base-info.html" method="post" novalidate>
+        <div class="form-group">
+            <label>博客標題<span> {{ obj.title.errors.0 }}</span></label>
+            {{ obj.title }}
+        </div>
+
+        <div class="form-group">
+            <label>博客網址<span> {{ obj.site.errors.0 }}</span></label>
+            {{ obj.site }}
+        </div>
+
+        <div class="form-group">
+            <label>博客主題<span> {{ obj.theme.errors.0 }}</span></label>
+            {{ obj.theme }}
+        </div>
+
+        <button type="submit" class="btn btn-default" style="margin-left: 10px">提交</button>
+    </form>
+</div>
+
+
+{% endblock %}
+
+{% block js %}{% endblock %}

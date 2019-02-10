@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--enctype="multipart/form-data" 上傳文件時須使用-->
+<form action="/baseByForms.html/" method="post" id="fm" novalidate enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>{{ obj.name.label }} {{ obj.name }} {{ obj.errors.name.0 }}</p>
+    <p>{{ obj.age.label }} {{ obj.age }} {{ obj.errors.age.0 }}</p>
+    <p>{{ obj.email.label }} {{ obj.email }} {{ obj.errors.email.0 }}</p>
+    <p>{{ obj.tall.label }} {{ obj.tall }} {{ obj.errors.tall.0 }}</p>
+    <p>{{ obj.file.label }} {{ obj.file }} {{ obj.errors.file.0 }}</p>
+    <p>{{ obj.city.label }} {{ obj.city }} {{ obj.errors.city.0 }}</p>
+    <p>{{ obj.hobby.label }} {{ obj.hobby }} {{ obj.errors.hobby.0 }}</p>
+    <p>{{ obj.birth.label }} {{ obj.birth }} {{ obj.errors.birth.0 }}</p>
+    <p>{{ obj.radio.label }} {{ obj.radio }} {{ obj.errors.radio.0 }}</p>
+    <p>{{ obj.checkbox.label }} {{ obj.checkbox }} {{ obj.errors.checkbox.0 }}</p>
+    <p>{{ obj.myField.label }} {{ obj.myField }} {{ obj.errors.myField.0 }}</p>
+    <p>{{ obj.myField2.label }} {{ obj.myField2 }} {{ obj.errors.myField2.0 }}</p>
+
+    <p>-----------------------------自定義格式-----------------------------</p>
+    <!--自定義格式，需用循環來設定樣式-->
+    {% for radio in obj.radio %}
+    <div class="myradio">
+        {{ radio }}
+    </div>
+    {% endfor %}
+
+    <select class="form-control" id="exampleFormControlSelect2">
+        {% for city in obj.city %}
+        {{ city }}
+        {% endfor %}
+    </select>
+    <br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

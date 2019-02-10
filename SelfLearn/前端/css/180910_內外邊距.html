@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*盒子大小等於內容(width*height)+padding(內邊距)+border(邊框)*/
+        .div1{
+            /*width*height是裡面內容框的大小(不包含邊框)*/
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            border: 20px solid greenyellow;
+            /*padding(內邊距): 用於控制內容與邊框之間的距離；*/
+            padding: 40px;
+            /*margin(外邊距): 用於控制元素與元素之間的距離*/
+            margin: 30px;
+            /*設4個順序：上右下左*/
+            /*margin: 10px 20px 30px 40px;*/
+            /*margin-bottom: 20px;*/
+        }
+        .div2{
+            width: 300px;
+            height: 300px;
+            background: fuchsia;
+            border: 20px solid red;
+            /*若與其他標籤外邊框相重疊取較大的外邊距*/
+            /*margin: 40px;*/
+        }
+        .father{
+            height: 1000px;
+            background: blanchedalmond;
+            border: 1px solid darkgoldenrod;
+            /*若有padding和margin重疊時取padding+margin*/
+            /*padding: 20px;*/
+        }
+        .father2{
+            width: 100px;
+            height: 100px;
+            background: aquamarine;
+        }
+        body{
+            /*body預設會有外邊距*/
+            /*margin: 0px;*/
+            border: 2px solid darkblue;
+        }
+    </style>
+</head>
+<body>
+<!--margin: 用於控制元素與元素之間的距離；margin的最基本用途就是控制元素周圍空間的間隔，從視覺角度上達到相互隔開的目的。-->
+<!--padding: 用於控制內容與邊框之間的距離；-->
+<!--Border(邊框) 圍繞在內邊距和內容外的邊框。-->
+<!--Content(內容) 盒子的內容，顯示文本和圖像。-->
+
+<!--兄弟div：-->
+<!--上面div的margin-bottom和下面div的margin-top會塌陷，也就是會取上下兩者margin裡最大值作為顯示值-->
+<!--父子div：-->
+<!--如果父級div中沒有border，padding，inline content，
+子級div的margin會一直向上找，直到找到某個標籤包括border，padding，inline content中的其中一個，
+或是找到不是直系親屬的標籤，然後按此div進行margin-->
+
+<div class="father2"></div>
+<div class="father">
+    <div class="div1">hello div1</div>
+    <div class="div2">hello div2</div>
+</div>
+
+</body>
+</html>

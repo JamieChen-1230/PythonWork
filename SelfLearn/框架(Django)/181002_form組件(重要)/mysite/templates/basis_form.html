@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/basis_form.html/" method="post" id="fm">
+    <!--<p><input type="text" name="user">{{ f1.errors.user.0 }}</p>-->
+    <!--<p><input type="text" name="pwd">{{ f1.errors.pwd.0 }}</p>-->
+    <!--<p><input type="text" name="age">{{ f1.errors.age.0 }}</p>-->
+    <!--<p><input type="text" name="email">{{ f1.errors.email.0 }}</p>-->
+    <!--可透過後端的Mybasisform對象來生成表單-->
+    <p>{{ f1.user }}{{ f1.errors.user.0 }}</p>  <!--f1.errors.user：錯誤列表，f1.errors.user.0：錯誤列表[0]-->
+    <p>{{ f1.pwd }}{{ f1.errors.pwd.0 }}</p>
+    <p>{{ f1.age }}{{ f1.errors.age.0 }}</p>
+    <p>{{ f1.email }}{{ f1.errors.email.0 }}</p>
+    <input type="submit" value="提交">
+</form>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    function Form_submit() {
+        $.ajax({
+            url: '/form1.html/',
+            type: "POST",
+            data: $('#fm').serialize(),  // $('#fm').serialize() 可以直接抓取表單資料
+            success: function (arg) {
+                console.log(arg);
+            }
+        });
+    }
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+</head>
+<body>
+<!--有上傳圖片必須加enctype="multipart/form-data"-->
+<form action="/detailed_form.html/" method="post" novalidate enctype="multipart/form-data">
+    <p>{{ obj.user.label }} {{ obj.user }} {{ obj.errors.user.0 }}</p>
+    <p>{{ obj.age.label }} {{ obj.age }} {{ obj.errors.age.0 }}</p>
+    <p>{{ obj.email.label }} {{ obj.email }} {{ obj.errors.email.0 }}</p>
+    <p>{{ obj.smath.label }} {{ obj.smath }} {{ obj.errors.smath.0 }}</p>
+    <p>{{ obj.file.label }} {{ obj.file }} {{ obj.errors.file.0 }}</p>
+    <p>{{ obj.city.label }} {{ obj.city }} {{ obj.errors.city.0 }}</p>
+    <p>{{ obj.hobby.label }} {{ obj.hobby }} {{ obj.errors.hobby.0 }}</p>
+    <p>{{ obj.date.label }} {{ obj.date }} {{ obj.errors.date.0 }}</p>
+    <p>{{ obj.datetime.label }} {{ obj.datetime }} {{ obj.errors.datetime.0 }}</p>
+    <p>{{ obj.my.label }} {{ obj.my }} {{ obj.errors.my.0 }}</p>
+    <p>{{ obj.my2.label }} {{ obj.my2 }} {{ obj.errors.my2.0 }}</p>
+
+    <!--默認都為<ul><li></li></ul>格式-->
+    <p>{{ obj.radio.label }} {{ obj.radio }} {{ obj.errors.radio.0 }}</p>
+    <p>{{ obj.check.label }} {{ obj.check }} {{ obj.errors.check.0 }}</p>
+
+    <p>-----------------------------自定義格式-----------------------------</p>
+    <!--自定義格式，需用循環來設定樣式-->
+    {% for radio in obj.radio %}
+    <div class="myradio">
+        {{ radio }}
+    </div>
+    {% endfor %}
+
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+        {% for city in obj.city %}
+        {{ city }}
+        {% endfor %}
+    </select>
+
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

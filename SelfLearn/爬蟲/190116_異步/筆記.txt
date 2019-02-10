@@ -1,0 +1,48 @@
+一個應用程序(軟件)開啟一個進程一個線程
+
+在Python中:
+    CPU密集: 多進程
+    IO密集(Ex: http請求): 多線程
+
+角色: 使用者
+協程(微線程) + 異步IO: gevent >> twisted >> tornado >> asyncio
+
+角色: 開發者
+    1.socket客戶端、服務端
+        連接非阻塞 setblocking(False): 因為非阻塞導致無數據(連接無回應、數據未返回)而報錯
+    2.IO多路複用
+        客戶端:
+        try:
+            socket對象1.connect()
+            socket對象2.connect()
+            socket對象3.connect()
+        except Exception:
+            pass
+        while True:
+            r,w,e = select.select([socket對象1,socket對象2,socket對象3], [socket對象1,socket對象2,socket對象3], [], 0.05)
+            r = [socket對象2, ]  # 表示有人(服務端)給我(客戶端)發送數據了
+            w = [socket對象2, ]  # 表示我(客戶端)已經和別人(服務端)連接成功，先有w才會有r
+
+            如果w有變化表示連結成功，則發送數據:
+                socket對象2.send("""GET /index HTTP/1.0\r\nHost: baidu.com\r\n\r\n""")
+            而發送數據後，r有變化表示要接收數據:
+                xx = socket對象2.recv()
+
+    3.
+        r,w,e = select.select([是否必須為socket對象?, ], [], [])
+        # 不一定，只要對象有: fileno方法，並返回一個文件描述符
+        class Foo:
+            def fileno(self):
+                obj = socket()
+                return obj.fileno()
+        總結:
+            a. select內部: 對象.fileno()
+            b. Foo()內部封裝socket文件描述符所以也可以放到select中
+
+
+IO多路複用: 用迴圈監聽多個socket對象
+異步IO: 當IO請求完成的時候，自動去執行迴調函數
+通過非阻塞的socket + IO多路複用 = 異步IO
+    - 非阻塞socket
+    - select參數對象能自己封裝
+    - 監聽r, w

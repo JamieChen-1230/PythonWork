@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--用onload製作回調函數-->
+<iframe id="iframe" name="ifra"></iframe>
+<form id="fm" action="/baseByIframe.html/" method="post" target="ifra" novalidate>
+    <p>{{ obj.username.label }} {{ obj.username }}</p>
+    <p>{{ obj.age.label }} {{ obj.age }}</p>
+    <p id="err"></p>
+    <input type="button" id="btn" value="提交">
+</form>
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script>
+    $("#btn").click(function () {
+        document.getElementById('iframe').onload = reloadIframe;
+        document.getElementById('fm').submit();
+    });
+    
+    function reloadIframe() {
+        // 方式一(DOM)
+        // console.log(this);
+        // console.log(this.contentWindow); // 進入下一個html文檔
+        // console.log(this.contentWindow.document.body);
+        // console.log(this.contentWindow.document.body.innerHTML);
+
+        // 方式二(jQuery)
+        // console.log($(this).contents().find('body').html());
+
+        var content = this.contentWindow.document.body.innerHTML;
+        var obj = JSON.parse(content);
+        if (obj.status == "ok") {
+            window.location.href = 'https://www.youtube.com/?gl=TW&hl=zh-tw';
+        } else {
+            $("#err").text(obj.msg["age"]);
+        }
+    }
+</script>
+</html>

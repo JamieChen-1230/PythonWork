@@ -1,0 +1,26 @@
+<1> null ：數據庫中字段是否可以為空
+
+<2> blank： django的Admin中添加數據時是否可允許空值
+
+<3> default：設定缺省值
+
+<4> editable：如果為假，admin模式下將不能改寫。缺省為真
+
+<5> primary_key：設置主鍵，如果沒有設置django創建表時會自動加上：
+    id = meta.AutoField（' ID '，primary_key = True）
+    primary_key = True表示blank = False，null = False ， unique = True。只有一個
+    主鍵是允許的對象上。
+
+<6> unique：數據唯一
+
+<7> verbose_name Admin中字段的顯示名稱
+
+<8> validator_list：有效性檢查。非有效產生django.core.validators.ValidationError錯誤
+
+
+<9> db_column，db_index如果為真將為此字段創建索引
+
+<10> choices：一個用來選擇值的2維元組。第一個值是實際存儲的值，第二個用來方便進行選擇。
+            如SEX_CHOICES = (( 'F', ' Female'),('M', ' Male'),)
+            gender = models.CharField（max_length = 2，choices = SEX_CHOICES）
+

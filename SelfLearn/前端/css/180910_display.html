@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1,a,span,p{
+            width: 100px;
+            height: 100px;
+        }
+        .div1{
+            /*不顯示*/
+            display: none;
+            background: yellow;
+        }
+        p{
+            /*把塊級改成內聯*/
+            /*display: inline;*/
+            background: red;
+        }
+        span{
+            /*內聯標籤不能設長寬，所以要改成block*/
+            display: block;
+            background: greenyellow;
+        }
+        a{
+            /*inline-block可設長寬的內聯標籤*/
+            display: inline-block;
+            background: rebeccapurple;
+        }
+        .out{
+            word-spacing: -5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div1">div</div>
+<p>p</p>
+<span>span</span>
+<div class="out">
+    <a href="#">click</a>
+    <a href="#">click2</a>
+    <a href="#">click3</a>
+</div>
+
+
+</body>
+</html>

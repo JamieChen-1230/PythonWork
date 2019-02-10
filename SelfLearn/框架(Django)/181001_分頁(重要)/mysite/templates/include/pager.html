@@ -1,0 +1,13 @@
+{% if posts.has_previous %}
+    <a href="/internal_pagination?p={{ posts.previous_page_number }}">上一頁</a>
+{% else %}
+    <a href="#">上一頁</a>
+{% endif %}
+
+{% if posts.has_next %}
+    <a href="/internal_pagination?p={{ posts.next_page_number }}">下一頁</a>
+{% endif %}
+
+<span>
+    {{ posts.number }}/{{ posts.paginator.num_pages }}
+</span>

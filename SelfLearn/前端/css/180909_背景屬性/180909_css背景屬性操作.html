@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*<!--背景屬性-->*/
+        .back{
+            border: 1px solid;
+            width: 600px;
+            height: 600px;
+            background-image: url("test.jpg");
+            /*圖片不重複*/
+            background-repeat: no-repeat;
+            /*圖片在中間偏左*/
+            background-position: center left;
+        }
+
+        .small{
+            /*原本內聯標籤不能設長寬，所以要用display去轉換*/
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            /*background-image: url("small.png");*/
+            /*!*選取所要的圖標位置*!*/
+            /*background-position: 0 -45px;*/
+            /*可以用background合併寫*/
+            background: 0 -45px url("small.png");
+        }
+    </style>
+</head>
+<body>
+
+<!--顏色屬性-->
+<div style="color:blueviolet">英文單詞</div>
+<div style="color:#ffee33">顏色代碼</div>
+<div style="color:rgb(255,0,0)">rgb</div>
+<div style="color:rgba(255,0,0,0.5)">rgba</div>
+
+<!--字體屬性-->
+<!--大小font-size: 20px or 50% or larger-->
+<p style="font-size: larger">老男孩</p>
+<!--斜體-->
+<p style="font-style: oblique">老男孩</p>
+
+<!--背景屬性-->
+<div style="background-color:cornflowerblue">XD</div>
+<div class="back"></div>
+<span class="small"></span>
+
+</body>
+</html>

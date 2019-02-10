@@ -1,0 +1,16 @@
+動態創建class:
+    - kingadmin/form_handle.py
+        type("類名", (要繼承的類,...), {"方法名": 方法,...})
+        dynamic_form = type("DynamicModelForm", (ModelForm,), {"Meta": Meta, "__new__": __new__})
+
+類的構造函數(__new__())與初始化函數(__init__()):
+    - kingadmin/form_handle.py
+        - __new__(cls):
+            構造函數，實例化時調用的第一個方法，創建時調用的是「父類或者超類」的__new__(cls)方法，
+            並返回一個實例對象(self)，之後就會調用__init__(self)方法來初始化實例。
+             * 如果自己重寫了new方法，且調用了自己的__new__(cls)方法將會導致死循環。
+        - __init__(self):
+            初始化函數，通常會在這初始化屬性。
+             * __new__()下存放是實例變量，__init__()作用初始化實例變量。
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .content {
+            margin-left: 20px;
+            display: none;
+        }
+
+        .content a {
+            display: block;
+        }
+
+        .active > .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <hr>
+    {{ menu_string | safe }}
+</div>
+<hr>
+<div style="float: left;width: 80px;">
+    {% if 'post' in action_list %}
+    <a href="http://www.baidu.com">添加</a>
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .div1{
+            width: 200px;
+            height: 100px;
+            background: yellow;
+
+        }
+        .div2{
+            width: 200px;
+            height: 100px;
+            background: fuchsia;
+            /*相對定位：即以自己該元素在文檔流中的原始位置為參照物，且並未脫離文檔流*/
+            /*position: relative;*/
+
+            /*絕對定位的元素從文檔流刪除*/
+            /*對於最近的已定位祖先元素定位，如果元素沒有已定位的祖先元素，那麼它的位置相對於body元素*/
+            position: absolute;
+
+            left: 100px;
+            top: 100px;
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .div4{
+            width: 200px;
+            height: 200px;
+            background: rebeccapurple;
+        }
+        .outer{
+            position: relative;
+        }
+        .gototop{
+            width: 80px;
+            height: 50px;
+            background: gray;
+            text-align: center;
+            line-height: 50px;
+            /*fixed：對象脫離正常文檔流，使用top，right，bottom，left等屬性以窗口為參考點進行定位，
+            當出現滾動條時，對像不會隨著滾動*/
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div style="height: 100px; border: darkgoldenrod 1px solid"></div>
+<div class="outer">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</div>
+<div style="height: 1000px; border: darkgoldenrod 1px solid"></div>
+<div class="gototop">返回頂部</div>
+
+</body>
+</html>

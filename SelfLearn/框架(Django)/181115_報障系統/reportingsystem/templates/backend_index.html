@@ -1,0 +1,10 @@
+{% extends "backend_layout.html" %}
+{% block title %}後臺管理{% endblock %}
+{% block css %} {% endblock %}
+
+{% block content %}
+<h1 style="text-align: center">歡迎使用，{{ request.session.user_info.nickname }}~</h1>
+<h3 style="text-align: center">部分功能須先建立Blog後才可使用~</h3>
+{% endblock %}
+
+{% block js %} {% endblock %}

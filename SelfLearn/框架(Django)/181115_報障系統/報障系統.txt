@@ -1,0 +1,454 @@
+一、瀑布流作業
+    - 佈局
+    - 文檔，窗口，滾動
+    - 面向對象的封裝： this,that
+    
+二、報障系統
+    需求分析
+        - 報障
+            用戶：
+                提交報賬單
+                自己報障記錄
+            處理著：
+                查看所有人報障單
+                處理報賬單
+                
+        - 知識庫（博客）
+            主頁：
+                展示最新文章
+                展示最熱文章
+                展示評論最多文章
+                分類查看
+            個人博客：
+                個人博客主頁
+                個人博客文章詳細：贊，踩，評論
+                個人博客分類：標籤、分類、時間
+                個人博客主題定制：後台修改
+            後台管理：
+                個人信息管理
+                個人標籤
+                個人分類
+                個人文章
+            
+    數據庫設計：
+        
+        用戶表： uid,username,pwd,email,img,
+        博客表： bid,surfix,theme,title,summary, FK(用戶表,unique)=OneToOne(用戶表)
+        互粉表： id  明星ID（用戶表）   粉絲ID（用戶表）
+                          2                   1
+                          1                   2
+                          1                   3
+                          5                   3
+        
+        
+        報障單：UUID   title   detail   user（用戶表）   processor（用戶表 null）  status(待處理，處理中，已處理)  創建時間  處理事件
+        
+        
+        分類表：caption  Fk(博客bid)
+        
+        標籤表：caption  Fk(博客bid)
+        
+        
+        文章：id,title,summary,ctime,FK(個人分類表),主站分類（choices）
+        
+        文章詳細：detail  OneToOne(文章)
+        
+        文章標籤關係：  文章ID   標籤ID
+        
+        
+        贊踩文章關係： 文章ID    用戶ID   贊或踩（True，False）  聯合唯一索引：（文章ID    用戶ID ）
+        
+        評論表：id,content,FK(文章),FK(user),ctime,parent_comment_id
+        
+        
+        
+三、程序目錄結構
+
+    project
+        - APP(repository) - 數據倉庫（操作數據Model）
+        - APP(backend)    - 後台管理
+        - APP(web)        - 首頁，個人博客
+        - utils           - 工具包（公共模塊）
+        
+
+        
+        
+工作安排：
+    1. 需求分析
+    2. 數據庫設計思路
+    3. 實現數據庫設計（Admin添加數據）
+    4. 主站：分類(主站)查看+分頁
+        - 標題菜單：母版
+        - 登錄成功： session['username'] = 'root'
+        - 主頁html：
+                判斷是否有用戶：顯示用戶名
+                否則          ： 登錄，註冊
+                <div class="pg-header">
+                    {% if request.session.username %}
+                        <a>{{ request.session.username }}</a>
+                    {% else %}
+                        <a>登錄</a><a>註冊</a>
+                    {% endif %}
+                </div>
+                    
+        - 博文內容佈局：
+                div   div  -> float   => 圖片下方空白
+                <a></a>asdflkjasdfkj  => 文字環繞
+        - URL分類篩選：
+            url(r'^all/(?P<article_type_id>\d+).html$', home.index, name='index'),
+            url(r'^', home.index),
+        
+            index根據kwargs判斷是否分類查詢？
+            a. 生成分類菜單
+            b. 考慮是否選中
+            c. 根據條件model.xxx.objects.filter(**kwargs)
+            
+        - URL:
+            from django.urls import reverse
+            
+            url(r'^all/(?<article_type_id>\d+).html$', home.index, name='index'),
+                在HTML中：{% url "index" article_type_id=1 %}             => all/1.html
+                在views中：reverse('index',kwargs={"article_type_id":1})  =>all/1.html
+            
+            url(r'^all/(\d+).html$', home.index, name='index'),
+                在HTML中：{% url "index" 1 %}          =>all/1.html
+                在views中：reverse('index',args=(1,))  =>all/1.html
+        
+        - 利用reverse+分頁組件完成：分類查看+分頁 
+        
+    5. 登錄，註冊
+        - 密碼：數字，字母，特殊字符
+        - 密碼兩次輸入一致
+        
+        提交：
+            v = MyForm(request.GET) # 6個字段
+            if v.is_valid():
+                pass
+        
+        密碼示例：RegexField自定義密碼驗證規則
+        
+            password = forms.RegexField(
+                '^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$\%\^\&\*\(\)])[0-9a-zA-Z!@#$\%\^\&\*\(\)]{8,32}$',
+                min_length=12,
+                max_length=32,
+                error_messages={'required': '密碼不能為空.',
+                                'invalid': '密碼必須包含數字，字母、特殊字符',
+                                'min_length': "密碼長度不能小於8個字符",
+                                'max_length': "密碼長度不能大於32個字符"}
+            )
+              
+
+
+            class RegisterForm(BaseForm, django_forms.Form):
+                username = django_fields.CharField()
+                password = django_fields.CharField()
+                confirm_pwd = django_fields.CharField()
+
+                def clean(self):
+                    v1 = self.cleaned_data['password']
+                    v2 = self.cleaned_data['confirm_pwd']
+                    if v1 == v2:
+                        pass
+                    else:
+                        from django.core.exceptions import ValidationError
+                        raise ValidationError('密碼輸入不一致')
+        
+            
+            def register(request):
+                v = RegisterForm(request.POST)
+                if v.is_valid():
+                    pass
+                else:
+                    v.errors['username']
+                    v.errors['__all__']
+                    v.errors[NON_FIELD_ERRORS]
+                    {
+                        __all__: [],
+                        username: [],
+                        password: []
+                        confirm_pwd: []
+                    }
+                
+                return render(request, 'register.html', {'v':v})
+                
+                
+            register.html
+            
+                {{v.errors.username.0}}
+                
+                {{v.non_field_errors}}
+        
+        
+        補充： 驗證碼
+            
+            1.點擊更換驗證碼
+            2.驗證碼到底是否有必要是圖片？有
+            3.
+                服務端：
+                    a. session中保存隨機驗證碼，如：87fs
+                    b. 在頁面中顯示圖片
+                客戶端：
+                    a. 顯示圖片
+                    b. 在cookie中保存sessionid
+                    
+                    
+                驗證碼圖片
+                驗證碼字符串:87fs
+                sessionid='asdfasdfasdfasdfasdfasdf09'
+                {
+                    "asdfasdfasdfasdfasdfasdf09": {'ck': 87fs}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                    "ffsdfsdfsdfsdfsqq243234234": {'ck': 98fd}
+                }
+            
+            
+                ffsdfsdfsdfsdfsqq243234234 : 9999
+                
+                使用：
+                    check_code.py
+                    Monaco.ttf
+                    
+                    <img src="/shizhengwen.html" onclick="changeImg(this);">
+            
+                    <script>
+                        function changeImg(ths) {
+                            ths.src = ths.src + "?";
+                        }
+                    </script>
+            
+            
+            
+                    def xiaoyun(request):
+                        if request.method == "GET":
+                            return render(request,'xiaoyun.html')
+                        else:
+                            input_code = request.POST.get('code')
+                            check_cd = request.session['check_code']
+                            print(input_code,check_cd)
+                            return HttpResponse('...')
+
+                    def shizhengwen(request):
+                        """生成驗證碼圖片"""
+                        # f = open('static/imgs/avatar/20130809170025.png','rb')
+                        # data = f.read()
+                        # f.close()
+                        f = BytesIO()
+                        img, code = create_validate_code()
+                        request.session['check_code'] = code
+                        img.save(f, 'PNG')
+                        # request.session['CheckCode'] = code
+                        return HttpResponse(f.getvalue())
+                                
+            
+        補充： 一個月免登陸
+            request.session.set_expiry(60 * 60 * 24 * 30)
+            SESSION_COOKIE_AGE = 1209600 
+            
+            
+            
+    6. 個人博客 
+
+            個人主頁：http://127.0.0.1:8000/wupeiqi.html
+                /(\w+).html   ->    func(site) # wupeiqi
+                
+                # 個人信息
+                # 博客信息
+                    - 數據庫字段+CSS文件名（warm，default）
+
+            文章最終：http://127.0.0.1:8000/wupeiqi/5.html
+                # 根據當前  wupeiqi + 5 
+                    obj = article.objects.filter(nid=5,blog=blog).first()
+                    冗余
+                    
+                # 富文本編輯框
+                    CKEditor
+                    UEEditor
+                    TinyEditor
+                    KindEditor
+                    
+                    # 下載插件
+                    # 基本使用KindEditor
+                    
+            個人篩選：
+                      http://127.0.0.1:8000/wupeiqi/tag/2.html
+                      http://127.0.0.1:8000/wupeiqi/category/3.html
+                      http://127.0.0.1:8000/wupeiqi/date/2017-02.html
+                # 公告
+                # 分類
+                # 標籤
+                # 時間
+                
+                # 過濾
+                    url(r'^(?P<site>\w+)/(?P<condition>((tag)|(date)|(category)))/(?P<val>\w+-*\w*).html$', home.filter),
+                    
+                    # 當前博客id、
+                    # 數據庫內置時間格式化函數
+                
+                
+            注意：個人主題定制
+            
+    7. 後台管理
+        用戶： 
+            - 普通用戶（知識庫+提交報障單+個人信息）
+            - 管理員  （知識庫+提交報障單+個人信息+處理報障單）
+            - 超級管理員  
+                - （知識庫+提交報障單+個人信息+處理報障單+報障統計信息）
+                -  權限管理
+        菜單：
+            - 知識庫管理
+                文章
+                    還債：KindEditor,XSS攻擊
+                分類
+                標籤
+                
+            - 報障管理
+                個人保障
+                處理報障單
+                報障統計信息
+                    畫圖
+                    
+            - 權限管理
+                菜單
+                權限
+                角色
+        
+        ========》後台管理頁面《=======
+        依賴：
+            bootstrap
+            fontawsome
+        
+        作業： 
+            知識庫管理：文章（Form驗證）
+    
+    
+    8. 報障管理
+          後台管理：
+             普通用戶：
+                報障列表，創建報障，修改，【查看解決方案】【評分】
+             工程師：
+                報障列表【自己 or 未】
+                列表：
+                    models.tb.objects.filter(Q(processor_id=1)|Q(status=1)).order_by('status')
+                查看報障單id=1：
+                    接單：v = models.tb.objects.filter(id=1,status=1).update(processor_id=22,status=2)
+                    處理：
+                          填寫解決方案，提交status=3
+                    ===》 模板
+             老闆：
+                查看所有信息
+                
+                頁面：
+                    圖
+                    列表
+                
+                    # 每個處理者，
+                    # 每個月處理了多少訂單
+    
+                    
+                    id    創建時間              內容    處理者
+                     1    2017-02-01 11:11                1
+                     2    2017-03-01 11:11                11
+                     3    2017-04-01 11:11                2
+                     4    2017-05-01 11:11                1
+                     5    2017-02-02 11:11                1
+    
+                    1. 思路
+                        處理者列表 = select 處理著 from tb 
+                        for 處理者 in 處理者列表:
+                            v = select * from tb where  處理者=處理者   group by     創建時間(2017-02)
+                        
+                    2. 思路
+                        # 每個月份全部門處理的訂單個數
+                        select * from tb group by 創建時間(%Y-%m)
+                        
+                        
+                        select 
+                            創建時間(%Y-%m),
+                            (select count(id) from tb as T2 where 處理者=1 and T2.ctime = T1.ctime ),
+                            (select count(id) from tb as T2 where 處理者=2 and T2.ctime = T1.ctime ),
+                        from tb as T1 group by 創建時間(%Y-%m)
+                        年月                  id=1      id=2
+                        2017-02                2         
+                        2017-03                0
+                        2017-04                0
+                        2017-05                1
+    
+    9. 權限管理
+    
+       - 動態菜單(關係存在數據庫)
+       - 基於角色分配(RBAC)Role Based Access Control
+       
+       流程：
+            a. 用戶登陸
+            b. 根據用戶獲取所有的權限（url+action）
+            c. 根據用戶獲取所有的權限（url+action）根據URL去重（）
+            d. 放在左側菜單（）
+       作業:
+            1. 登陸，獲取所有權限（url+action）
+                ORM
+                
+                
+                
+            2. 所有菜單（）
+                v = models.Menus.objects.values('id','caption','parent_id')
+                [
+                    {id:'1','caption': '菜單1','parent_id':None},
+                    {'caption': '菜單1.1','parent_id':1},
+                    {'caption': '菜單1.2'},
+                    {'caption': '菜單1.2.1'},
+                    {'caption': '菜單2'},
+                    {'caption': '菜單3'},
+                    {'caption': '菜單3.1'},
+                ]
+                ==>
+                [
+                    {'caption': '菜單1','child': [{'caption': '菜單1.1'},{'caption': '菜單1.2','child':[{'caption': '菜單1.2.1'},]}]}
+                    {'caption': '菜單2'}
+                    {'caption': '菜單3'}
+                ]
+                
+                # 遞歸
+                # python中：字典，列表（引用類型）
+
+        思考：
+            a. 用遞歸的形式講所有菜單的等級管理列(完成)
+            b. 不顯示無權限的菜單  (完成)
+            c. 僅展開當前訪問的菜單，其他閉合
+
+
+        ====》一個類，一個裝飾器，八張表
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+            
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        

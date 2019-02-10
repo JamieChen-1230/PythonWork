@@ -1,0 +1,30 @@
+{% extends "kingadmin/index.html" %}
+{% load kingadmin_tags %}
+
+{% block right-content-container %}
+<ol class="breadcrumb">
+  <li><a href="/kingadmin/">Home</a></li>
+</ol>
+
+<div>
+    {% for app_name, app_tables in site.enabled_admins.items %}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>{{ app_name }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for model_name in app_tables %}
+        <tr>
+            <td><a href="{% url 'model_obj_list' app_name model_name %}">
+                {% get_admin_class site app_name model_name as admin_class %}
+                {% get_model_verbose_name admin_class %}
+            </a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+</div>
+{% endblock %}

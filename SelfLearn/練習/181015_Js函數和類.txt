@@ -1,0 +1,41 @@
+----------------(1)JS中的this關鍵字：----------------
+// 函數
+function func(){
+    # 當作函數執行時，this=windows
+    console.log(this);
+}
+func()
+
+// 類
+function Func(){
+    # 當作類執行時，this=obj本身
+    console.log(this);
+}
+obj = new Func()
+
+----------------(2)JS中無字典只有對象：----------------
+// 相當於new出了一個對象v
+Name = 'jamie'
+v = {
+    Name: 'root',
+    Age: 18,
+    Func: function(){
+        // this=v
+        console.log(this.Name);  //=> root
+        var that=this;
+        function inner(){
+            // this=window
+            console.log(this.Name);  //=> jamie
+            // inner本身沒有that，往上層找that
+            console.log(that.Name);  //=> root
+        }
+        inner()
+    }
+}
+v.Func()
+
+----------------(3)JS自執行函數：----------------
+// 創建一個函數並執行
+(function(){
+    console.log(666);
+}) ()

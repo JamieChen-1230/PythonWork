@@ -1,0 +1,44 @@
+1. 數字或字符串
+$.ajax({
+        url: '/add_student/',  // 提交網址
+        type: 'POST',  // 方法
+        data: {'k1': 1, 'k2': 'jamie'},  // 資料
+        success: function (arg) {}  // 回調函數
+});
+
+2. 數組
+$.ajax({
+        url: '/add_student/',
+        type: 'POST',
+        data: {'k1': [1,2,3]},
+        traditional: true  // 需加此行，且python接收時要用getlist接收
+        success: function (arg) {}
+});
+
+3. 字典
+$.ajax({
+        url: '/add_student/',
+        type: 'POST',
+        data: {'k1': JSON.stringify({'name': 'jamie'})},  // 只能用JSON轉成字符串再傳，本身不支持傳字典
+        success: function (arg) {}
+});
+
+4. dataType.
+$.ajax({
+        url: '/add_student/',
+        type: 'POST',
+        data: {'k1': 1, 'k2': 'jamie'},
+        // 默認為text
+        // 限定接收過來的資料(arg)只能為json格式，且會自動翻譯json資料回原格式
+        dataType: 'JSON',
+        success: function (arg) {}
+});
+
+5.
+$.ajax({
+        url: '/add_student/',  // 提交網址
+        type: 'POST',  // 方法
+        data: {'k1': 1, 'k2': 'jamie'},  // 資料
+        success: function (arg) {}  // 成功回調函數
+        error: function () {}  // 錯誤回調函數
+});

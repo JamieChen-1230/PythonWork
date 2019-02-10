@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ajaxadd,.ajaxupdate{
+            position: fixed;
+            top: 40%;
+            left: 40%;
+            margin-top: -70px;
+            margin-left: -15px;
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            background: white;
+        }
+        .btn{
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 5px;
+            background: antiquewhite;
+            color: black;
+            cursor: pointer;
+        }
+        .shade{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            background-color: black;
+            opacity: 0.4;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/add_students.html">添加</a>
+        <a href="#" onclick="ajax_dialog(this);">ajax添加</a>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>姓名</th>
+                <th>年齡</th>
+                <th>性別</th>
+                <th>班級</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in list_stu %}
+                <tr>
+                    <td nid="{{ i.id }}" id="nid">{{ i.id }}</td>
+                    <td id="td_name">{{ i.name }}</td>
+                    <td id="td_age">{{ i.age }}</td>
+                    <td id="td_gender">{{ i.gender }}</td>
+                    <td id="td_cs">{{ i.cs.name }}</td>
+                    <td>
+                        <a href="del_students.html?nid={{ i.id }}">刪除</a>
+                        |
+                        <a href="#" onclick="ajax_del(this);">ajax刪除</a>
+                        |
+                        <a href="update_students.html?nid={{ i.id }}">編輯</a>
+                        |
+                        <!--<a href="#" onclick="ajax_update(this);">ajax編輯</a>-->
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="shade hide"></div>
+
+    <div class="ajaxadd hide">
+        <h3>ajax添加</h3>
+        <p><input type="text" id="user" placeholder="用戶名"></p>
+        <p><input type="number" id="age" placeholder="年齡"></p>
+        <p>
+            男：<input type="radio" name="gender" value="1">
+            女：<input type="radio" name="gender" value="0">
+        </p>
+        <p>
+            <select id="cs">
+                {% for cls in list_cls %}
+                    <option value="{{ cls.id }}">{{ cls.name }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <div class="btn" onclick="ajax_add();">提交</div>
+    </div>
+
+    <!--<div class="ajaxupdate">-->
+        <!--<h3>ajax編輯</h3>-->
+        <!--<p><input type="text" id="user_up" placeholder="用戶名"></p>-->
+        <!--<p><input type="number" id="age_up" placeholder="年齡"></p>-->
+        <!--<p>-->
+            <!--男：<input type="radio" name="gender" value="1">-->
+            <!--女：<input type="radio" name="gender" value="0">-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--<select id="cs_up">-->
+                <!--{% for cls in list_cls %}-->
+                    <!--<option value="{{ cls.id }}">{{ cls.name }}</option>-->
+                <!--{% endfor %}-->
+            <!--</select>-->
+        <!--</p>-->
+        <!--<div class="btn" onclick="ajax_update(this);">提交</div>-->
+    <!--</div>-->
+
+<script src="/static/jquery-3.3.1.js"></script>
+<script>
+    function ajax_add() {
+        var user = $("#user").val();
+        var age = $("#age").val();
+        var gender = $('[name="gender"]:checked').val();
+        var cs = $("#cs").val();
+
+        $.ajax({
+            url: "/ajax_add_students.html",
+            type: "POST",
+            data: {user:user, age:age, gender:gender, cs:cs},
+            success:function (arg) {
+                console.log(arg);
+                // 刷新頁面
+                window.location.reload();
+            }
+        });
+    }
+
+    function ajax_del(self) {
+        var nid=$(self).parent().parent().children("#nid").attr('nid');
+        $.ajax({
+            url: "/ajax_del_students.html",
+            type: "GET",
+            data: {nid:nid},
+            success:function (arg) {
+                // window.location.reload();
+                $(self).parent().parent().remove(); // 把要刪除的整個<tr>刪掉
+            }
+        });
+    }
+
+    // function ajax_update(self) {
+    //     $('.ajaxupdate #user_up').attr("value", $(self).parent().parent().children("#td_name").html())
+    //     $('.ajaxupdate #age_up').attr("value", $(self).parent().parent().children("#td_age").html())
+    //
+    //     var nid = $(self).parent().parent().children("#nid").attr('nid');
+    //     var user = $("#user_up").val();
+    //     var age = $("#age_up").val();
+    //     var gender = $('.ajaxupdate [name="gender"]:checked').val();
+    //     var cs = $("#cs_up").val();
+    //     alert(gender);
+    //
+    //     $.ajax({
+    //         url: "/ajax_update_students.html",
+    //         type: "POST",
+    //         data: {nid:nid, user:user, age:age, gender:gender, cs:cs},
+    //         success:function (arg) {
+    //             console.log(arg);
+    //             // 刷新頁面
+    //             window.location.reload();
+    //         }
+    //     });
+    // }
+
+    function ajax_dialog(self) {
+        $(".shade").removeClass("hide");
+        $(".ajaxadd").removeClass("hide");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css"/>
+    <style>
+        .register {
+            width: 400px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #f0f0f0;
+            padding: 10px 30px 50px 30px;
+            /*陰影*/
+            -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, .05);
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, .05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="register">
+    <form action="/register.html" method="post" novalidate>
+        {% csrf_token %}
+        <h3 style="text-align: center;">用戶註冊</h3>
+        <div class="form-group">
+            <label>用戶名</label>
+            {{ obj.username }}
+            {{ obj.errors.username.0 }}
+        </div>
+        <div class="form-group">
+            <label>暱稱</label>
+            {{ obj.nickname }}
+            {{ obj.errors.nickname.0 }}
+        </div>
+        <div class="form-group">
+            <label>信箱</label>
+            {{ obj.email }}
+            {{ obj.errors.email.0 }}
+        </div>
+        <div class="form-group">
+            <label>密碼</label>
+            {{ obj.password }}
+            {{ obj.errors.password.0 }}
+        </div>
+        <div class="form-group">
+            <label>密碼確認</label>
+            {{ obj.password_ck }}
+            {{ obj.errors.password_ck.0 }}
+        </div>
+        <div class="form-group">
+            <label>驗證碼</label>
+            <div>
+                <div style="width: 50%; display: inline-block; margin-right:10px;">
+                    {{ obj.check_code }}
+                </div>
+                <div style="width: 45%; display: inline-block;">
+                    <img src="/check_code.html" onclick="changeImg(this);">
+                </div>
+                {{ obj.errors.check_code.0 }}
+                {{ obj.non_field_errors.0 }}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+    </form>
+</div>
+
+</body>
+<script>
+    function changeImg(ths) {
+        ths.src += "?";
+    }
+</script>
+</html>

@@ -1,0 +1,123 @@
+{% extends "kingadmin/index.html" %}
+{% load kingadmin_tags %}
+
+{% block right-content-container %}
+<ol class="breadcrumb">
+  <li><a href="/kingadmin/">Home</a></li>
+  <li><a href="/kingadmin/{{ app_name }}/">{{ app_name }}</a></li>
+  <li class="active">{% get_model_verbose_name admin_class %}</li>
+</ol>
+
+<div>
+    {% if admin_class.search_fields %}
+    <div class="search-form">
+        <form class="form-inline">
+            <input class='form-control' type="search" name="_q" value="{{ admin_class.search_key }}" placeholder="{% for s in admin_class.search_fields %}{{ s }},{% endfor %}">
+            <input class="btn btn-default" type="submit" value="搜尋">
+            {% for k,v in admin_class.filter_conditions.items %}
+                <input type="hidden" name="{{ k }}" value="{{ v }}">
+            {% endfor %}
+        </form>
+        <hr>
+    </div>
+    {% endif %}
+
+    <div>
+        {% if admin_class.list_filter %}
+        <form class="form-inline">
+            {% for filter_column in admin_class.list_filter %}
+                <div class="form-group">
+                    <label>{{ filter_column }}:</label>
+                    {% build_filter_ele filter_column admin_class %}
+                </div>
+            {% endfor %}
+            <input name="_o" type="hidden" value="{% render_ordered_args admin_class %}">
+            <input class="btn btn-primary" type="submit" value="過濾" style="margin-left: 10px">
+        </form>
+        <hr>
+        {% endif %}
+    </div>
+
+    <div class="actions" style="margin-bottom: 10px">
+        <form class="form-inline" onsubmit="return ActionCheck(this)" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>action:</label>
+                <select name="action" class="form-control">
+                    <option value="">---------</option>
+                    {% for action in admin_class.actions %}
+                        <option value="{{ action }}">{{ action }}</option>
+                    {% endfor %}}
+                </select>
+            </div>
+            <input type="submit" value="go" class="btn btn-primary">
+            <a class="btn btn-primary" href="add/" style="position: absolute; right: 40px">添加</a>
+        </form>
+    </div>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th style="width: 5px"><input type="checkbox" onclick="SelectAllObjs(this)"></th>
+            {% if admin_class.list_display %}
+                {% for column in admin_class.list_display %}
+                    <th><a href="?_o={% get_orderby_index admin_class column forloop %}{% render_filtered_args admin_class %}">
+                        {{ column }}
+                        {% render_orderby_icon admin_class column %}
+                    </a></th>
+                {% endfor %}
+            {% else %}
+            <th>{% get_model_name admin_class %}</th>
+            {% endif %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for obj in querysets %}
+        <tr>
+            <td style="width: 5px"><input name="row_selected" type="checkbox" value="{{ obj.id }}"></td>
+            {% build_table_row obj admin_class %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination_div" style="margin: 0px">
+        {% render_paginator_btn querysets admin_class %}
+    </div>
+</div>
+
+
+<script>
+    function SelectAllObjs(this_ele) {
+        // console.log($("input[name='row_selected']"));
+        if ($(this_ele).prop("checked")){
+            $("input[name='row_selected']").prop("checked", true);
+        } else{
+            $("input[name='row_selected']").prop("checked", false);
+        }
+    }
+
+    function ActionCheck(this_ele) {
+        var action = $("select[name='action']").val();
+        var selected_objs = $("input[name='row_selected']").filter(":checked");
+        if(!action) {
+            alert("no action selected!");
+            return false
+        }else if(selected_objs.length == 0){
+            alert("no item selected!");
+            return false
+        }else{
+            // 選中的checkbox生成標籤放進form裡
+            var selected_ids = [];
+            $.each(selected_objs, function () {
+                // console.log($(this).val());
+                selected_ids.push($(this).val())
+            });
+            // console.log(selected_ids);
+            var ele = "<input type='hidden' name='selected_ids' value='"+ JSON.stringify(selected_ids) +"'>";
+            $(this_ele).append(ele);
+            return true
+        }
+    }
+</script>
+{% endblock %}

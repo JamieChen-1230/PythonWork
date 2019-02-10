@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+    <style>
+        .article-list .article-item .avatar img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .active {
+            background-color: lightgray;
+        }
+
+        .left {
+            float: left;
+        }
+        .shadow{
+            -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, .05);
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, .05);
+        }
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">技術論壇</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    {% if article_type_id %}
+                    <li><a href="/">全部</a></li>
+                    {% else %}
+                    <li class="active"><a href="/">全部</a></li>
+                    {% endif %}
+
+                    {% for type in article_type_list %}
+                    {% if type.0 == article_type_id %}
+                    <li class="active"><a href="/all/{{ type.0 }}.html">{{ type.1 }}</a></li>
+                    {% else %}
+                    <li><a href="/all/{{ type.0 }}.html">{{ type.1 }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
+                {% if request.session.user_info %}
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/backend/index.html">{{ request.session.user_info.nickname }}</a></li>
+                    {% if request.session.user_info.blog__site %}
+                        <li><a style="padding-left: 0;padding-right: 0;"> </a></li>
+                        <li>
+                            <a href="/{{ request.session.user_info.blog__site }}.html">我的博客</a>
+                        </li>
+                    {% endif %}
+                    <li><a style="padding-left: 0;padding-right: 0;"> </a></li>
+                    <li><a href="/backend/index.html">管理</a></li>
+                    <li><a style="padding-left: 0;padding-right: 0;">|</a></li>
+                    <li><a href="/logout.html">退出</a></li>
+                </ul>
+                {% else %}
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/login.html">登入</a></li>
+                    <li><a href="/register.html">註冊</a></li>
+                </ul>
+                {% endif %}
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="col-md-8">
+        <div class="article-list">
+            {% for row in article_list %}
+            <div class="article-item clearfix">
+                <h3><a href="/{{ row.blog.site }}/{{ row.nid }}.html">{{ row.title }}</a></h3>
+                <div class="clearfix">
+                    <a class="avatar left" href="/{{ row.blog.site }}.html">
+                        <img src="/static/imgs/avatar/2.jpg">
+                    </a>
+                    {{ row.summary }}
+                </div>
+                <div class="footers">
+                    <a href="/{{ row.blog.site }}.html">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <span>{{ row.blog.user.nickname }}</span>
+                    </a>
+                    <span>發布於 2014-11-11</span>
+                    <a href="#" class="ele">
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <span>{{ row.comment_count }}</span>
+                    </a>
+                    <a href="/updown.html?up=True&article_id={{ row.nid }}&url=/?p={{ current_page }}" class="ele">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span>{{ row.up_count }}</span>
+                    </a>
+                    <hr>
+                </div>
+
+            </div>
+            {% endfor %}
+
+        </div>
+        <div class="clearfix">
+            <ul class="pagination">
+                {{ page_str }}
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default hot-recommend shadow">
+            <div class="panel-heading">版主推薦</div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    {% for row in blog_list %}
+                    <li><a href="/{{ row.site }}.html">{{ row.user.nickname }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-default hot-comment shadow">
+            <div class="panel-heading">评论最多</div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/plugins/bootstrap/js/bootstrap.js"></script>
+</html>
