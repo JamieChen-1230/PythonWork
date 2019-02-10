@@ -49,12 +49,22 @@
     git push -u origin master:master => 告訴Git把本地的master分支(左)的此文件提交到遠程倉庫(origin為預設URL)的遠程的master分支(右)，-u表要登入
 
 分支:
-    git checkout -b xxx => 創建並切換分支
+    git checkout -b xxx => 創建並切換分支，在哪個分支上創建分支，就會以該分支為基礎創建
     git checkout xxx => 切換分支
     git branch => 查看分支，*代表當前分支
+
+暫存當前分支的代碼:
+    git stash => 暫存，這樣不必提交到本地倉庫就可以切換分支了
+    git stash list => 查看暫存區列表
+    git stash apply => 恢復之前保存的工作
+    git stash drop => 刪除暫存的備份檔
+    git stash pop => 等於git stash apply + git stash drop
 
 更新本地端代碼:
     git pull => 從遠程倉庫拿最新代碼更新本地代碼
 
 合併代碼(本地):
-    切換到本地master >> git merge xxx分支
+    切換到本地master >> 更新本地端代碼(git pull) >> git merge xxx分支
+
+上傳忽略文件(讓一些文件不上傳到遠程倉庫):
+    建立 .gitignore文件 >> 添加不想上傳到遠程的檔名

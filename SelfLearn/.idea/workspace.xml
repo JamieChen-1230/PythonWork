@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/SelfLearn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/restful規範.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Git使用/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Git使用/筆記.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SelfLearn$181027_helloworld__1_.coverage" NAME="181027_helloworld (1) Coverage Results" MODIFIED="1540799655474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190112_BeautifulSoup.coverage" NAME="190112_BeautifulSoup詳細使用 Coverage Results" MODIFIED="1547620570111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190119_IO.coverage" NAME="190119_自定義異步IO Coverage Results" MODIFIED="1547883202947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190118_tornado.coverage" NAME="190118_tornado Coverage Results" MODIFIED="1547806472167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$180723_.coverage" NAME="180723_汽車之家爬蟲 Coverage Results" MODIFIED="1547613232404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$181027_.coverage" NAME="181027_源碼解析一 Coverage Results" MODIFIED="1540801298393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
+    <SUITE FILE_PATH="coverage/SelfLearn$181014_.coverage" NAME="181014_練習題 Coverage Results" MODIFIED="1539495980312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/練習" />
+    <SUITE FILE_PATH="coverage/SelfLearn$models.coverage" NAME="models Coverage Results" MODIFIED="1535442263161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_聚合函數/mysite/app01" />
+    <SUITE FILE_PATH="coverage/SelfLearn$check_code.coverage" NAME="check_code Coverage Results" MODIFIED="1544097788317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181111_網站驗證碼/mysite/utils" />
+    <SUITE FILE_PATH="coverage/SelfLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1548937014290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SelfLearn$manage.coverage" NAME="manage Coverage Results" MODIFIED="1548940045657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180830_學員管理系統/mysite" />
+    <SUITE FILE_PATH="coverage/SelfLearn$180619_While.coverage" NAME="180619_While迴圈 Coverage Results" MODIFIED="1548937913420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$180626_.coverage" NAME="180626_運算符 Coverage Results" MODIFIED="1548937789336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190116_.coverage" NAME="190116_多進程實現併發請求 Coverage Results" MODIFIED="1547788122527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$181025_pandas.coverage" NAME="181025_pandas模塊 Coverage Results" MODIFIED="1540527759393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
+    <SUITE FILE_PATH="coverage/SelfLearn$180713_.coverage" NAME="180713_裝飾器 Coverage Results" MODIFIED="1544417374818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$180718_os.coverage" NAME="180718_os模塊 Coverage Results" MODIFIED="1540523110920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190117_asyncio.coverage" NAME="190117_asyncio Coverage Results" MODIFIED="1547784609783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190124_LowScrapy.coverage" NAME="190124_自定義LowScrapy框架 Coverage Results" MODIFIED="1548407136542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析" />
+    <SUITE FILE_PATH="coverage/SelfLearn$admin.coverage" NAME="admin Coverage Results" MODIFIED="1535507856834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180828_admin/mysite/app01" />
+    <SUITE FILE_PATH="coverage/SelfLearn$181214_agent.coverage" NAME="181214_資產採集之agent Coverage Results" MODIFIED="1544760884290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181210_CMDB" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1548138295335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up" />
+    <SUITE FILE_PATH="coverage/SelfLearn$dict__.coverage" NAME="dict(字典) Coverage Results" MODIFIED="1535390718255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180626_基本數據類型" />
+    <SUITE FILE_PATH="coverage/SelfLearn$runscrapy.coverage" NAME="runscrapy Coverage Results" MODIFIED="1548313295897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190123_Twisted.coverage" NAME="190123_Twisted Coverage Results" MODIFIED="1548396004545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run.coverage" NAME="run Coverage Results" MODIFIED="1548138064140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190112_github.coverage" NAME="190112_github自動登入 Coverage Results" MODIFIED="1547625457118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$180703_.coverage" NAME="180703_字符串格式化 Coverage Results" MODIFIED="1548937872412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$181027_helloworld.coverage" NAME="181027_helloworld Coverage Results" MODIFIED="1540798464790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Tornado)" />
+    <SUITE FILE_PATH="coverage/SelfLearn$students.coverage" NAME="students Coverage Results" MODIFIED="1535720810780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180829_學員管理系統/mysite/app01/views" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190118_gevent.coverage" NAME="190118_gevent Coverage Results" MODIFIED="1547788015528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$html.coverage" NAME="html介紹 Coverage Results" MODIFIED="1538277367643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/前端/html" />
+    <SUITE FILE_PATH="coverage/SelfLearn$engine.coverage" NAME="engine Coverage Results" MODIFIED="1548663458763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190110_session.coverage" NAME="190110_抽屜自動登入session Coverage Results" MODIFIED="1547612707234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$181025_pandas__1_.coverage" NAME="181025_pandas模塊 (1) Coverage Results" MODIFIED="1540535850477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊/181025_pandas模塊" />
+    <SUITE FILE_PATH="coverage/SelfLearn$chouti.coverage" NAME="chouti Coverage Results" MODIFIED="1547962234946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/spiders" />
+    <SUITE FILE_PATH="coverage/SelfLearn$190110_.coverage" NAME="190110_抽屜自動登入 Coverage Results" MODIFIED="1547612695879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$views.coverage" NAME="views Coverage Results" MODIFIED="1535422116577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_多表操作/mysite/app01" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/框架(Django)/restful規範.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Jupyter Notebook" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>foo</find>
+      <find>add_tb</find>
+      <find>add_user</find>
+      <find>mark_safe</find>
+      <find>tag</find>
+      <find>open_leaf_parent_id</find>
+      <find>re</find>
+      <find>self.permission2action_list</find>
+      <find>self.menu_leaf_list</find>
+      <find>ForeignKey</find>
+      <find>admin</find>
+      <find>request.user</find>
+      <find>user</find>
+      <find>ArnoldHou/HTML</find>
+      <find>NTUST/106-team20</find>
+      <find>small</find>
+      <find>visited_urls</find>
+      <find>start_re</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/engine.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190124_自定義LowScrapy框架.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190123_Twisted.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/spider/chouti.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/crm/admin.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/kingadmin/urls.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/kingadmin/permissions.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/kingadmin/permission_hook.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/crm/models.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/kingadmin/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/kingadmin/permission_list.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/PerfectCRM-master/PerfectCRM-master/crm/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/PerfectCRM-master/PerfectCRM-master/teacher/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181214_CRM/MyCRM/crm/views.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/190115_自動登入.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/190110_抽屜自動登入.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/190111_requests詳細使用.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/180723_汽車之家爬蟲.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/190110_抽屜自動登入session.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/190112_BeautifulSoup詳細使用.py" />
+        <option value="$PROJECT_DIR$/爬蟲/180723_基礎/190112_github自動登入.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190116_多線程實現併發請求.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190116_多進程實現併發請求.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190117_asyncio.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190118_gevent.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190118_twisted.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190118_tornado.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/筆記.txt" />
+        <option value="$PROJECT_DIR$/爬蟲/190116_異步/190119_自定義異步IO.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/items.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/run.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/duplication.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/settings.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/pipelines.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/spiders/chouti.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/extensions.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/spiders/chouti.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/筆記.txt" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/runscrapy.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/middlewares.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/settings.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/commands/crawlall.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190123_Twisted.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190124_自定義LowScrapy框架.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/spider/chouti.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/spider/cnblogs.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/engine.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/基礎/180626_運算符.py" />
+        <option value="$PROJECT_DIR$/基礎/180703_字符串格式化.py" />
+        <option value="$PROJECT_DIR$/基礎/180619_While迴圈.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/181102_瀑布流/mysite/app01/apps.py" />
+        <option value="$PROJECT_DIR$/Git使用/筆記.txt" />
+        <option value="$PROJECT_DIR$/框架(Django)/restful規範.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/PythonWork/SelfLearn/框架(Django)/181214_CRM/MyCRM/crm/kingadmin.py" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\kingadmin\templates\kingadmin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PythonWork\SelfLearn\爬蟲\190123_Scrapy源碼分析\190125_自定義TinyScrapy框架\spider" />
+      <recent name="D:\PythonWork\SelfLearn\爬蟲\190119_Scrapy框架" />
+      <recent name="D:\PythonWork\SelfLearn\爬蟲\190119_Scrapy框架\190120_抽屜自動登入並點讚\chouti_like_up" />
+      <recent name="D:\PythonWork\SelfLearn\爬蟲\190116_異步" />
+      <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\static\plugins" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="180619_While迴圈" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180619_While迴圈.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="180626_運算符" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180626_運算符.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="180703_字符串格式化" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180703_字符串格式化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/框架(Django)/180830_學員管理系統/mysite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/框架(Django)/180830_學員管理系統/mysite/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.180619_While迴圈" />
+      <item itemvalue="Python.180626_運算符" />
+      <item itemvalue="Python.180703_字符串格式化" />
+      <item itemvalue="Python.manage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.180619_While迴圈" />
+        <item itemvalue="Python.180703_字符串格式化" />
+        <item itemvalue="Python.180626_運算符" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\USER\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="" />
+      <created>1535390307245</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535390307245</updated>
+      <workItem from="1548936938423" duration="2875000" />
+      <workItem from="1549011183066" duration="301000" />
+      <workItem from="1549086615625" duration="4677000" />
+      <workItem from="1549162756964" duration="5570000" />
+      <workItem from="1549173349147" duration="3205000" />
+      <workItem from="1549765205078" duration="455000" />
+      <workItem from="1549765706838" duration="587000" />
+      <workItem from="1549766307372" duration="808000" />
+      <workItem from="1549768267774" duration="8347000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="26825000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23592493" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29745042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49785408" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.1883378" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17091152" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6680851" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49785408" weight="0.33333334" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" weight="0.32839224" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.1883378" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190118_gevent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190118_twisted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190116_多進程實現併發請求.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190116_多線程實現併發請求.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" selection-start-line="14" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190117_asyncio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="79" selection-start-line="79" selection-end-line="83" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190118_tornado.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/190119_自定義異步IO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190116_異步/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/news.json" />
+    <entry file="file://D:/Python35/Lib/site-packages/scrapy/__init__.py" />
+    <entry file="file://D:/Python35/Lib/site-packages/scrapy/http/request/__init__.py" />
+    <entry file="file://D:/Python35/Lib/site-packages/scrapy/spiders/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2600" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Python35/Lib/site-packages/scrapy/dupefilters.py" />
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/duplication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/180823_數據庫操作">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-401" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/180825_pymysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/news.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3276">
+          <caret line="117" column="33" lean-forward="true" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/news2.txt" />
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/spiders/chouti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2313">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="96" selection-start-line="96" selection-end-line="96" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python35/Lib/site-packages/scrapy/extensions/telnet.py" />
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/spiders/chouti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="430" lean-forward="true" selection-start-line="430" selection-end-line="430" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/commands/crawlall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="112" column="7" lean-forward="true" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/runscrapy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up/chouti_like_up/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="167" selection-start-line="167" selection-end-line="206" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190123_Twisted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="81" selection-start-line="81" selection-end-line="81" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架.py" />
+    <entry file="file://$PROJECT_DIR$/基礎/180703_函數.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180705_函數作用域&amp;匿名函數.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-773" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190124_自定義LowScrapy框架.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/spider/chouti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/spider/cnblogs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180702_集合.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180626_運算符.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180703_字符串格式化.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180619_While迴圈.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180830_學員管理系統/mysite/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/181102_瀑布流/mysite/app01/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/restful規範.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
