@@ -1,0 +1,30 @@
+文檔節點:
+    - 根節點
+    - 元素節點: html、div、a等
+    - 屬性節點: href等
+    - 文本節點: helloworld等
+
+基礎語法:
+    .: 當前節點
+    ..: 當前節點的父節點
+    /ELEMENT: 子節點中的所有ELEMENT元素節點
+    //ELEMENT: 後代節點中的所有ELEMENT元素節點
+    *: 子節點中的所有元素節點
+    text(): 所有文本子節點
+    @ATTR: 所有ATTR屬性節點
+    @*: 所有屬性節點
+
+進階語法:
+    E1/E2: E1子節點中的所有E2節點
+    E1//E2: E1後代節點中的所有E2節點
+    */E: 孫節點中的所有E節點
+    E/@ATTR: E節點的ATTR屬性節點
+    E/@*: E節點的所有屬性節點
+    //a[3]: 第三個a節點
+    //a[position()<=3]: 前三個a節點
+    //div[@id="img"]: id為img的div節點
+    //div[contains(@class, "aa")]: 所有class屬性包含img的div節點
+    //a[starts-with(@href, '/all/hot/recent/')]: href開頭為/all/hot/recent/的所有a節點
+    //a[re:test(@href, '/all/hot/recent/\d+')]  找到href為/all/hot/recent/\d+的所有a節點
+    obj.extract(): 返回Unicode字符串型式
+    obj.extract_first(): 返回第一個對象的Unicode字符串型式

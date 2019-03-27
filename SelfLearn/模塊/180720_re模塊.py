@@ -1,9 +1,39 @@
-# ---------re模塊---------
+"""
+整理：
+    - 元(特殊)字符：
+            .：代表一個任意字符(除了\n等符號)
+            ^：代表匹配字串須為字符串的開頭
+            $：代表字符串須為字符串的結尾
+            *：重複符號(代表0到無窮次)
+            +：重複符號(代表1到無窮次)
+            ?：重複符號(代表0或1次)
+            {x,y}：重複符號(範圍自訂)，不給參數代表無窮，且參數間不可有空格
+            [ ]：字符集，裡面不能有元(特殊)字符，只能有 -到、^not、\轉義
+            \ ：轉義符，能讓有意義變沒意義，能讓沒意義變有意義
+                    \d：代表[0-9]
+                    \D：代表[^0-9] => 非0-9
+                    \s：代表[空格\t\n\r\f\v] (空白符)
+                    \S：代表[^\t\n\r\f\v]
+                    \w：代表[a-z0-9A-Z_]
+                    \W：代表[^a-z0-9A-Z_]
+            |：代表或(or)，找多個值
+            ( )：代表分組
+                    (?:)：只識別，不取值
+                    (?P<name>[a-z]+)：分組命名
+    - 方法：
+            findall：匹配所有並返回一個陣列
+            search：找第一個符合字符串並返回一個對象
+            match：只匹配字符串開頭並返回一個對象
+            split：分割並返回一個陣列
+            sub：替代並返回一個字串
+            subn：替代並返回一個元組(字符串和替換個數)
+            finditer：匹配所有並返回一個跌代器對象
+"""
 # 正則表達式，只對字符串進行處理
 # 元(特殊)字符 .^$*+?{}[]|()\
 import re
 # . 一個任意字符(除了\n等)
-# print(re.findall("s..b", "fffsddblkfksdkb"))  # => ['sddb', 'sdkb']
+# print(re.findall("s..b", "fffsd\nblkfks\kbsaab"))  # => ['s\\kb', 'saab']
 
 # ^ 匹配字符串須為字符串的開頭
 # print(re.findall("^s..b", "fffsddblkfksdkb"))  # => []
@@ -20,7 +50,7 @@ import re
 
 # + 重複符號(1到無窮次)
 # print(re.findall("d+", "asdddddddasda"))  # => ['ddddddd', 'd']
-# print(re.findall("jami+e", "ddjamiiiiieee"))  # => ['jamiiiiie']，i可以有0到無窮個
+# print(re.findall("jami+e", "ddjamiiiiieee"))  # => ['jamiiiiie']，i可以有1到無窮個
 # print(re.findall("jami+e", "ddjameee"))  # => []
 
 # ? 重複符號(0到1次)
@@ -31,7 +61,7 @@ import re
 # {} 重複符號(範圍自訂)，不給參數代表無窮，且參數間不可有空格
 # print(re.findall("jami{1,8}e", "ddjamiiiiieee"))  # => ['jamiiiiie']，i可以出現1到8次
 
-# [] 字符集，裡面不能有元字符，只有 -到 ^not \
+# [] 字符集，裡面不能有元字符，只有 -到 ^not \轉義
 # print(re.findall("w[b,nb]", "wsbxhzhxf"))  # => []，裡面沒有wb w, wn wb
 # print(re.findall("x[yz]", "xzdasadxy"))  # => ['xz', 'xy']，y或z都可以
 # print(re.findall("q[a-z]", "qwqfsfsfkqoqfkl"))  # => ['qw', 'qf', 'qo', 'qf']，字符集a到z都可，字符集內的-代表到
@@ -63,7 +93,9 @@ import re
 # () 分組
 # print(re.findall(r"abc+", "abccccc"))  # => ['abccccc']
 # print(re.findall(r"(abc)+", "abccccc"))  # => ['abc']
+# (?:) 只識別，不取值
 # print(re.findall("(?:abc)+", "abcabcabc"))  # => ['abcabcabc']，使用?:去掉分組的優先權
+# print(re.findall("(?:a)(bc)", "abcabcbbc"))  # => ['bc', 'bc']
 # 有命名的分組
 # print(re.search("(?P<name>[a-z]+)\d+", "jamie123sb123").group())  # => jamie123，?P<name>用來命名
 # print(re.search("(?P<name>[a-z]+)\d+", "jamie123sb123").group("name"))  # => jamie，只取出name的值

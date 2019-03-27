@@ -1,0 +1,39 @@
+name: 為爬蟲的名字，Scrapy用此來辨識不同之爬蟲程序，故爬蟲名不可重複。
+start_urls: 起始爬取URL。
+start_requests: 爬蟲起始調用之方法，可透過覆寫此方法讓爬蟲不使用parse函數，而是自定義的回調函數。
+parse: 當一個頁面下載完成時，Scrapy會回調一個頁面解析函數，而parse為起始默認的回調函數。
+    - 提取頁面數據
+    - 提取更深度之連結
+Request: Scrapy中的HTTP請求對象。
+    - url(必填): 網址，可為bytes或str類型
+    - callback: 頁面解析函數，若未指定則是使用默認的parse函數
+    - method: HTTP請求的方法，默認為GET
+    - headers: 請求頭，為dict類型
+    - body: HTTP請求的正文
+    - cookies: Cookie信息，為dict類型
+    - meta: Request的原數據字典，用於給框架中的其他組件傳送信息，其他組件可透過request.meta訪問信息
+    - encoding: 默認為UTF-8
+    - priority: 優先度，會從優先度高的請求開始執行
+    - dont_filter: 默認為False，會對HTTP請求進行去重
+    - errback: 異常回調函數，當發生錯誤時會使用該回調函數
+Response: Scrapy中的HTTP響應對象，爬取頁面的話返回的是HtmlResponse。
+    - url: 響應的網址
+    - status: 響應的狀態碼
+    - headers: 響應頭
+    - body: 響應體
+    - text: 文本形式的HTTP響應體
+    - encoding: 響應體的編碼
+    - meta: 在構築Request對象時，可將欲使用之信息透過meta參數傳入，並在Response使用reponse.meta進行取出調用.
+    - selector: Selector對象用於提取數據
+    - xpath: 使用XPath選擇器提取數據且內部已幫我們轉成selector對象，故不需在事前使用selector
+    - css: 使用CSS選擇器提取數據且內部已幫我們轉成selector對象，故不需在事前使用selector
+    - urljoin: 用於構造絕對URL路徑，當response.url為http://www.test.com，相對路徑URL為jamie/profile.html時，可使用
+               urljoin(相對路徑URL)為http://www.test.com/jamie/profile.html
+Item: 從頁面中所爬取的數據對象。
+    - 一、直接使用dict類型
+        - 缺點：不能一眼了解有那些字段、無對字段的檢測
+    - 二、繼承Item基類並實現自定義類(good)
+        - Field(): 定義字段
+
+
+

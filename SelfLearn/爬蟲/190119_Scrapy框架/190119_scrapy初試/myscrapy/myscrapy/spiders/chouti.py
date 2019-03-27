@@ -2,7 +2,7 @@
 import scrapy
 import sys
 import io
-from scrapy.selector import Selector, HtmlXPathSelector
+from scrapy.selector import Selector
 from scrapy.http import Request
 from ..items import ChoutiItem
 # from scrapy.dupefilter import RFPDupeFilter
