@@ -80,7 +80,7 @@
 # def a():
 #     print("a", end=" ")
 #     b()
-# a()  # => 報錯 因為b()還未加載到內存
+# a()  # => 報錯(NameError: name 'b' is not defined)，因為b()還未加載到內存
 # def b():
 #     print("b", end=" ")
 

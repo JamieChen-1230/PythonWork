@@ -7,20 +7,23 @@
 
 # ------高階函數------
 # 高階函數定義：傳入參數是函數名或回傳值是函數名
-# 只符合條件一
+"""只符合條件一"""
 # import time
 # def foo():
 #     time.sleep(1)
-#     print("你好")
-# def test(func):  # 符合不修改被修飾函數的原代碼
+#     print("foo run")
+# def run(func):  # 符合不修改被修飾函數的原代碼
 #     print(func)  # => <function foo at 0x00000258E0D67F28>
 #     start = time.time()
 #     func()  # 調用foo()
 #     end = time.time()
 #     print("運行時間%s" % (end-start))  # => 運行時間1.0005557537078857
-# test(foo)  # foo的原調用方法是foo()，但現在卻是test(foo)，所以不是裝飾器
+# run(foo)  # foo的原調用方法是foo()，但現在卻是test(foo)，所以不是裝飾器
 
-# 符合條件一、二，但會多運行一次被調用函數 (這是高階函數的極限了)
+"""
+符合條件一、二，但會多運行一次被調用函數 (這是高階函數的極限了)
+條件：不修改foo的原代碼、不修改foo的調用方法
+"""
 # import time
 # def foo():
 #     time.sleep(1)
@@ -34,10 +37,12 @@
 #     print("運行時間%s" % (end-start))  # => 運行時間1.0005557537078857
 #     return func
 # foo = timmer(foo)
+# print("-----分隔線-----")
 # foo()  # 符合不修改被修飾函數的調用方法
 # # 運行結果如下，但多運行了一次foo()
 # # 來自foo
 # # 運行時間1.0005180835723877
+# # -----分隔線-----
 # # 來自foo
 
 # ------函數嵌套------
@@ -79,13 +84,13 @@
 #         print("運行時間%s" % (end - start))
 #     return wrapper
 #
-# @timmer   # @timmer 相當於 test = timmer(test)
+# @timmer   # @timmer 相當於 test = timmer(test)，此時test為wrapper的地址
 # def test():  # 符合不修改被修飾函數的原代碼
 #     time.sleep(1)
 #     print("test")
 #
 # # test = timmer(test)  # 得到wrapper的地址
-# test()  # 執行wrapper()，符合不修改被修飾函數的調用方法
+# test()  # 實際意義上等於執行wrapper()，符合不修改被修飾函數的調用方法
 
 # ------裝飾器的基本架構+返回值(2)------
 # import time
@@ -119,7 +124,7 @@
 #     #     print("運行時間%s" % (end - start))
 #     #     return res  # 因為實際上是執行wrapper()，所以要有返回值要從這return
 #     def wrapper(*args, **kwargs):  # 不能把參數寫死，因為每個函數參數不同
-#         # print(func)
+#         # print(args, *args)
 #         start = time.time()
 #         # args = ('jamie', 18, "man"), kwargs = {}，
 #         # 所以要加*號，不然就會傳元組和字典過去，且能應付各種輸入
@@ -157,6 +162,7 @@
 # def auth_func(func):
 #     def wrapper(*args, **kwargs):
 #         if current["username"] and current["login"]:  # 已登入就直接進入頁面
+#             print("已登入")
 #             res = func(*args, **kwargs)
 #             return res
 #         username = input("帳號 ").strip()
@@ -180,8 +186,11 @@
 # def shopping_car(name):
 #     print("%s目前已選購 [%s, %s, %s]" % (name, "奶茶", "妹妹", "娃娃"))
 #
+# import time
 # index()
+# time.sleep(1)
 # home("jamie")
+# time.sleep(1)
 # shopping_car("jamie")
 
 # ------使用裝飾器(有參數)模仿認證功能(2)------

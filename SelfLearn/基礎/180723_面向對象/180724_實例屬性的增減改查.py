@@ -24,7 +24,7 @@
 # print(p1.__dict__)  # => {'government': '無黨', 'age': 20, 'name': 'jamie', 'gender': 'man'}
 # p2 = Chinese("jamie2", 20, "man")
 # print(p2.__dict__)  # => {'age': 20, 'name': 'jamie2', 'gender': 'man'}，p1修改不影響p2
-#
+# #
 # # 刪除
-# del p1.government
+# del p1.gender
 # print(p1.__dict__)  # => {'name': 'jamie', 'age': 20, 'gender': 'man'}

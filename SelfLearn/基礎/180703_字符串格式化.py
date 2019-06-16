@@ -16,7 +16,7 @@
 
 # %f浮點數
 # print("percent %f" % 1.123456)  # => percent 1.123456
-# print("percent %.2f" % 1.123456)  # => percent 1.12
+# print("percent %.2f" % 1.123456)  # => percent 1.12，只保留小數點後兩位
 
 # 用字典傳值
 # msg = "I am %(name)s, my hobby is %(hobby)s." % {"name": "Jamie", "hobby": "sleeping"}
@@ -35,7 +35,7 @@
 # msg = "I am {}, age is {}, {}".format("Jamie", 18, "sb")
 # print(msg)  # => I am Jamie, age is 18, sb
 
-# 標數字 => 對應元組位置
+# 標數字 => 對應元組索引位置
 # msg = "I am {2}, age is {1}, {0}".format("Jamie", 18, "sb")
 # print(msg)  # => I am sb, age is 18, Jamie
 # msg = "I am {2}, age is {2}, {2}".format("Jamie", 18, "sb")
@@ -57,4 +57,4 @@
 
 # 設定不同數字類型
 # msg = "number: {:b}, {:o}, {:d}, {:x}, {:%}".format(15, 15, 15, 15, 15.87878787)
-# print(msg)  # => number: 1111, 17, 15, f, 1587.878787%  二進制, 八進制, 整數, 十六進制, 百分比
+# print(msg)  # => number: 1111, 17, 15, f, 1587.878787%，二進制, 八進制, 整數, 十六進制, 百分比

@@ -49,3 +49,6 @@
 #
 # func = lambda *args: print(args)
 # print(func(1, 2, 3))  # => None
+#
+# func = lambda *args: print(*args)
+# print(func(1, 2, 3))  # => None

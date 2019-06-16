@@ -49,8 +49,11 @@
 #     yield "自己"    #  yield會保持函數運行狀態
 #     print("繼續生")
 #     yield "兒子"
-# res = birth()
+# res = birth()  # 不會執行print("開始生")，直到使用next()後才開始執行
+# import time
+# time.sleep(1)
 # print(next(res))  # => 自己，停在 yield "自己"
+# time.sleep(1)
 # print(next(res))  # => 兒子，停在 yield "兒子"
 
 # ------列表解析&生成器表達式------
@@ -89,9 +92,13 @@
 #     x = yield 1
 #     print("二", x)  # => 二 傳值給yield
 #     yield 2
+# import time
 # res = test()
+# time.sleep(1)
 # print(res.__next__())  # => 1
-# print(res.send('傳值給yield'))  # => 2，並傳值給yield
+# time.sleep(1)
+# # print(res.__next__())  # => 1
+# print(res.send('傳值給yield'))  # => 2，傳值給yield讓x能接到值，並繼續執行到下個yield(相當於執行一個next())
 
 # 跌代器只能使用一次
 # li = (i for i in range(5))
@@ -125,4 +132,5 @@
 #         for i in range(n*10, (n+1)*10):
 #             time.sleep(0.1)
 #             c.send("包子%s" % i)
+#         time.sleep(1)
 # producer(['jamie', 'sb'])

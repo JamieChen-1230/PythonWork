@@ -50,7 +50,7 @@ name = "jamieooo"
 # 13.將字符串斷句，每10個為一組，若遇到\t直接用空格補到10，可用來排版
 # test = "name\tage\tbirthday\njamie\t22\t851230\njamie\t22\t851230\njamie\t22\t851230\n"  # \n換行
 # print(test.expandtabs(10))
-# 14.判斷是否能打印(不能打印的：不可顯示的字符\n\t)
+# 14.判斷是否全為能打印之字符(不能打印的：不可顯示的字符\n\t)
 # test = "不可顯示的字符\n"
 # print(test.isprintable())  # => False
 # 15.判斷是否為全空格字串
@@ -132,16 +132,16 @@ name = "jamieooo"
 # 10.找出第一個符合元素的索引位置
 # li = ["我", 2, 3, 5, ["你", "他", 2], 2]
 # print(li.index(2))  # => 1
-# 11.在指定位置新增元素
+# 11.在指定索引位置新增元素
 # li = ["我", 2, 3, 5, ["你", "他", 2]]
 # li.insert(0, 99)
 # print(li)  # => [99, '我', 2, 3, 5, ['你', '他', 2]]
-# 12.刪除元素，並取得被刪除元素
+# 12.根據索引位置刪除元素，並取得被刪除元素
 # li = ["我", 2, 3, 5, ["你", "他", 2]]
 # v = li.pop(1)  # 默認刪最後一個，此刪除li[1]
 # print(li)  # => ['我', 3, 5, ['你', '他', 2]]
 # print(v)  # => 2  被刪除的值
-# 13.刪除第一個指定值
+# 13.根據字面量，刪除第一個指定元素
 # li = ["我", 2, 3, 5, ["你", "他", 2], 2]
 # li.remove(2)
 # print(li)  # => ['我', 3, 5, ['你', '他', 2], 2]
@@ -187,7 +187,7 @@ name = "jamieooo"
 # for i in di.values():
 #     print(i)  # value
 # di = {"k1": 18, "k2": True, "k3": [13, 22, 33, {"kk1": (11, 22)}], "k4": (13, 22)}
-# for k,v in di.items():
+# for k, v in di.items():
 #     print(k, v)  # => key + value
 # 4.根據序列創建字典，並指定統一的值(此為靜態方法，調用方法為 類.方法())
 # print(dict.fromkeys([1, 2, 3], 123))  # => {1: 123, 2: 123, 3: 123}
@@ -206,8 +206,8 @@ name = "jamieooo"
 # print(v)  # => 18
 # 7.新增鍵值對，若key不存在則直接新增且回傳value，若key已存在則不新增且回傳原本的value
 # di = {"k1": 18, "k2": True}
-# v = di.setdefault("k3", 4)  # => {'k2': True, 'k3': 4, 'k1': 18} 4
-# print(di, v)
+# v = di.setdefault("k3", 4)
+# print(di, v)  # => {'k2': True, 'k3': 4, 'k1': 18} 4
 # v = di.setdefault("k2", 4)
 # print(di, v)  # => {'k1': 18, 'k2': True} True
 # 8.更新鍵值對
