@@ -26,3 +26,13 @@ while count <= 3:
     count = count + 1
 else:
     print("請稍後再嘗試登入")
+
+
+# for count in range(1, 4):
+#     # input取得用戶輸入值
+#     password = input("請輸入： ")  # input出來都是字串
+#     if password == "123":
+#         print("登入成功")
+#         break
+#     else:
+#         print("登入失敗，你還有" + str(3-count) + "次輸入機會")

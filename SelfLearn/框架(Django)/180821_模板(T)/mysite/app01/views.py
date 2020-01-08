@@ -37,7 +37,7 @@ def variable(request):
 
 
 def label(request):
-    d = {'name': 'jamie', 'age': 18}
+    d = {'name': 'jamie', 'age': 8}
     li = ['jamie', 'sb', 'nb']
     return render(request, "label.html", locals())
 

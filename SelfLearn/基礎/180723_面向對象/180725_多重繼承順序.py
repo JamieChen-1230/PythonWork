@@ -27,5 +27,6 @@ class F(D, E):
 
 f1 = F()
 f1.test()  # 尋找順序：F ---> D ---> B ---> E ---> C ---> A ---> 沒找到test()
+# __mro__屬性 => 依照方法解析順序列出各個超類
 print(F.__mro__)
 # => (<class '__main__.F'>, <class '__main__.D'>, <class '__main__.B'>, <class '__main__.E'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)

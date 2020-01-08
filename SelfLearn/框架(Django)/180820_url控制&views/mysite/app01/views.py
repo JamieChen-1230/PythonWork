@@ -5,7 +5,9 @@ import time
 # views必須有參數，用來接收客戶端的請求信息(request)
 def show_time(request):
     now_time = time.asctime()
-    # -----頁面渲染-----
+
+    # -----頁面渲染render-----
+    # 自動找到模板路徑下的show_time.html文件，讀取並返回給用戶
     # 第一個參數必須為客戶端的請求信息(request)
     # 第二個參數為網頁
     # 第三個參數為前端要用的變數(字典形式)，key為變量名稱，value為值

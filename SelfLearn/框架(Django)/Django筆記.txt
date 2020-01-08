@@ -1,0 +1,62 @@
+Django框架：
+    安裝 命令： pip3 install django
+    創建Django程序 命令： django-admin startproject __專案名__
+        程序內建文件：
+            manage.py ==> 管理文件，對於當前Django程序的操作皆通過此文件完成
+                - 啟動服務器 命令： python manage.py runserver __127.0.0.1:8080__
+            settings.py ==> 配置文件
+                - 模板參數設定： TEMPLATES
+                    - 模板文件目錄路徑： DIRS
+                - (href等)欲使用靜態文件時的前綴： STATIC_URL
+                - 本地靜態文件目錄路徑： STATICFILES_DIRS
+                - APP列表： INSTALLED_APPS
+
+            urls.py ==> 路由系統(url與函數對應關係)
+            wsgi.py ==> 網頁服務網端接口，用於定義Django如何實現溝通協議(socket, wsgiref(本地測試用), uwsgi(開發用))
+
+創建Django步驟：
+    1.創建project(用命令或pycharm創建皆可)
+    2.配置：
+        - 模板路徑
+            TEMPLATES = [
+                {
+                    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                    'DIRS': [os.path.join(BASE_DIR, 'templates')],
+                    'APP_DIRS': True,
+                    'OPTIONS': {
+                        'context_processors': [
+                            'django.template.context_processors.debug',
+                            'django.template.context_processors.request',
+                            'django.contrib.auth.context_processors.auth',
+                            'django.contrib.messages.context_processors.messages',
+                        ],
+                    },
+                },
+            ]
+        - 靜態文件路徑
+            # 定義使用時網址前綴 /static/
+            STATIC_URL = '/static/'
+            # 定義實際上去找文件的目錄名稱(static)
+            STATICFILES_DIRS = (
+                os.path.join(BASE_DIR, 'static'),
+            )
+    3.註釋掉文件的csrf
+        MIDDLEWARE = [
+            'django.middleware.security.SecurityMiddleware',
+            'django.contrib.sessions.middleware.SessionMiddleware',
+            'django.middleware.common.CommonMiddleware',
+            # 'django.middleware.csrf.CsrfViewMiddleware',
+            'django.contrib.auth.middleware.AuthenticationMiddleware',
+            'django.contrib.messages.middleware.MessageMiddleware',
+            'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        ]
+    4.有創建APP的話記得加入settings.py
+        INSTALLED_APPS = [
+            'django.contrib.admin',
+            'django.contrib.auth',
+            'django.contrib.contenttypes',
+            'django.contrib.sessions',
+            'django.contrib.messages',
+            'django.contrib.staticfiles',
+            'app01',
+        ]
