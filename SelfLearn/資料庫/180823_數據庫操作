@@ -1,23 +1,34 @@
---1.創建數據庫（在磁盤上創建一個對應的文件夾）
---    create  database  [ if not exists ]  db_name  [ character set xxx ]
-create database if not exists test character set gbk;
+1.創建數據庫（在磁盤上創建一個對應的文件夾）
+- create database [ if not exists ] db_name [ character set xxx ];
+指令範例：create database if not exists test character set gbk;
 
---2.查看數據庫
---    show databases;查看所有數據庫
-show databases;
---    show create  database  db_name ;查看數據庫的創建方式
-show create database test;
 
---3.修改數據庫
---    alter  database  db_name  [ character set xxx ];
-alter database test character set utf8;
+2.查看數據庫
+- 查看所有數據庫
+- show databases;
+指令範例：show databases;
 
---4.刪除數據庫
---    drop  database  [ if exists ]  db_name;
-drop database if exists test;
+- 查看數據庫的創建方式
+- show create database db_name;
+指令範例：show create database test;
 
---5.使用數據庫
---    切換數據庫use  db_name ; -- 注意：進入到某個數據庫後沒辦法再退回之前狀態，但可以通過use進行切換
-use test;
---    查看當前使用的數據庫select  database ();
-select database();
+- 查看當前使用的數據庫
+- select database();
+指令範例：select database();
+
+
+3.修改數據庫
+- alter database db_name [ character set xxx ];
+指令範例：alter database test character set utf8;
+
+
+4.刪除數據庫
+- drop database [ if exists ] db_name;
+指令範例：drop database if exists test;
+
+
+5.使用數據庫
+- 切換數據庫(注意：進入到某個數據庫後沒辦法再退回之前狀態，但可以通過use進行切換)
+- use db_name;
+指令範例：use test;
+

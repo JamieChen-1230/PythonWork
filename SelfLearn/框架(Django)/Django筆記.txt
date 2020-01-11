@@ -3,13 +3,14 @@ Django框架：
     創建Django程序 命令： django-admin startproject __專案名__
         程序內建文件：
             manage.py ==> 管理文件，對於當前Django程序的操作皆通過此文件完成
-                - 啟動服務器 命令： python manage.py runserver __127.0.0.1:8080__
+                - 啟動服務器 命令： python manage.py runserver __端口(EX: 127.0.0.1:8080)__
             settings.py ==> 配置文件
                 - 模板參數設定： TEMPLATES
                     - 模板文件目錄路徑： DIRS
                 - (href等)欲使用靜態文件時的前綴： STATIC_URL
                 - 本地靜態文件目錄路徑： STATICFILES_DIRS
-                - APP列表： INSTALLED_APPS
+                - 應用列表： INSTALLED_APPS
+                - 數據庫： DATABASES
 
             urls.py ==> 路由系統(url與函數對應關係)
             wsgi.py ==> 網頁服務網端接口，用於定義Django如何實現溝通協議(socket, wsgiref(本地測試用), uwsgi(開發用))
