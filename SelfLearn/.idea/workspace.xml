@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" beforeDir="false" afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" beforeDir="false" afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" afterDir="false" />
     </list>
@@ -90,11 +89,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="247">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -490,7 +498,7 @@
       <workItem from="1578545498147" duration="13975000" />
       <workItem from="1578634930176" duration="8035000" />
       <workItem from="1578719753663" duration="15664000" />
-      <workItem from="1588143111570" duration="5703000" />
+      <workItem from="1588143111570" duration="5784000" />
     </task>
     <servers />
   </component>
@@ -509,7 +517,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169997000" />
+    <option name="totallyTimeSpent" value="170078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -855,15 +863,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="303">
+          <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="247">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
         </state>
       </provider>
     </entry>
