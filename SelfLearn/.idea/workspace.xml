@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +28,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$181025_pandas.coverage" NAME="181025_pandas模塊 Coverage Results" MODIFIED="1540527759393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
     <SUITE FILE_PATH="coverage/SelfLearn$180713_.coverage" NAME="180713_裝飾器 Coverage Results" MODIFIED="1560675779252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$190124_LowScrapy.coverage" NAME="190124_自定義LowScrapy框架 Coverage Results" MODIFIED="1548407136542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200429_.coverage" NAME="200429_深淺複製 Coverage Results" MODIFIED="1588148545433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用" />
     <SUITE FILE_PATH="coverage/SelfLearn$admin.coverage" NAME="admin Coverage Results" MODIFIED="1535507856834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180828_admin/mysite/app01" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_for_180713__test.coverage" NAME="pytest for 180713_裝飾器.test Coverage Results" MODIFIED="1557749155337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$180724_.coverage" NAME="180724_實例屬性的增減改查 Coverage Results" MODIFIED="1560687589236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180723_面向對象" />
@@ -97,10 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
+        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="224">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -158,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/爬蟲/190301_精通Scrapy網路爬蟲筆記/XPath.txt" />
-        <option value="$PROJECT_DIR$/爬蟲/190301_精通Scrapy網路爬蟲筆記/變量解釋.txt" />
         <option value="$PROJECT_DIR$/爬蟲/190120_Scrapy框架總整理/scrapyTotal/scrapyTotal/settings.py" />
         <option value="$PROJECT_DIR$/爬蟲/190301_精通Scrapy網路爬蟲筆記/ItemPipeline.txt" />
         <option value="$PROJECT_DIR$/爬蟲/190120_Scrapy框架總整理/scrapyTotal/scrapyTotal/pipelines.py" />
@@ -209,6 +210,8 @@
         <option value="$PROJECT_DIR$/資料庫/練習範例數據(外鍵).txt" />
         <option value="$PROJECT_DIR$/資料庫/20200111_其他約束.txt" />
         <option value="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" />
       </list>
     </option>
   </component>
@@ -263,22 +266,17 @@
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="基礎" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="觀念釐清" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念釐清(流暢的Python)" type="462c0819:PsiDirectoryNode" />
+              <item name="進階觀念(流暢的Python)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念釐清(流暢的Python)" type="462c0819:PsiDirectoryNode" />
+              <item name="進階觀念(流暢的Python)" type="462c0819:PsiDirectoryNode" />
               <item name="200429_對象引用" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -299,15 +297,15 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\kingadmin\templates\kingadmin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190120_Scrapy框架總整理\scrapyTotal\scrapyTotal" />
       <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190120_Scrapy框架總整理\scrapyTotal" />
       <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190211_爬蟲練習\190213_ezTravel\myscrapy" />
       <recent name="D:\PythonWork\SelfLearn\爬蟲\190123_Scrapy源碼分析\190125_自定義TinyScrapy框架\spider" />
       <recent name="D:\PythonWork\SelfLearn\爬蟲\190119_Scrapy框架" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\kingadmin\templates\kingadmin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200429_Python之傳值&amp;傳址">
+  <component name="RunManager" selected="Python.200429_深淺複製">
     <configuration name="類的共享屬性" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,28 +365,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="180724_實例屬性的增減改查" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/180723_面向對象" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180723_面向對象/180724_實例屬性的增減改查.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="180725_組合" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -403,6 +379,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180723_面向對象/180725_組合.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="200429_深淺複製" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,19 +432,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.180724_實例屬性的增減改查" />
       <item itemvalue="Python.類的共享屬性" />
       <item itemvalue="Python.180725_組合" />
       <item itemvalue="Python.180619_While迴圈" />
       <item itemvalue="Python.200429_Python之傳值&amp;傳址" />
+      <item itemvalue="Python.200429_深淺複製" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.200429_深淺複製" />
         <item itemvalue="Python.200429_Python之傳值&amp;傳址" />
         <item itemvalue="Python.180619_While迴圈" />
         <item itemvalue="Python.180725_組合" />
         <item itemvalue="Python.類的共享屬性" />
-        <item itemvalue="Python.180724_實例屬性的增減改查" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +499,7 @@
       <workItem from="1578545498147" duration="13975000" />
       <workItem from="1578634930176" duration="8035000" />
       <workItem from="1578719753663" duration="15664000" />
-      <workItem from="1588143111570" duration="1529000" />
+      <workItem from="1588143111570" duration="5568000" />
     </task>
     <servers />
   </component>
@@ -520,7 +518,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165823000" />
+    <option name="totallyTimeSpent" value="169862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,15 +538,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.3512748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.3512748" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6642091" weight="0.34135976" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6635389" weight="0.34135976" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -587,19 +585,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/templatetags/my_tags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-247">
@@ -860,13 +845,6 @@
     <entry file="file://$PROJECT_DIR$/資料庫/180824_索引">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/基礎/180626_運算符.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -874,6 +852,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
         </state>
       </provider>
     </entry>

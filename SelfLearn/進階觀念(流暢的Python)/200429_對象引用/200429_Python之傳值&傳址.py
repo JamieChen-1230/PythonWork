@@ -27,3 +27,9 @@ def t(int_, float_, str_, bool_, bytes_, dict_, list_):
 t(int_, float_, str_, bool_, bytes_, dict_, list_)
 # 發現dict和list等可變序列，若在函數內有修改的話，則會影響到原本之序列
 print(int_, float_, str_, bool_, bytes_, dict_, list_)
+
+"""
+結論：
+一、若函數接收到的參數為可變類型，且需要對它進行修改的話，最好先建立該參數之副本，再對副本進行修改。
+    原因：因為這樣在函數內修改，才不會影響到函數外部之變量
+"""
