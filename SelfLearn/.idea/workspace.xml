@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="" />
+    <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$190119_IO.coverage" NAME="190119_自定義異步IO Coverage Results" MODIFIED="1547883202947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
     <SUITE FILE_PATH="coverage/SelfLearn$1.coverage" NAME="1 Coverage Results" MODIFIED="1553671636697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$190118_tornado.coverage" NAME="190118_tornado Coverage Results" MODIFIED="1547806472167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1588144588681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_.coverage" NAME="181027_源碼解析一 Coverage Results" MODIFIED="1540801298393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
     <SUITE FILE_PATH="coverage/SelfLearn$models.coverage" NAME="models Coverage Results" MODIFIED="1535442263161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_聚合函數/mysite/app01" />
     <SUITE FILE_PATH="coverage/SelfLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1548937014290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -85,27 +88,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/資料庫/180826_外鍵約束.txt">
+        <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="532">
+              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/資料庫/20200111_其他約束.txt">
+        <entry file="file://$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state relative-caret-position="408">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/資料庫/180824_索引">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1073" />
           </provider>
         </entry>
       </file>
@@ -162,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/爬蟲/190120_Scrapy框架總整理/scrapyTotal/scrapyTotal/middlewares.py" />
         <option value="$PROJECT_DIR$/爬蟲/190301_精通Scrapy網路爬蟲筆記/XPath.txt" />
         <option value="$PROJECT_DIR$/爬蟲/190301_精通Scrapy網路爬蟲筆記/變量解釋.txt" />
         <option value="$PROJECT_DIR$/爬蟲/190120_Scrapy框架總整理/scrapyTotal/scrapyTotal/settings.py" />
@@ -213,6 +208,7 @@
         <option value="$PROJECT_DIR$/資料庫/180826_約束.txt" />
         <option value="$PROJECT_DIR$/資料庫/練習範例數據(外鍵).txt" />
         <option value="$PROJECT_DIR$/資料庫/20200111_其他約束.txt" />
+        <option value="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
       </list>
     </option>
   </component>
@@ -251,6 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,13 +258,33 @@
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="資料庫" type="462c0819:PsiDirectoryNode" />
+              <item name="Git使用" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="基礎" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念釐清" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念釐清(流暢的Python)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念釐清(流暢的Python)" type="462c0819:PsiDirectoryNode" />
+              <item name="200429_對象引用" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.180619_While迴圈">
+  <component name="RunManager" selected="Python.200429_Python之傳值&amp;傳址">
     <configuration name="類的共享屬性" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -342,28 +359,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180619_While迴圈.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="180713_裝飾器" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180713_裝飾器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -416,20 +411,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="200429_Python之傳值&amp;傳址" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.180713_裝飾器" />
       <item itemvalue="Python.180724_實例屬性的增減改查" />
       <item itemvalue="Python.類的共享屬性" />
       <item itemvalue="Python.180725_組合" />
       <item itemvalue="Python.180619_While迴圈" />
+      <item itemvalue="Python.200429_Python之傳值&amp;傳址" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.200429_Python之傳值&amp;傳址" />
         <item itemvalue="Python.180619_While迴圈" />
         <item itemvalue="Python.180725_組合" />
         <item itemvalue="Python.類的共享屬性" />
         <item itemvalue="Python.180724_實例屬性的增減改查" />
-        <item itemvalue="Python.180713_裝飾器" />
       </list>
     </recent_temporary>
   </component>
@@ -484,6 +501,7 @@
       <workItem from="1578545498147" duration="13975000" />
       <workItem from="1578634930176" duration="8035000" />
       <workItem from="1578719753663" duration="15664000" />
+      <workItem from="1588143111570" duration="1529000" />
     </task>
     <servers />
   </component>
@@ -502,7 +520,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164294000" />
+    <option name="totallyTimeSpent" value="165823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,21 +533,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16487935" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16689008" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3512748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33512065" side_tool="true" visible="true" weight="0.34135976" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.6648794" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6642091" weight="0.34135976" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -568,20 +587,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/templates/show_time.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/templates/variable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -826,20 +831,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180824_外鍵約束">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="72" column="73" lean-forward="true" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180824_多表查詢">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/180824_外鍵約束" />
+    <entry file="file://$PROJECT_DIR$/資料庫/180824_多表查詢" />
     <entry file="file://$PROJECT_DIR$/資料庫/180825_多表查詢.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-728">
@@ -850,29 +843,37 @@
     <entry file="file://$PROJECT_DIR$/資料庫/190515_資料庫三范式">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/資料庫/180826_外鍵約束.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="280">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="9" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180824_索引">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1073" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/資料庫/20200111_其他約束.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        <state relative-caret-position="327">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/180824_索引">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180626_運算符.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
