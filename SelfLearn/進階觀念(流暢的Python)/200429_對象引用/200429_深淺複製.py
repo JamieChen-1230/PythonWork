@@ -48,6 +48,8 @@ bus1 = Bus(passengers)
 bus2 = Bus(passengers)
 bus1.pick("jamie")
 print(bus1.passenger, bus2.passenger)
+
+
 """
 結論：
 一、若容器有內包含其他可變類型，請慎用淺複製。

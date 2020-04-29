@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" beforeDir="false" afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" beforeDir="false" afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$181025_pandas.coverage" NAME="181025_pandas模塊 Coverage Results" MODIFIED="1540527759393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
     <SUITE FILE_PATH="coverage/SelfLearn$180713_.coverage" NAME="180713_裝飾器 Coverage Results" MODIFIED="1560675779252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$190124_LowScrapy.coverage" NAME="190124_自定義LowScrapy框架 Coverage Results" MODIFIED="1548407136542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析" />
-    <SUITE FILE_PATH="coverage/SelfLearn$200429_.coverage" NAME="200429_深淺複製 Coverage Results" MODIFIED="1588148545433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200429_.coverage" NAME="200429_深淺複製 Coverage Results" MODIFIED="1588148690516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用" />
     <SUITE FILE_PATH="coverage/SelfLearn$admin.coverage" NAME="admin Coverage Results" MODIFIED="1535507856834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180828_admin/mysite/app01" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_for_180713__test.coverage" NAME="pytest for 180713_裝飾器.test Coverage Results" MODIFIED="1557749155337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$180724_.coverage" NAME="180724_實例屬性的增減改查 Coverage Results" MODIFIED="1560687589236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180723_面向對象" />
@@ -90,20 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
+        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            <state relative-caret-position="107">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -210,8 +201,8 @@
         <option value="$PROJECT_DIR$/資料庫/練習範例數據(外鍵).txt" />
         <option value="$PROJECT_DIR$/資料庫/20200111_其他約束.txt" />
         <option value="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
-        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
       </list>
     </option>
   </component>
@@ -499,7 +490,7 @@
       <workItem from="1578545498147" duration="13975000" />
       <workItem from="1578634930176" duration="8035000" />
       <workItem from="1578719753663" duration="15664000" />
-      <workItem from="1588143111570" duration="5568000" />
+      <workItem from="1588143111570" duration="5703000" />
     </task>
     <servers />
   </component>
@@ -518,7 +509,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169862000" />
+    <option name="totallyTimeSpent" value="169997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,20 +524,20 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16689008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16689008" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.3512748" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6635389" weight="0.34135976" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33713138" side_tool="true" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6628686" visible="true" weight="0.34135976" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -862,17 +853,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="79">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        <state relative-caret-position="107">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
