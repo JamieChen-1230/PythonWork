@@ -31,7 +31,7 @@ def student():
     def info():
         # 在function scope中，當變數被賦值時，Python會自動將變數設定為區域變數。
         # 但在info中卻找不到height、weight等區域變數，因此會報錯。
-        # captured variable在Python中並非區域或全域變數，所以只能用nonlocal去宣告變數，才能進行其他操作。
+        # captured variable在Python中並非區域或全域變數，所以只能用nonlocal去宣告變數，才能進行修改操作。
         nonlocal height
         nonlocal weight
         height += 1

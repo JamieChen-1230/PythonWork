@@ -37,6 +37,7 @@ def scope1():
 scope1()
 print(c)  # => 1
 
+
 # -----------Enclosed Scope-----------
 # 依據巢狀層次從內到外搜尋，Python會從最近的enclosing scope向外找起，enclosing scopes裡的變數，稱作non-local variable。
 def outer(a):
@@ -50,6 +51,7 @@ def outer(a):
             return b+c
         return inner_inner
     return inner
+
 
 outcome = outer(5)
 ans = outcome()

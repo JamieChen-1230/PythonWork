@@ -38,7 +38,7 @@ def auth(auth_type="local"):
 # 這邊做了兩步驟：
 # (1) @auth() ---> auth_func = auth(auth_type = "local")
 # (2) @auth_func(且附加了auth_type) ---> index = auth_func(index)
-# 相當於執行了：auth(auth_type="local")(index)
+# 相當於執行了：index = auth(auth_type="local")(index)
 @auth()
 def index():
     print("歡迎來到主頁")
@@ -57,3 +57,12 @@ def shopping_car(name):
 index()
 home("jamie")
 shopping_car("jamie")
+
+
+"""
+結論：
+    一、裝飾器(無參數)的基本架構為【高階函數+函數嵌套+閉包】。
+    二、有參數化的裝飾器至少會有兩層嵌套。
+        deco_2 = deco_1(裝飾器之參數設定)
+        test = deco_2(test)
+"""
