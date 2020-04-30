@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200425_基礎知識.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200426_何時運行裝飾器.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200426_高階函數.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200427_函數嵌套.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200409_賦值.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,16 +19,17 @@
     <SUITE FILE_PATH="coverage/SelfLearn$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1588144588681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_.coverage" NAME="181027_源碼解析一 Coverage Results" MODIFIED="1540801298393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
     <SUITE FILE_PATH="coverage/SelfLearn$models.coverage" NAME="models Coverage Results" MODIFIED="1535442263161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_聚合函數/mysite/app01" />
-    <SUITE FILE_PATH="coverage/SelfLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1548937014290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SelfLearn$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1551928649219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190120_Scrapy框架總整理/scrapyTotal" />
+    <SUITE FILE_PATH="coverage/SelfLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1588233658641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_in___py.coverage" NAME="pytest in 傳值&amp;傳址.py Coverage Results" MODIFIED="1553671676803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$CS1601_.coverage" NAME="CS1601_陳俊宇 Coverage Results" MODIFIED="1553524103852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SelfLearn$190116_.coverage" NAME="190116_多進程實現併發請求 Coverage Results" MODIFIED="1547788122527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
     <SUITE FILE_PATH="coverage/SelfLearn$181025_pandas.coverage" NAME="181025_pandas模塊 Coverage Results" MODIFIED="1540527759393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
     <SUITE FILE_PATH="coverage/SelfLearn$200426_.coverage" NAME="200426_高階函數 Coverage Results" MODIFIED="1588208951504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$180713_.coverage" NAME="180713_裝飾器 Coverage Results" MODIFIED="1560675779252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200430_.coverage" NAME="200430_模仿認證功能裝飾器 Coverage Results" MODIFIED="1588232873892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$190124_LowScrapy.coverage" NAME="190124_自定義LowScrapy框架 Coverage Results" MODIFIED="1548407136542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析" />
-    <SUITE FILE_PATH="coverage/SelfLearn$200429_.coverage" NAME="200429_裝飾器 Coverage Results" MODIFIED="1588218975946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200429_.coverage" NAME="200429_裝飾器 Coverage Results" MODIFIED="1588219302803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$admin.coverage" NAME="admin Coverage Results" MODIFIED="1535507856834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180828_admin/mysite/app01" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_for_180713__test.coverage" NAME="pytest for 180713_裝飾器.test Coverage Results" MODIFIED="1557749155337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$180724_.coverage" NAME="180724_實例屬性的增減改查 Coverage Results" MODIFIED="1560687589236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180723_面向對象" />
@@ -57,6 +52,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$200409_.coverage" NAME="200409_賦值 Coverage Results" MODIFIED="1588154419431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用" />
     <SUITE FILE_PATH="coverage/SelfLearn$180706_.coverage" NAME="180706_內置函數 Coverage Results" MODIFIED="1560672361171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$200425_.coverage" NAME="200425_基礎知識 Coverage Results" MODIFIED="1588206418473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200430___.coverage" NAME="200430_模仿認證功能裝飾器(有參數) Coverage Results" MODIFIED="1588233479681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$views.coverage" NAME="views Coverage Results" MODIFIED="1535422116577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_多表操作/mysite/app01" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_helloworld__1_.coverage" NAME="181027_helloworld (1) Coverage Results" MODIFIED="1540799655474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
     <SUITE FILE_PATH="coverage/SelfLearn$190112_BeautifulSoup.coverage" NAME="190112_BeautifulSoup詳細使用 Coverage Results" MODIFIED="1547620570111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
@@ -104,17 +100,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="152" lean-forward="true" selection-start-line="75" selection-end-line="152" />
+            <state relative-caret-position="307">
+              <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py">
+        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+            <state relative-caret-position="-40">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -172,9 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基礎/190615_列表解析.py" />
-        <option value="$PROJECT_DIR$/基礎/190615_解析式.py" />
-        <option value="$PROJECT_DIR$/基礎/180703_函數.py" />
         <option value="$PROJECT_DIR$/基礎/180703_字符串格式化.py" />
         <option value="$PROJECT_DIR$/基礎/180704_全局、局部變量.py" />
         <option value="$PROJECT_DIR$/基礎/180704_函數遞歸.py" />
@@ -223,6 +216,9 @@
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_裝飾器.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py" />
+        <option value="$PROJECT_DIR$/Git使用/筆記.txt" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器.py" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py" />
       </list>
     </option>
   </component>
@@ -336,73 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200429_裝飾器">
-    <configuration name="200427_函數嵌套" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200427_函數嵌套.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="200428_變量作用域" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="200428_閉包" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="200429_裝飾器" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -447,6 +377,72 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="200430_模仿認證功能裝飾器" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="200430_模仿認證功能裝飾器(有參數)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in 200429_裝飾器.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -464,19 +460,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.200427_函數嵌套" />
-      <item itemvalue="Python.200428_變量作用域" />
-      <item itemvalue="Python.200428_閉包" />
       <item itemvalue="Python tests.pytest in 200429_裝飾器.py" />
       <item itemvalue="Python.200429_裝飾器" />
+      <item itemvalue="Python.200430_模仿認證功能裝飾器" />
+      <item itemvalue="Python.200430_模仿認證功能裝飾器(有參數)" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.200430_模仿認證功能裝飾器(有參數)" />
+        <item itemvalue="Python.200430_模仿認證功能裝飾器" />
         <item itemvalue="Python.200429_裝飾器" />
         <item itemvalue="Python tests.pytest in 200429_裝飾器.py" />
-        <item itemvalue="Python.200428_閉包" />
-        <item itemvalue="Python.200428_變量作用域" />
-        <item itemvalue="Python.200427_函數嵌套" />
       </list>
     </recent_temporary>
   </component>
@@ -533,7 +529,7 @@
       <workItem from="1578719753663" duration="15664000" />
       <workItem from="1588143111570" duration="9779000" />
       <workItem from="1588165431045" duration="1241000" />
-      <workItem from="1588204690644" duration="9824000" />
+      <workItem from="1588204690644" duration="12388000" />
     </task>
     <servers />
   </component>
@@ -555,7 +551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185138000" />
+    <option name="totallyTimeSpent" value="187702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,22 +564,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17091152" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49463806" visible="true" weight="0.3512748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49329758" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5053619" side_tool="true" visible="true" weight="0.3512748" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.66018766" weight="0.33569404" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5067024" side_tool="true" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6595174" weight="0.33569404" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -622,20 +617,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板繼承extend&amp;添加標籤include/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180822_ORM單表操作/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django)/180822_ORM單表操作/mysite/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -795,13 +776,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
-    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/觀念釐清/類的共享屬性.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1741" />
@@ -862,13 +836,6 @@
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_裝飾器.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="152" lean-forward="true" selection-start-line="75" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200427_函數嵌套.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -899,8 +866,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1892">
+          <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
