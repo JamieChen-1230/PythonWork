@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +39,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$run.coverage" NAME="run Coverage Results" MODIFIED="1549946502428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/190211_PChome/myscrapy" />
     <SUITE FILE_PATH="coverage/SelfLearn$180712___.coverage" NAME="180712_跌代器&amp;生成器&amp;三元表達式 Coverage Results" MODIFIED="1560674368113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$180703_.coverage" NAME="180703_字符串格式化 Coverage Results" MODIFIED="1560666041807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200502_.coverage" NAME="200502_單分派泛函數 Coverage Results" MODIFIED="1588553916680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_helloworld.coverage" NAME="181027_helloworld Coverage Results" MODIFIED="1540798464790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Tornado)" />
     <SUITE FILE_PATH="coverage/SelfLearn$190615_.coverage" NAME="190615_列表解析 Coverage Results" MODIFIED="1560585012884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$180705__.coverage" NAME="180705_函數作用域&amp;匿名函數 Coverage Results" MODIFIED="1560666838620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
@@ -80,7 +82,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$run__2_.coverage" NAME="run (2) Coverage Results" MODIFIED="1550728183263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/190213_ezTravel/myscrapy" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_in_200429__py.coverage" NAME="pytest in 200429_裝飾器.py Coverage Results" MODIFIED="1588218416679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$180704_.coverage" NAME="180704_函數遞歸 Coverage Results" MODIFIED="1560666468291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
-    <SUITE FILE_PATH="coverage/SelfLearn$200502_functools_lru_cache.coverage" NAME="200502_functools.lru_cache Coverage Results" MODIFIED="1588249030795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200502_functools_lru_cache.coverage" NAME="200502_functools.lru_cache Coverage Results" MODIFIED="1588552150298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$180720_re.coverage" NAME="180720_re模塊 Coverage Results" MODIFIED="1550741365353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
   </component>
   <component name="DatabaseView">
@@ -98,12 +100,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="896">
+              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
               <folding>
                 <element signature="e#298#309#0" expanded="true" />
               </folding>
@@ -111,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="60" />
+            <state relative-caret-position="268">
+              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -173,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基礎/180706_內置函數.py" />
         <option value="$PROJECT_DIR$/基礎/180712_跌代器&amp;生成器&amp;三元表達式.py" />
         <option value="$PROJECT_DIR$/基礎/180713_裝飾器.py" />
         <option value="$PROJECT_DIR$/基礎/180723_面向對象/180723_面向對象練習一.py" />
@@ -224,6 +225,7 @@
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器(有參數).py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py" />
       </list>
     </option>
   </component>
@@ -262,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,7 +297,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,29 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200502_functools.lru_cache">
-    <configuration name="200429_元組的相對不可變性" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_元組的相對不可變性.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.200502_單分派泛函數">
     <configuration name="200430_模仿認證功能裝飾器(有參數)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -421,6 +401,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="200502_單分派泛函數" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SelfLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="200502_functools.lru_cache" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -468,15 +470,15 @@
     <list>
       <item itemvalue="Python.200430_模仿認證功能裝飾器(有參數)" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.200430_模仿計時裝飾器(有參數)" />
       <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
       <item itemvalue="Python.200502_functools.lru_cache" />
+      <item itemvalue="Python.200502_單分派泛函數" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.200502_單分派泛函數" />
         <item itemvalue="Python.200502_functools.lru_cache" />
         <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
-        <item itemvalue="Python.200430_模仿計時裝飾器(有參數)" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.200430_模仿認證功能裝飾器(有參數)" />
       </list>
@@ -535,7 +537,8 @@
       <workItem from="1578719753663" duration="15664000" />
       <workItem from="1588143111570" duration="9779000" />
       <workItem from="1588165431045" duration="1241000" />
-      <workItem from="1588204690644" duration="19099000" />
+      <workItem from="1588204690644" duration="19773000" />
+      <workItem from="1588551854738" duration="2102000" />
     </task>
     <servers />
   </component>
@@ -557,7 +560,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194413000" />
+    <option name="totallyTimeSpent" value="197189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -572,20 +575,20 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1816354" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18364611" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4919571" visible="true" weight="0.3512748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49128687" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5080429" side_tool="true" visible="true" weight="0.3512748" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65817696" weight="0.33569404" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5087131" side_tool="true" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65683645" weight="0.30169973" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -624,13 +627,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180822_ORM單表操作/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django)/180822_ORM單表操作/mysite/app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
@@ -790,16 +786,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_裝飾器/180713_裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2828">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_裝飾器/180713_裝飾器.py" />
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_裝飾器.py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200427_函數嵌套.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -849,25 +837,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py" />
     <entry file="file://$PROJECT_DIR$/基礎/180713_裝飾器.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6928" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -875,9 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器.py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器基本架構.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-224">
@@ -892,13 +866,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器(有參數).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器(有參數).py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -915,11 +883,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="896">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding>
             <element signature="e#298#309#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
         </state>
       </provider>
     </entry>

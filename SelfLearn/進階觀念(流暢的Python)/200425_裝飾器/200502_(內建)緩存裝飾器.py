@@ -40,7 +40,7 @@ print("------------------------------------------------")
 
 # ---------有使用緩存---------
 # 費波納西數列
-@functools.lru_cache()
+@functools.lru_cache(maxsize=128, typed=False)
 @check
 def fibonacci(n):
     if n > 1:
