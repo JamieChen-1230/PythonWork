@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/筆記/Django/網頁筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/筆記/Django/網頁筆記.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SelfLearn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SelfLearn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django基礎指令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django基礎指令.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/MTV概念/MTV筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/MTV概念/MTV筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,11 +105,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/MTV概念/MTV筆記.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="336">
+              <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="83" />
+              <folding>
+                <element signature="e#8#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/app01/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="48" column="69" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -162,9 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基礎/180619_While迴圈.py" />
-        <option value="$PROJECT_DIR$/基礎/180626_運算符.py" />
-        <option value="$PROJECT_DIR$/基礎/180626_基本數據類型/180626_基本數據類型.py" />
         <option value="$PROJECT_DIR$/框架(Django)/TEST複習/TestSite/TestSite/urls.py" />
         <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/templates/no_alias_register.html" />
@@ -210,9 +236,12 @@
         <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/app01/views.py" />
         <option value="$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/templates/variable.html" />
         <option value="$PROJECT_DIR$/筆記/Django/網頁筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django基礎指令.txt" />
         <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django創建步驟.txt" />
         <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/MTV概念/MTV筆記.txt" />
+        <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django基礎指令.txt" />
+        <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/app01/views.py" />
+        <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt" />
       </list>
     </option>
   </component>
@@ -273,53 +302,6 @@
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
-              <item name="180820_url控制&amp;views" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
-              <item name="180830_學員管理系統" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
-              <item name="180830_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
-              <item name="180830_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
-              <item name="180830_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="筆記" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="筆記" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="總複習與進階觀念(流暢的Python)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -340,8 +322,7 @@
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="總複習與進階觀念(流暢的Python)" type="462c0819:PsiDirectoryNode" />
               <item name="200504_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_基礎筆記" type="462c0819:PsiDirectoryNode" />
-              <item name="MTV概念" type="462c0819:PsiDirectoryNode" />
+              <item name="200505_url控制" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -358,7 +339,7 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -588,7 +569,7 @@
       <workItem from="1588143111570" duration="9779000" />
       <workItem from="1588165431045" duration="1241000" />
       <workItem from="1588204690644" duration="19773000" />
-      <workItem from="1588551854738" duration="15310000" />
+      <workItem from="1588551854738" duration="19582000" />
     </task>
     <servers />
   </component>
@@ -610,7 +591,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210397000" />
+    <option name="totallyTimeSpent" value="214669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -638,7 +619,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34517425" side_tool="true" weight="0.30169973" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" weight="0.30169973" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" visible="true" weight="0.30169973" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -677,40 +658,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200425_基礎知識.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200426_高階函數.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180713_裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6928" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -938,38 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/筆記/Django/網頁筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1372">
-          <caret line="76" column="18" lean-forward="true" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/Django筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1056">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django)/180830_學員管理系統/mysite/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-716">
           <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django創建步驟.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1960">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django基礎指令.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -978,8 +897,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/MTV概念/MTV筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="215">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django基礎指令.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/筆記/Django/網頁筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1923">
+          <caret line="76" column="18" lean-forward="true" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/Django筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-812">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180713_裝飾器.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200504_基礎筆記/Django創建步驟.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="83" />
+          <folding>
+            <element signature="e#8#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/app01/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/mysite/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="48" column="69" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>

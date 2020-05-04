@@ -6,8 +6,8 @@
     範例：django-admin startproject mysite
 
 創建APP：
-    指令：python mannage.py startapp <<APP名>>
-    範例：python mannage.py startapp app01
+    指令：python manage.py startapp <<APP名>>
+    範例：python manage.py startapp app01
 
 啟動項目（測試網頁）：
     指令：python manage.py runserver <<端口>>
