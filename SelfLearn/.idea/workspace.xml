@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +74,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_for___test.coverage" NAME="pytest for 傳值&amp;傳址.test Coverage Results" MODIFIED="1553671529787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$.coverage" NAME="類的共享屬性 Coverage Results" MODIFIED="1560690106827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$CS1601___1_.coverage" NAME="CS1601_陳俊宇 (1) Coverage Results" MODIFIED="1553524314592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/SelfLearn$200501___.coverage" NAME="200501_模仿計時裝飾器(多層裝飾器) Coverage Results" MODIFIED="1588236377097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/SelfLearn$200501___.coverage" NAME="200501_模仿計時裝飾器(多層裝飾器) Coverage Results" MODIFIED="1588566267747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$engine.coverage" NAME="engine Coverage Results" MODIFIED="1548663458763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架" />
     <SUITE FILE_PATH="coverage/SelfLearn$_.coverage" NAME="傳值&amp;傳址 Coverage Results" MODIFIED="1553672743843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$190110_.coverage" NAME="190110_抽屜自動登入 Coverage Results" MODIFIED="1547612695879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
@@ -101,25 +100,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/180715_模塊基本架構介紹.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1008" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/基礎/180706_內置函數.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4009" />
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py">
+        <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="110">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding>
+                <element signature="e#640#672#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基礎/180713_裝飾器.py" />
-        <option value="$PROJECT_DIR$/基礎/180723_面向對象/180723_面向對象練習一.py" />
         <option value="$PROJECT_DIR$/基礎/180723_面向對象/180724_實例屬性的增減改查.py" />
         <option value="$PROJECT_DIR$/觀念釐清/類的共享屬性.py" />
         <option value="$PROJECT_DIR$/基礎/180723_面向對象/180725_多重繼承順序.py" />
@@ -187,7 +173,6 @@
         <option value="$PROJECT_DIR$/基礎/180626_運算符.py" />
         <option value="$PROJECT_DIR$/基礎/180626_基本數據類型/180626_基本數據類型.py" />
         <option value="$PROJECT_DIR$/框架(Django)/TEST複習/TestSite/TestSite/urls.py" />
-        <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/app01/views.py" />
         <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/templates/no_alias_register.html" />
         <option value="$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/views.py" />
@@ -228,6 +213,9 @@
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py" />
+        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py" />
+        <option value="$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/app01/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/templates/variable.html" />
       </list>
     </option>
   </component>
@@ -277,23 +265,7 @@
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="Git使用" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="基礎" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="進階觀念(流暢的Python)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="進階觀念(流暢的Python)" type="462c0819:PsiDirectoryNode" />
-              <item name="200503_內置函數" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,15 +285,15 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\kingadmin\templates\kingadmin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190120_Scrapy框架總整理\scrapyTotal\scrapyTotal" />
       <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190120_Scrapy框架總整理\scrapyTotal" />
       <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190211_爬蟲練習\190213_ezTravel\myscrapy" />
       <recent name="D:\PythonWork\SelfLearn\爬蟲\190123_Scrapy源碼分析\190125_自定義TinyScrapy框架\spider" />
       <recent name="D:\PythonWork\SelfLearn\爬蟲\190119_Scrapy框架" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\kingadmin\templates\kingadmin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,7 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200503_repr&amp;str">
+  <component name="RunManager" selected="Python.200501_模仿計時裝飾器(多層裝飾器)">
     <configuration name="200430_模仿計時裝飾器(有參數)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -478,10 +450,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
         <item itemvalue="Python.200503_repr&amp;str" />
         <item itemvalue="Python.200502_單分派泛函數" />
         <item itemvalue="Python.200502_functools.lru_cache" />
-        <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -540,7 +512,7 @@
       <workItem from="1588143111570" duration="9779000" />
       <workItem from="1588165431045" duration="1241000" />
       <workItem from="1588204690644" duration="19773000" />
-      <workItem from="1588551854738" duration="5016000" />
+      <workItem from="1588551854738" duration="10476000" />
     </task>
     <servers />
   </component>
@@ -562,7 +534,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200103000" />
+    <option name="totallyTimeSpent" value="205563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,20 +548,20 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18364611" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18364611" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49061662" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899464" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5093834" side_tool="true" visible="true" weight="0.3512748" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6561662" weight="0.30169973" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34517425" side_tool="true" visible="true" weight="0.30169973" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" visible="true" weight="0.30169973" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -628,134 +600,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架(Django)/Django筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-934">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e542fefc-e133-4efa-a7f2-13a5199771a6/schema/main/table/sqlite_master" />
-    <entry file="file://$PROJECT_DIR$/資料庫/180825_pymysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180823_數據表操作">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/模塊/180720_re模塊.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180823_數據庫操作">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/200110_用戶權限.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180823_數據表紀錄操作">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="151" column="5" lean-forward="true" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/練習範例數據.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/練習範例數據(多表).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="58" column="39" lean-forward="true" selection-end-line="60" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/練習範例數據(外鍵).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180824_外鍵約束" />
-    <entry file="file://$PROJECT_DIR$/資料庫/180824_多表查詢" />
-    <entry file="file://$PROJECT_DIR$/資料庫/180825_多表查詢.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/190515_資料庫三范式">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180826_外鍵約束.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/20200111_其他約束.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/180824_索引">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/180626_運算符.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
-    <entry file="file://$PROJECT_DIR$/觀念釐清/類的共享屬性.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1741" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_深淺複製.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_Python之傳值&amp;傳址.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200429_元組的相對不可變性.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200429_對象引用/200409_賦值.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-420">
@@ -844,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
@@ -889,9 +726,18 @@
         <state relative-caret-position="-588" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/180715_模塊基本架構介紹.py">
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008" />
+        <state relative-caret-position="415">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/基礎/180706_內置函數.py">
@@ -899,10 +745,154 @@
         <state relative-caret-position="-4009" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py">
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/180715_模塊基本架構介紹.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="-1008" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/restful規範.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1332" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/templates/show_time.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/筆記/Django/網頁筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/筆記/Django/MTV流程.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/Django筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="e#8#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/templates/no_alias_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/templates/alias_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180820_url控制&amp;views/mysite/app01/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/templates/variable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/templates/label.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/templatetags/my_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180821_模板(T)/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#640#672#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
