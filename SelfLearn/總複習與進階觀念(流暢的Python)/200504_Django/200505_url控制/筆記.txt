@@ -37,3 +37,9 @@
             範例：redirect("/login/")
             網址是否會改變：是
             login函式內的其他程序是否會被執行：會
+
+    三、request：
+        - request.GET：接收前端傳來的GET數據。
+        - request.POST：接收前端傳來的POST數據。
+        - request.method：前端傳回數據的方式。
+
