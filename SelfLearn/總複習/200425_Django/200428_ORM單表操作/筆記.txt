@@ -115,4 +115,6 @@
                 結果：<QuerySet [<Book: test>, <Book: js>, <Book: test>]>
 
 
-
+總結：
+    一、一個Model類代表資料庫中的一張表。
+    二、Model類的對象代指資料庫的一行數據。

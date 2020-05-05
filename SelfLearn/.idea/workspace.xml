@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,28 +104,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="14" />
+            <state relative-caret-position="84">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt">
+        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+            <state relative-caret-position="307">
+              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -230,7 +216,6 @@
         <option value="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django基礎指令.txt" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/app01/models.py" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/app01/views.py" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/mysite/urls.py" />
@@ -239,6 +224,7 @@
         <option value="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" />
       </list>
     </option>
   </component>
@@ -319,6 +305,13 @@
               <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
               <item name="200425_基礎筆記" type="462c0819:PsiDirectoryNode" />
               <item name="Django_ORM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="總複習" type="462c0819:PsiDirectoryNode" />
+              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="200428_ORM單表操作" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
@@ -616,7 +609,7 @@
       <workItem from="1588165431045" duration="1241000" />
       <workItem from="1588204690644" duration="19773000" />
       <workItem from="1588551854738" duration="20791000" />
-      <workItem from="1588645189882" duration="17358000" />
+      <workItem from="1588645189882" duration="17433000" />
     </task>
     <servers />
   </component>
@@ -638,7 +631,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233236000" />
+    <option name="totallyTimeSpent" value="233311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -973,13 +966,6 @@
         <state relative-caret-position="-840" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1541">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e98af88b-9e6a-41f5-b960-d7a498eea1be/schema/main/table/app01_author">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1023,13 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/mysite/app01/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1037,17 +1016,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt">
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="14" />
+          <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt">
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+        <state relative-caret-position="224">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
         </state>
       </provider>
     </entry>
