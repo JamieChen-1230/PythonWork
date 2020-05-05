@@ -105,7 +105,11 @@
     七、load 語法：加載標籤庫
         - 後端：
             - 自定義標籤庫：
-                要在App應用資料夾內創建templatetags資料夾，並在其中在創建 標籤文件.py
+                a、在app中創建templatetags資料夾(必要的)
+                b、創建任意 .py 文件，如：my_tags.py
+                c、(在檔案開頭導入)在使用自定義simple_tag和filter的html文件中導入之前創建的my_tags.py  EX：{% load my_tags %}
+                d、使用simple_tag和filter
+                e、在settings中的INSTALLED_APPS配置當前app，不然django無法找到自定義的simple_tag
         - 模板：
             - {% load <<標籤文件名>> %}：加載標籤文件，此行要加在html文檔最上方
 
@@ -126,7 +130,9 @@
                 def simple_tag_multi(x, y, z):
                     print(x, y, z)
                     return x*y*z
-
         - 模板：
             - {{ d.age|filter_multi:2 }}
             - {% simple_tag_multi d.age 2 3 %}
+
+    九、引用路由配置的地址(別名)：
+        - 模板：<form action="{% url 'show_time' %}" method="post"></form>

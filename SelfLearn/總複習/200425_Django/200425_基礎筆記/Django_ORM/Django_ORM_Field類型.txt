@@ -1,0 +1,104 @@
+﻿<1> CharField
+# 字符串字段,用於較短的字符串.
+# CharField要求必須有一個參數maxlength,用於從數據庫層和Django校驗層限制該字段所允許的最大字符數.
+
+<2> IntegerField
+# 用於保存一個整數.
+
+<3> FloatField
+# 一個浮點數.必須提供兩個參數:
+#
+# 參數描述
+# max_digits總位數(不包括小數點和符號)
+# decimal_places小數位數
+# 舉例來說,要保存最大值為999 (小數點後保存2位),你要這樣定義字段:
+#
+# models.FloatField(..., max_digits=5, decimal_places=2)
+# 要保存最大值一百萬(小數點後保存10位)的話,你要這樣定義:
+#
+# models.FloatField(..., max_digits=19, decimal_places=10)
+# admin用一個文本框(<input type="text">)表示該字段保存的數據.
+
+<4> AutoField
+# 一個IntegerField,添加記錄時它會自動增長.你通常不需要直接使用這個字段;
+# 自定義一個主鍵：my_id=models.AutoField(primary_key=True)
+# 如果你不指定主鍵的話,系統會自動添加一個主鍵字段到你的model.
+
+<5> BooleanField
+# A true/false field. admin用checkbox來表示此類字段.
+
+<6> TextField
+# 一個容量很大的文本字段.
+# admin用一個<textarea> (文本區域)表示該字段數據.(一個多行編輯框).
+
+<7> EmailField
+# 一個帶有檢查Email合法性的CharField,不接受maxlength參數.
+
+<8> DateField
+# 一個日期字段.共有下列額外的可選參數:
+# Argument描述
+# auto_now當對像被保存時,自動將該字段的值設置為當前時間.通常用於表示"last-modified"時間戳.
+# auto_now_add當對象首次被創建時,自動將該字段的值設置為當前時間.通常用於表示對象創建時間.
+# （僅僅在admin中有意義...)
+
+<9> DateTimeField
+#   一個日期時間字段.類似DateField支持同樣的附加選項.
+
+<10> ImageField
+# 類似FileField,不過要校驗上傳對像是否是一個合法圖片.#它有兩個可選參數:height_field和width_field,
+# 如果提供這兩個參數,則圖片將按提供的高度和寬度規格保存.
+<11> FileField
+# 一個文件上傳字段.
+# 要求一個必須有的參數: upload_to,一個用於保存上載文件的本地文件系統路徑.這個路徑必須包含strftime #formatting,
+# 該格式將被上載文件的date/time
+# 替換(so that uploaded files don't fill up the given directory).
+# admin用一個<input type="file">部件表示該字段保存的數據(一個文件上傳部件) .
+
+# 注意：在一個model中使用FileField或ImageField需要以下步驟:
+# （1）在你的settings文件中,定義一個完整路徑給MEDIA_ROOT以便讓Django在此處保存上傳文件.
+# (出於性能考慮,這些文件並不保存到數據庫.)定義MEDIA_URL作為該目錄的公共URL.要確保該目錄對
+#   WEB服務器用戶帳號是可寫的.
+# （2）在你的model中添加FileField或ImageField,並確保定義了upload_to選項,以告訴Django
+# 使用MEDIA_ROOT的哪個子目錄保存上傳文件.你的數據庫中要保存的只是文件的路徑(相對於MEDIA_ROOT).
+# 出於習慣你一定很想使用Django提供的get_<#fieldname >_url函數.舉例來說,如果你的ImageField
+# 叫作mug_shot,你就可以在模板中以{{ object.#get_mug_shot_url }}這樣的方式得到圖像的絕對路徑.
+
+<12> URLField
+# 用於保存URL.若verify_exists參數為True (默認),給定的URL會預先檢查是否存在(即URL是否被有效裝入且
+# 沒有返回404響應).
+# admin用一個<input type="text">文本框表示該字段保存的數據(一個單行編輯框)
+
+<13> NullBooleanField
+# 類似BooleanField,不過允許NULL作為其中一個選項.推薦使用這個字段而不要用BooleanField加null=True選項
+# admin用一個選擇框<select> (三個可選擇的值: "Unknown", "Yes"和"No" )來表示這種字段數據.
+
+<14> SlugField
+# "Slug"是一個報紙術語. slug是某個東西的小小標記(短簽),只包含字母,數字,下劃線和連字符.#它們通常用於URLs
+# 若你使用Django開發版本,你可以指定maxlength.若maxlength未指定, Django會使用默認長度: 50. #在
+# 以前的Django版本,沒有任何辦法改變50這個長度.
+# 這暗示了db_index=True.
+# 它接受一個額外的參數: prepopulate_from, which is a list of fields from which to auto-#populate
+# the slug, via JavaScript,in the object's admin form: models.SlugField
+# (prepopulate_from=("pre_name", "name"))prepopulate_from不接受DateTimeFields.
+
+<13> XMLField
+# 一個校驗值是否為合法XML的TextField,必須提供參數: schema_path,它是一個用來校驗文本的RelaxNG schema #的文件系統路徑.
+
+<14> FilePathField
+# 可選項目為某個特定目錄下的文件名.支持三個特殊的參數,其中第一個是必須提供的.
+# 參數描述
+# path必需參數.一個目錄的絕對文件系統路徑. FilePathField據此得到可選項目.
+# Example: "/home/images".
+# match可選參數.一個正則表達式,作為一個字符串, FilePathField將使用它過濾文件名.
+# 注意這個正則表達式只會應用到base filename而不是
+# 路徑全名. Example: "foo.*\.txt^",將匹配文件foo23.txt卻不匹配bar.txt或foo23.gif.
+# recursive可選參數.要么True要么False .默認值是False.是否包括path下面的全部子目錄.
+# 這三個參數可以同時使用.
+# match僅應用於base filename,而不是路徑全名.那麼,這個例子:
+# FilePathField(path="/ home/images", match="foo.*", recursive=True)
+# ...會匹配/home/images/foo.gif 而不匹配/home/images/foo/bar.gif
+
+<15> IPAddressField
+# 一個字符串形式的IP地址, (ie "24.124.1.30").
+
+
