@@ -57,7 +57,12 @@
     三、改(update)：
         models.Books.objects.filter(name='c++').update(price=666)
 
-    四、查(search)：
+    四、重置(set)：
+        ※ 刪除所有與id=3書籍的作者關聯後，再加上與id=1的作者關聯。
+            obj_book = models.Books.objects.get(id=3)
+            obj_book.authors.set(1)
+
+    五、查(search)：
         - 找出id=3書籍的所有關聯作者對象的名字：
             obj_book = models.Books.objects.get(id=3)
             obj_book.authors.all().values('name')
@@ -68,3 +73,13 @@
                 obj_author.books_set.all().values('name')
             - 方法二：雙下滑線__，形式和一對多相同
                 models.Books.objects.filter(authors__name='jamie').values('name', 'price')
+
+
+總結：
+    一、一個Model類代表資料庫中的一張表。
+    二、Model類的對象代指資料庫的一行數據。
+    三、ManyToManyField會自動生成第三張表，依賴關聯對第三張表進行間接操作。
+    四、ManyToManyField代指關聯表的數據(Model類的對象)。
+        - 正向：ManyToManyField字段
+        - 反向：小寫表名_set
+    ※ 多多利用雙下划線

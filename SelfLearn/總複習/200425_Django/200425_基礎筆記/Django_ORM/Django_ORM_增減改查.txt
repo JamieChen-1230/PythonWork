@@ -85,4 +85,3 @@ list_cls_name = list_cls.values('name')
 
 
 
-

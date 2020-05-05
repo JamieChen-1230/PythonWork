@@ -44,7 +44,7 @@
         models.Books.objects.filter(name='c++').update(price=666)
 
     四、查(search)：
-        * 一對多：obj_book.publish(外鍵)一定是一個外鍵對象(Publisher object)。
+        ※ 一對多：obj_book.publish(外鍵)一定是一個外鍵對象(Publisher object)。
         - 找出吉米出版社出的書：
             - 方法一：
                 obj_publisher = models.Publisher.objects.get(name='吉米出版社')
@@ -96,3 +96,11 @@
                 - 原因：
                     相當於在Python層面上的進行join，因此該操作允許多對多關係以及反向關係，而這是select_related無法做到的。
 
+
+總結：
+    一、一個Model類代表資料庫中的一張表。
+    二、Model類的對象代指資料庫的一行數據。
+    三、ForeignKey代指關聯表的一行數據(Model類的對象)。
+        - 正向：ForeignKey字段
+        - 反向：小寫表名_set
+    ※ 多多利用雙下划線
