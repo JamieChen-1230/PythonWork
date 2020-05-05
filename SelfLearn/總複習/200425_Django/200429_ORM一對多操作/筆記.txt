@@ -32,7 +32,7 @@
 視圖(views)：
     一、增(add)：
         - 方法一：
-             Book.objects.create(name='c++', price=999, publish_id=1)
+             models.Book.objects.create(name='c++', price=999, publish_id=1)
         - 方法二：
              obj_publisher = models.Publisher.objects.get(name='台灣出版社')
              models.Books.objects.create(name='c++', price=455, publish=obj_publisher)
