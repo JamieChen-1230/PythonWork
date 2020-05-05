@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state relative-caret-position="215">
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -251,7 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,6 +318,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,6 +490,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.200430_模仿計時裝飾器(有參數)" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
       <item itemvalue="Python.200502_functools.lru_cache" />
@@ -559,7 +561,8 @@
       <workItem from="1588143111570" duration="9779000" />
       <workItem from="1588165431045" duration="1241000" />
       <workItem from="1588204690644" duration="19773000" />
-      <workItem from="1588551854738" duration="20172000" />
+      <workItem from="1588551854738" duration="20791000" />
+      <workItem from="1588645189882" duration="63000" />
     </task>
     <servers />
   </component>
@@ -581,7 +584,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215259000" />
+    <option name="totallyTimeSpent" value="215941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,7 +599,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18364611" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18632708" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -649,62 +652,15 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py" />
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器.py" />
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器基本架構.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器基本架構.py" />
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py" />
     <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器(有參數).py" />
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="e#298#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_(內建)緩存裝飾器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#298#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py" />
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" />
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py" />
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_(內建)緩存裝飾器.py" />
     <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-331">
@@ -717,20 +673,8 @@
         <state relative-caret-position="-588" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py" />
+    <entry file="file://$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py" />
     <entry file="file://$PROJECT_DIR$/基礎/180706_內置函數.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4009" />
@@ -955,8 +899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="215">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
         </state>
       </provider>
     </entry>

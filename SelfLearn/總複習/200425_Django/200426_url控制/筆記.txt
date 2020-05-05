@@ -31,12 +31,13 @@
             參數：render(客戶端的請求信息(request), 模板文件名, 前端要用的變數(字典形式)，key為變量名稱，value為值)
             範例：render(request, "show_time.html", {"t": t})
             網址是否會改變：否
+            login函式內的其他程序是否會被執行：否  => 所以不能用於跳轉網頁
 
         - redirect()：重定向
             參數：redirect(路徑)
             範例：redirect("/login/")
             網址是否會改變：是
-            login函式內的其他程序是否會被執行：會
+            login函式內的其他程序是否會被執行：是
 
     三、request：
         - request.GET：接收前端傳來的GET數據。
