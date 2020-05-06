@@ -1,3 +1,7 @@
+本地MySQL密碼：
+    username：root
+    password：生(一)
+
 - 創建用戶
 - CREATE USER '用戶名'@'當前用戶能從哪個IP地址登入' IDENTIFIED by '密碼';
 指令範例：
