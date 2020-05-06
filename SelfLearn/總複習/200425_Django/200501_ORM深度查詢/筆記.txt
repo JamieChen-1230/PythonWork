@@ -18,6 +18,9 @@
             }
         }
 
+    - 創建django_orm_deep_query資料庫：
+        - 在cmd進入mysql後創建資料庫：create database django_orm_deep_query;
+
 
 模型(models)：
     - 創建表：

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/資料庫/200110_用戶權限.txt" beforeDir="false" afterPath="$PROJECT_DIR$/資料庫/200110_用戶權限.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,23 +95,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="django_orm_deep_query" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="django_orm_deep_query" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="django_orm_deep_query" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="django_orm_deep_query: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FavoritesManager">
@@ -122,32 +104,30 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/app01/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="44" column="89" lean-forward="true" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="236">
+              <caret line="85" column="53" lean-forward="true" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/筆記.txt">
+        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+            <state relative-caret-position="308">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-168" />
           </provider>
         </entry>
       </file>
@@ -204,10 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/180713_裝飾器.py" />
-        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_裝飾器.py" />
-        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200429_裝飾器.py" />
-        <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿認證功能裝飾器.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_變量作用域.py" />
         <option value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200428_閉包.py" />
@@ -254,7 +230,11 @@
         <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/app01/models.py" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/app01/views.py" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/mysite/__init__.py" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/筆記.txt" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/筆記.txt" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/admin.py" />
       </list>
     </option>
   </component>
@@ -308,6 +288,16 @@
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="基礎" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="總複習" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,14 +311,21 @@
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="總複習" type="462c0819:PsiDirectoryNode" />
               <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_ORM深度查詢" type="462c0819:PsiDirectoryNode" />
+              <item name="200425_基礎筆記" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="總複習" type="462c0819:PsiDirectoryNode" />
               <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_ORM深度查詢" type="462c0819:PsiDirectoryNode" />
+              <item name="200502_admin操作" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="總複習" type="462c0819:PsiDirectoryNode" />
+              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="200502_admin操作" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,7 +333,26 @@
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
               <item name="總複習" type="462c0819:PsiDirectoryNode" />
               <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_ORM深度查詢" type="462c0819:PsiDirectoryNode" />
+              <item name="200502_admin操作" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="app01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="總複習" type="462c0819:PsiDirectoryNode" />
+              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="200502_admin操作" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="app01" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="總複習" type="462c0819:PsiDirectoryNode" />
+              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="200502_admin操作" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -589,7 +605,7 @@
       <workItem from="1588204690644" duration="19773000" />
       <workItem from="1588551854738" duration="20791000" />
       <workItem from="1588645189882" duration="18116000" />
-      <workItem from="1588732718601" duration="6783000" />
+      <workItem from="1588732718601" duration="11378000" />
     </task>
     <servers />
   </component>
@@ -611,7 +627,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240777000" />
+    <option name="totallyTimeSpent" value="245372000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,12 +663,12 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16085792" />
+      <window_info anchor="right" id="Database" order="4" weight="0.16085792" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18632708" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.18900804" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5010142" side_tool="true" weight="0.18632708" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899464" weight="0.3512748" />
@@ -663,87 +679,21 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34517425" side_tool="true" weight="0.30169973" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" visible="true" weight="0.30169973" />
-      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" visible="true" weight="0.31161472" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
-      <window_info anchor="right" id="Database" order="4" weight="0.18766756" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16085792" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django基礎指令.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9581a85c-e577-4e65-9a00-e81dd03d5bea/schema/main/table/app01_book" />
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/templates/books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="97" column="30" lean-forward="true" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3e392932-7280-4280-bebc-2d547a3eca16/schema/main/table/app01_books" />
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/templates/books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588" />
-      </provider>
-    </entry>
-    <entry file="das://3e392932-7280-4280-bebc-2d547a3eca16/schema/main/table/app01_publisher" />
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200426_url控制/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840" />
-      </provider>
-    </entry>
-    <entry file="das://e98af88b-9e6a-41f5-b960-d7a498eea1be/schema/main/table/app01_author" />
-    <entry file="das://e98af88b-9e6a-41f5-b960-d7a498eea1be/schema/main/table/app01_books" />
     <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-235" />
@@ -966,10 +916,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/180819_簡易Web框架/myWeb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#34#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+        <state relative-caret-position="560">
+          <caret line="50" lean-forward="true" selection-start-line="24" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#640#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/Django筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django基礎指令.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <folding>
+            <element signature="e#73#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="85" column="53" lean-forward="true" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
