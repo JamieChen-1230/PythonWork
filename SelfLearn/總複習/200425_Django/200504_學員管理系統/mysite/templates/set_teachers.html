@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/set_teachers.html?nid={{ obj_cls.id }}">
+    {#multiple多選#}
+    <select id="select" multiple name="ct" onchange="change_selected()">
+        {% for t in list_t %}
+            {% if t in list_cls_t %}
+                <option value="{{ t.id }}" selected="selected">{{ t.name }}</option>
+            {% else %}
+                <option value="{{ t.id }}">{{ t.name }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    <input name="selected_item" id="selected_item" type="text" style="display: none">
+    <input type="submit" value="提交">
+</form>
+
+<script>
+    function change_selected() {
+        // 獲取select下的options屬性
+        const options = document.querySelector('#select').options
+        const selectedValueArr = []
+        for (let i = 0; i < options.length; i++) {
+            // 如果該option被選中，則將它的value存入陣列
+            if (options[i].selected) {
+                selectedValueArr.push(options[i].value)
+            }
+        }
+        // 傳到一個隱藏的input，方便我們從後臺獲取該值
+        var selected_item = document.getElementById("selected_item");
+        selected_item.value = selectedValueArr;
+    }
+</script>
+
+</body>
+</html>

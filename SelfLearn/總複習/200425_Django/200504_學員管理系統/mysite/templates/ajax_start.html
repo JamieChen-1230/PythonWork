@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn{
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 5px;
+            background: antiquewhite;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input placeholder="用戶名" type="text" id="username">
+        <input placeholder="密碼" type="password" id="password">
+        <div class="btn" onclick="submitForm();">提交</div>
+    </div>
+
+    <div>
+        <input placeholder="數字" type="text" id="i1">
+        +
+        <input placeholder="數字" type="text" id="i2">
+        <div class="btn" onclick="addForm();">等於</div>
+        <input placeholder="數字" type="text" id="i3">
+    </div>
+
+    <script src="/static/jquery-3.3.1.js"></script>
+    <script>
+        function submitForm(){
+            // .val() 值
+            var u = $('#username').val();
+            var p = $('#password').val();
+            console.log(u, p);
+            $.ajax({
+                url: "/ajax_submit.html",
+                type: "GET",
+                data: {"user": u, "pwd": p},
+                success:function (arg) {
+                    // 回調函數，此arg是用來接收回傳值
+                    console.log(arg);
+                }
+            })
+        }
+
+        function addForm() {
+            var v1=$('#i1').val();
+            var v2=$('#i2').val();
+
+            $.ajax({
+                url: '/ajax_add.html',
+                type: "POST",
+                data: {"v1":v1, "v2": v2},
+                success:function (arg) {
+                    $("#i3").val(arg);
+                }
+            })
+        }
+    </script>
+</body>
+</html>

@@ -52,7 +52,7 @@
             - 代碼：
                 obj_book = models.Books.objects.get(id=3)
                 obj_author = models.Author.objects.all()
-                obj_book.authors.remove(*obj_author)
+                obj_book.authors.remove(*obj_author)  # obj_author因為是集合對象所以要加個*
 
     三、改(update)：
         models.Books.objects.filter(name='c++').update(price=666)
@@ -61,6 +61,9 @@
         ※ 刪除所有與id=3書籍的作者關聯後，再加上與id=1的作者關聯。
             obj_book = models.Books.objects.get(id=3)
             obj_book.authors.set(1)
+        ※ 若為一列表切記勿加 *
+            li = [1, 2]
+            obj_book.authors.set(li)  # 不能加*號
 
     五、查(search)：
         - 找出id=3書籍的所有關聯作者對象的名字：
@@ -83,3 +86,4 @@
         - 正向：ManyToManyField字段
         - 反向：小寫表名_set
     ※ 多多利用雙下划線
+    ※ 物件關聯對映(ORM) 是一種用於實現從物件資料到關聯資料的存儲對映的程式設計技術，將資料庫操作用物件導向的形式來呈現。

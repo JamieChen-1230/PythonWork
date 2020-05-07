@@ -1,0 +1,166 @@
+設定(settings)：
+    - 設定資料庫(這裡使用sqlite)：
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+
+    - 設定靜態文件路徑：
+        - 定義使用時網址前綴 /static/
+            STATIC_URL = '/static/'
+        - 定義實際上去找文件的目錄名稱(static)
+            STATICFILES_DIRS = (
+                os.path.join(BASE_DIR, 'static'),
+            )
+
+
+模型(models)：
+    - 創建表：
+        (1) 必須繼承models.Model，python才會知道他是表。
+            * Publisher對Book：一對多關係，外鍵要建在【多】那方。
+            - 表一：
+                class Classes(models.Model):
+                    name = models.CharField(max_length=32)
+                    ct = models.ManyToManyField('Teachers', related_name='classes_set')
+
+            - 表二：
+                class Teachers(models.Model):
+                    name = models.CharField(max_length=32)
+
+            - 表三：
+                class Students(models.Model):
+                    name = models.CharField(max_length=20)
+                    age = models.IntegerField()
+                    gender = models.BooleanField()
+                    cs = models.ForeignKey('Classes')
+
+        (2) 生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）。
+            cmd中執行 python manage.py makemigrations
+
+        (3) 同步數據庫（依更改文件修正資料庫）。
+            cmd中執行 python manage.py migrate
+
+
+※ FBV為views中的業務函數。
+網頁結構：
+    壹、課程頁面
+        - 課程主頁：
+            (Templates:get_classes.html, URL:/classes.html, Fbv:views.classes.get_classes)
+        - 課程添加頁：
+            (Templates:add_classes.html, URL:/add_classes.html, Fbv:views.classes.add_classes)
+        - 課程刪除：
+            (Templates:無, URL:/del_classes.html, Fbv:views.classes.del_classes)
+        - 課程修改頁：
+            (Templates:update_classes.html, URL:/update_classes.html, Fbv:views.classes.update_classes)
+        - 導師分配頁：
+            (Templates:set_teachers.html, URL:/set_teachers.html, Fbv:views.classes.set_teachers)
+            ※ 表單的select multiple只能允許前端多選，但無法直接傳給後台多個值(只會傳第一個)：
+                - Templates：
+                    原本代碼：
+                        <form method="post" action="/set_teachers.html?nid={{ obj_cls.id }}">
+                            <select id="select" multiple name="ct" onchange="change_selected()">
+                                {% for t in list_t %}
+                                    {% if t in list_cls_t %}
+                                        <option value="{{ t.id }}" selected="selected">{{ t.name }}</option>
+                                    {% else %}
+                                        <option value="{{ t.id }}">{{ t.name }}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select>
+                            <input name="selected_item" id="selected_item" type="text" style="display: none">
+                            <input type="submit" value="提交">
+                        </form>
+                    解決【透過js迴圈取值】：
+                        <script>
+                            function change_selected() {
+                                // 獲取select下的options屬性
+                                const options = document.querySelector('#select').options
+                                const selectedValueArr = []
+                                for (let i = 0; i < options.length; i++) {
+                                    // 如果該option被選中，則將它的value存入陣列
+                                    if (options[i].selected) {
+                                        selectedValueArr.push(options[i].value)
+                                    }
+                                }
+                                // 傳到一個隱藏的input，方便我們從後臺獲取該值
+                                var selected_item = document.getElementById("selected_item");
+                                selected_item.value = selectedValueArr;
+                            }
+                        </script>
+                - Fbv：
+                    錯誤：
+                        # 無法直接獲取多個值
+                        str_t_id = request.POST.get('ct')
+                    解決：
+                        # 透過前端搭配js寫迴圈，獲取所有值後，再傳到一個隱藏的input傳回來。
+                        str_t_id = request.POST.get('selected_item')  # 傳回來為字符串(EX: "1, 2")
+                        list_t_id = str_t_id.split(',')  # 轉成列表
+
+    貳、學生頁面
+        - 學生主頁：
+            (Templates:get_students.html, URL:/students.html, Fbv:views.students.get_students)
+        - 學生添加頁：
+            (Templates:add_students.html, URL:/add_students.html, Fbv:views.students.add_students)
+            ※ <input type="radio">的name可相同 => 表互斥，只能擇一
+                - Templates：
+                    <p>
+                        男：<input type="radio" name="gender" value="1">
+                        女：<input type="radio" name="gender" value="0">
+                    </p>
+
+        - 學生刪除：
+            (Templates:無, URL:/del_students.html, Fbv:views.students.del_students)
+        - 學生修改頁：
+            (Templates:update_students.html, URL:/update_students.html, Fbv:views.students.update_students)
+
+    參、老師頁面：暫時沒做
+
+    肆、ajax：
+        ※ 導入jQuery：
+            <script src="/static/jquery-3.3.1.js"></script>
+        ※ jQuery移除標籤屬性：
+            $(".ajaxadd").removeClass("hide");
+        - 學生添加：
+            (Templates:get_students.html, URL:/ajax_add_students.html, Fbv:views.students.ajax_add_students)
+            - Html：
+                <div class="ajaxadd hide">
+                    <h3>ajax添加</h3>
+                    <p><input type="text" id="user" placeholder="用戶名"></p>
+                    <p><input type="number" id="age" placeholder="年齡"></p>
+                    <p>
+                        男：<input type="radio" name="gender" value="1">
+                        女：<input type="radio" name="gender" value="0">
+                    </p>
+                    <p>
+                        <select id="cs">
+                            {% for cls in list_cls %}
+                                <option value="{{ cls.id }}">{{ cls.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </p>
+                    <div class="btn" onclick="ajax_add();">提交</div>
+                </div>
+
+            - javascript：
+                <script src="/static/jquery-3.3.1.js"></script>
+                <script>
+                    function ajax_add() {
+                        var user = $("#user").val();
+                        var age = $("#age").val();
+                        var gender = $('[name="gender"]:checked').val();
+                        var cs = $("#cs").val();
+                        console.log(gender);
+                        $.ajax({
+                            url: "/ajax_add_students.html",
+                            type: "POST",
+                            data: {user:user, age:age, gender:gender, cs:cs},
+                            success:function (arg) {
+                                console.log(arg);
+                                // 刷新頁面
+                                window.location.reload();
+                            }
+                        });
+                    }
+                </script>

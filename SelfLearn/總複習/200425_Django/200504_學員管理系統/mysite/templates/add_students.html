@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="add_students.html" method="post">
+        <p><input type="text" name="user" placeholder="用戶名"></p>
+        <p><input type="number" name="age" placeholder="年齡"></p>
+{#        name相同表互斥，只能擇一#}
+        <p>
+            男：<input type="radio" name="gender" value="1">
+            女：<input type="radio" name="gender" value="0">
+        </p>
+{#        value是發到後台的值#}
+        <p>
+            <select name="cs">
+                {% for cls in list_cls %}
+                    <option value="{{ cls.id }}">{{ cls.name }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p><input type="submit" value="提交"></p>
+    </form>
+</body>
+</html>

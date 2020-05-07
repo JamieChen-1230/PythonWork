@@ -1,0 +1,47 @@
+非同步的JavaScript與XML技術（ajax）：
+    一、功能：
+        ajax可以僅向伺服器傳送並取回資料，並在客戶端用JavaScript處理來自伺服器的回應。【可減輕伺服器的負荷】
+
+    二、優缺點：
+        優點：
+            - 能在不更新整個頁面的前提下維護資料。
+            - Web應用可更迅捷的回應用戶。【因為要傳輸的資料減少，伺服器的回應時間也變短】
+            - 可減輕Web伺服器的負荷。
+        缺點【目前都有解決方法了】：
+            - 破壞瀏覽器的後退功能。
+                【在動態更新頁面的情況下，用戶無法回到前一個頁面狀態，因為瀏覽器僅能記下歷史中的靜態頁面】
+            - 無法將狀態加入收藏或書籤。
+
+    三、參數：
+        url(String)：指定要進行呼叫的位址。
+
+        data(Map)：傳送至Server的資料，必須為Key/Value格式。【GET請求可將資料附加在URL後面即可】
+
+        type(String)：請求方式，POST/GET。(預設為GET)
+
+        dataType(String)：預期從Server傳回的資料類型，若沒指定jQuery則會根據response來推定。
+            - 可選擇類型：
+                xml：傳回可用jQuery處理的XML。
+                html：傳回HTML，包含script tags。
+                script：傳回可執行的JavaScript。
+                json：傳回JSON。
+                jsonp：JSONP 格式。在URL加上?callback=?參數，並在Server端配合送回此jsonp callback。
+                text：傳回純文字字串。
+
+        success：請求成功時執行函式。
+            - 函式範例：
+                function (data, textStatus) {
+                    // data可以是 xmlDoc, jsonObj, html, text，但還是要考慮到datatype。
+                }
+
+        error：請求失敗時執行函式。
+            - 函式範例：
+                function (xhr, ajaxOptions, thrownError) {
+                    // 通常ajaxOptions或thrownError只有一個有值。
+                }
+
+        complete：請求完成時執行的函式【不論結果是success或error】。
+            - 函式範例：
+                function (XMLHttpRequest, textStatus) {
+                    // the options for this ajax request.
+                }

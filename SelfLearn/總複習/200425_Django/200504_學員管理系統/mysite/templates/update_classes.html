@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/update_classes.html/" method="post">
+        {# 隱藏 display: none #}
+        <input type="text" name="nid" value="{{ obj_cls.id }}" style="display: none">
+        <input type="text" name="title" value="{{ obj_cls.name }}">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
