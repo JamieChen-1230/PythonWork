@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--導入css-->
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+    <style>
+        .blank_a {
+            padding-top: 10px;
+        }
+        .img_a {
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container blank_a">
+    <div>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>圖片</th>
+                <th>標題</th>
+                <th>上傳時間</th>
+                <th>內容</th>
+            </tr>
+            </thead>
+            <tbody id="tb">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/plugins/bootstrap/js/bootstrap.js"></script>
+
+<script>
+    var url = "api/news/" + {{ nid }};
+    // 向DRF取資料
+    $.ajax({
+        method: "GET",
+        url: url,
+        success: function (args) {
+            console.log(args);
+            create_item(args);
+        },
+        error: function(error_data){
+            console.log(error_data);
+        },
+    });
+
+    // 建立列表資訊
+    function create_item(data) {
+        var tr = document.createElement("tr");
+        $(tr).attr("nid", data.id);
+        // 圖片
+        var td_img = "<td na='img_url'><img class='img_a' src='" + data.img_url + "'></td>";
+        $(tr).append(td_img);
+        // 標題
+        var td_title = "<td na='title'>" + data.title + "</td>";
+        $(tr).append(td_title);
+        // 上傳時間
+        var td_post = "<td na='post_date'>" + data.post_date + "</td>";
+        $(tr).append(td_post);
+        // 內容
+        var td_content = "<td na='content'>" + data.content + "</td>";
+        $(tr).append(td_content);
+        $("#tb").append(tr);
+    }
+</script>
+</html>
