@@ -1,0 +1,144 @@
+設定(settings)：
+    - 設定資料庫(這裡使用sqlite)：
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+
+    - 設定靜態文件路徑：
+        - 定義使用時網址前綴 /static/
+            STATIC_URL = '/static/'
+        - 定義實際上去找文件的目錄名稱(static)
+            STATICFILES_DIRS = (
+                os.path.join(BASE_DIR, 'static'),
+            )
+
+
+模型(models)：
+    - 創建表：
+        (1) 必須繼承models.Model，python才會知道他是表。
+            * Publisher對Book：一對多關係，外鍵要建在【多】那方。
+            - 表一：
+                class Classes(models.Model):
+                    name = models.CharField(max_length=32)
+                    ct = models.ManyToManyField('Teachers', related_name='classes_set')
+
+            - 表二：
+                class Teachers(models.Model):
+                    name = models.CharField(max_length=32)
+
+            - 表三：
+                class Students(models.Model):
+                    name = models.CharField(max_length=20)
+                    age = models.IntegerField()
+                    gender = models.BooleanField()
+                    cs = models.ForeignKey('Classes')
+
+        (2) 生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）。
+            cmd中執行 python manage.py makemigrations
+
+        (3) 同步數據庫（依更改文件修正資料庫）。
+            cmd中執行 python manage.py migrate
+
+
+※ FBV為views中的業務函數。
+網頁結構：
+    壹、課程頁面
+
+    貳、學生頁面
+        - 添加靜態文件檔：
+            - 導入bootstrap.css【放在<head></head>中】：
+                <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+            - 導入font-awesome.css【放在<head></head>中】：
+                <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.css">
+            - 導入jquery-3.3.1.js：
+                <script src="/static/js/jquery-3.3.1.js"></script>
+            - 導入bootstrap.js：
+                <script src="/static/plugins/bootstrap/js/bootstrap.js"></script>
+
+        - bootstrap使用：在官網中找到自己需要的樣本直接拿過來套用即可。
+
+        - 編輯按鈕：
+            - 作法：透過JQuery實現「事件委託」，讓button鍵能實現其他作用。
+            - 代碼：
+                - 按鈕：<a class="fa fa-pencil-square-o blank_a edit_row"></a>
+                - 綁定編輯按鈕事件：
+                    function bindedit() {
+                        // 事件委託
+                        $('#tb').on('click', '.edit_row', function () {
+                            $('#edit_Modal').modal('show');  // 顯示模態框(bootstrap提供之方法)
+                            // 獲取當前行的所有數據給對應的對話框
+
+                            $(this).parent().prevAll().each(function () {
+                                var text = $(this).text();
+                                var na = $(this).attr('na');  // 自己設額外屬性，方便我們去獲取
+                                if (na == 'cls_id') {
+                                    var cid = $(this).attr('cid');  // 自己設額外屬性，方便我們去獲取
+                                    $('#edit_Modal select[name="cls_id"]').val(cid);
+                                } else if (na == 'gender') {
+                                    if (text == 'True') {
+                                        $('#edit_Modal :radio[value="1"]').prop('checked', true);
+                                    } else {
+                                        $('#edit_Modal :radio[value="0"]').prop('checked', true);
+                                    }
+                                } else {
+                                    // 剩下的一般input的框處理
+                                    // 透過兩者(name,na)相同的命名，能讓我們更方便的處理，也更好維護
+                                    $('#edit_Modal input[name=' + na + ']').val(text);
+                                }
+                            });
+                        });
+                    }
+
+
+    參、老師頁面：暫時沒做
+
+    肆、ajax：
+        ※ 導入jQuery：
+            <script src="/static/jquery-3.3.1.js"></script>
+        ※ jQuery移除標籤屬性：
+            $(".ajaxadd").removeClass("hide");
+        - 學生添加：
+            (Templates:get_students.html, URL:/ajax_add_students.html, Fbv:views.students.ajax_add_students)
+            - Html：
+                <div class="ajaxadd hide">
+                    <h3>ajax添加</h3>
+                    <p><input type="text" id="user" placeholder="用戶名"></p>
+                    <p><input type="number" id="age" placeholder="年齡"></p>
+                    <p>
+                        男：<input type="radio" name="gender" value="1">
+                        女：<input type="radio" name="gender" value="0">
+                    </p>
+                    <p>
+                        <select id="cs">
+                            {% for cls in list_cls %}
+                                <option value="{{ cls.id }}">{{ cls.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </p>
+                    <div class="btn" onclick="ajax_add();">提交</div>
+                </div>
+
+            - javascript：
+                <script src="/static/jquery-3.3.1.js"></script>
+                <script>
+                    function ajax_add() {
+                        var user = $("#user").val();
+                        var age = $("#age").val();
+                        var gender = $('[name="gender"]:checked').val();
+                        var cs = $("#cs").val();
+                        console.log(gender);
+                        $.ajax({
+                            url: "/ajax_add_students.html",
+                            type: "POST",
+                            data: {user:user, age:age, gender:gender, cs:cs},
+                            success:function (arg) {
+                                console.log(arg);
+                                // 刷新頁面
+                                window.location.reload();
+                            }
+                        });
+                    }
+                </script>

@@ -2,20 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/ajax筆記.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/scrapy_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/mysite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/templates/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200508_創順面試題/newscrawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/mysite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/nba/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/static/plugins/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/templates/detail_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/msg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/DRF.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/musics/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/static/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/筆記.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/總複習/200425_Django/200505_學員管理系統(ajax&amp;bootstrap)/mysite/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e392932-7280-4280-bebc-2d547a3eca16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9581a85c-e577-4e65-9a00-e81dd03d5bea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7108a4b-69d6-48c4-b685-4d7c187ad042.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e542fefc-e133-4efa-a7f2-13a5199771a6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e98af88b-9e6a-41f5-b960-d7a498eea1be.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/04c03fce-7581-4b87-b897-a53e51cc0f36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fda090c-02fd-4bc0-948b-25091002dd3a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a82e5845-c3fa-4d47-ad47-4fdb7c3991df.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_Field參數.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_Field參數.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +122,10 @@
     <SUITE FILE_PATH="coverage/SelfLearn$190118_tornado.coverage" NAME="190118_tornado Coverage Results" MODIFIED="1547806472167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
     <SUITE FILE_PATH="coverage/SelfLearn$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1588144588681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清(流暢的Python)/200429_對象引用" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_.coverage" NAME="181027_源碼解析一 Coverage Results" MODIFIED="1540801298393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
+    <SUITE FILE_PATH="coverage/SelfLearn$nba_crawler.coverage" NAME="nba_crawler Coverage Results" MODIFIED="1589000914251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/200510_創順面試題/mysite/nba" />
     <SUITE FILE_PATH="coverage/SelfLearn$models.coverage" NAME="models Coverage Results" MODIFIED="1535442263161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_聚合函數/mysite/app01" />
-    <SUITE FILE_PATH="coverage/SelfLearn$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1551928649219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190120_Scrapy框架總整理/scrapyTotal" />
     <SUITE FILE_PATH="coverage/SelfLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1588233658641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1589011228183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_in___py.coverage" NAME="pytest in 傳值&amp;傳址.py Coverage Results" MODIFIED="1553671676803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$CS1601_.coverage" NAME="CS1601_陳俊宇 Coverage Results" MODIFIED="1553524103852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SelfLearn$190116_.coverage" NAME="190116_多進程實現併發請求 Coverage Results" MODIFIED="1547788122527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
@@ -48,8 +140,8 @@
     <SUITE FILE_PATH="coverage/SelfLearn$180724_.coverage" NAME="180724_實例屬性的增減改查 Coverage Results" MODIFIED="1560687589236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180723_面向對象" />
     <SUITE FILE_PATH="coverage/SelfLearn$180705_.coverage" NAME="180705_函數式編程 Coverage Results" MODIFIED="1560668012282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$190123_Twisted.coverage" NAME="190123_Twisted Coverage Results" MODIFIED="1548396004545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析" />
-    <SUITE FILE_PATH="coverage/SelfLearn$run.coverage" NAME="run Coverage Results" MODIFIED="1549946502428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/190211_PChome/myscrapy" />
     <SUITE FILE_PATH="coverage/SelfLearn$180712___.coverage" NAME="180712_跌代器&amp;生成器&amp;三元表達式 Coverage Results" MODIFIED="1560674368113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run.coverage" NAME="run Coverage Results" MODIFIED="1589009772123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy" />
     <SUITE FILE_PATH="coverage/SelfLearn$180703_.coverage" NAME="180703_字符串格式化 Coverage Results" MODIFIED="1560666041807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$200502_.coverage" NAME="200502_單分派泛函數 Coverage Results" MODIFIED="1588553916680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_helloworld.coverage" NAME="181027_helloworld Coverage Results" MODIFIED="1540798464790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Tornado)" />
@@ -67,7 +159,7 @@
     <SUITE FILE_PATH="coverage/SelfLearn$180706_.coverage" NAME="180706_內置函數 Coverage Results" MODIFIED="1560672361171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$200425_.coverage" NAME="200425_基礎知識 Coverage Results" MODIFIED="1588206418473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$200430___.coverage" NAME="200430_模仿計時裝飾器(有參數) Coverage Results" MODIFIED="1588236293703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
-    <SUITE FILE_PATH="coverage/SelfLearn$views.coverage" NAME="views Coverage Results" MODIFIED="1535422116577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180827_多表操作/mysite/app01" />
+    <SUITE FILE_PATH="coverage/SelfLearn$views.coverage" NAME="views Coverage Results" MODIFIED="1589013937105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba" />
     <SUITE FILE_PATH="coverage/SelfLearn$181027_helloworld__1_.coverage" NAME="181027_helloworld (1) Coverage Results" MODIFIED="1540799655474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181027_Tornado框架" />
     <SUITE FILE_PATH="coverage/SelfLearn$190112_BeautifulSoup.coverage" NAME="190112_BeautifulSoup詳細使用 Coverage Results" MODIFIED="1547620570111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$180723_.coverage" NAME="180723_汽車之家爬蟲 Coverage Results" MODIFIED="1547613232404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
@@ -76,11 +168,14 @@
     <SUITE FILE_PATH="coverage/SelfLearn$manage.coverage" NAME="manage Coverage Results" MODIFIED="1548940045657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/180830_學員管理系統/mysite" />
     <SUITE FILE_PATH="coverage/SelfLearn$200427_.coverage" NAME="200427_函數嵌套 Coverage Results" MODIFIED="1588209428737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$180619_While.coverage" NAME="180619_While迴圈 Coverage Results" MODIFIED="1565156465079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run__4_.coverage" NAME="run (4) Coverage Results" MODIFIED="1589011253436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news" />
     <SUITE FILE_PATH="coverage/SelfLearn$180626_.coverage" NAME="180626_基本數據類型 Coverage Results" MODIFIED="1560665003585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180626_基本數據類型" />
     <SUITE FILE_PATH="coverage/SelfLearn$180718_os.coverage" NAME="180718_os模塊 Coverage Results" MODIFIED="1540523110920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
     <SUITE FILE_PATH="coverage/SelfLearn$190117_asyncio.coverage" NAME="190117_asyncio Coverage Results" MODIFIED="1547784609783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190116_異步" />
+    <SUITE FILE_PATH="coverage/SelfLearn$main.coverage" NAME="main Coverage Results" MODIFIED="1588987452976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/200508_創順面試題" />
     <SUITE FILE_PATH="coverage/SelfLearn$181214_agent.coverage" NAME="181214_資產採集之agent Coverage Results" MODIFIED="1544760884290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/181210_CMDB" />
-    <SUITE FILE_PATH="coverage/SelfLearn$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1550039632731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy" />
+    <SUITE FILE_PATH="coverage/SelfLearn$newscrawler.coverage" NAME="newscrawler Coverage Results" MODIFIED="1588986924902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/200508_創順面試題" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1589010355721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy" />
     <SUITE FILE_PATH="coverage/SelfLearn$dict__.coverage" NAME="dict(字典) Coverage Results" MODIFIED="1535390718255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180626_基本數據類型" />
     <SUITE FILE_PATH="coverage/SelfLearn$runscrapy.coverage" NAME="runscrapy Coverage Results" MODIFIED="1549877000290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190120_抽屜自動登入並點讚/chouti_like_up" />
     <SUITE FILE_PATH="coverage/SelfLearn$190112_github.coverage" NAME="190112_github自動登入 Coverage Results" MODIFIED="1547625457118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
@@ -91,10 +186,11 @@
     <SUITE FILE_PATH="coverage/SelfLearn$engine.coverage" NAME="engine Coverage Results" MODIFIED="1548663458763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架" />
     <SUITE FILE_PATH="coverage/SelfLearn$_.coverage" NAME="傳值&amp;傳址 Coverage Results" MODIFIED="1553672743843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念釐清" />
     <SUITE FILE_PATH="coverage/SelfLearn$190110_.coverage" NAME="190110_抽屜自動登入 Coverage Results" MODIFIED="1547612695879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/180723_基礎" />
-    <SUITE FILE_PATH="coverage/SelfLearn$run__2_.coverage" NAME="run (2) Coverage Results" MODIFIED="1550728183263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/190213_ezTravel/myscrapy" />
+    <SUITE FILE_PATH="coverage/SelfLearn$run__2_.coverage" NAME="run (2) Coverage Results" MODIFIED="1589011877745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba" />
     <SUITE FILE_PATH="coverage/SelfLearn$pytest_in_200429__py.coverage" NAME="pytest in 200429_裝飾器.py Coverage Results" MODIFIED="1588218416679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/SelfLearn$180704_.coverage" NAME="180704_函數遞歸 Coverage Results" MODIFIED="1560666468291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/SelfLearn$200502_functools_lru_cache.coverage" NAME="200502_functools.lru_cache Coverage Results" MODIFIED="1588552150298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/SelfLearn$nba.coverage" NAME="nba Coverage Results" MODIFIED="1589007246926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/myscrapy/spiders" />
     <SUITE FILE_PATH="coverage/SelfLearn$180720_re.coverage" NAME="180720_re模塊 Coverage Results" MODIFIED="1550741365353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/模塊" />
   </component>
   <component name="DatabaseView">
@@ -124,13 +220,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="app01_books: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -139,50 +228,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/筆記.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="126" column="19" lean-forward="true" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/students.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/get_students.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+        <entry file="file://$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="252">
+                <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -223,13 +276,17 @@
       <find>header</find>
       <find>yield</find>
       <find>DUPEFILTER_CLASS</find>
+      <find>edit_row</find>
+      <find>add_btn</find>
+      <find>edit_Modal</find>
+      <find>edit_submit</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Programming\WorkPlace\PythonWork\SelfLearn\框架(Django)\180820_url控制&amp;views</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/爬蟲/190123_Scrapy源碼分析/190125_自定義TinyScrapy框架/engine.py" root0="FORCE_HIGHLIGHTING" />
@@ -240,57 +297,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/總複習與進階觀念(流暢的Python)/200504_Django/200505_url控制/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200427_模板數據顯示/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200427_模板數據顯示/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/Git使用/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200427_模板數據顯示/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django基礎指令.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/app01/models.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200505_學員管理系統(ajax&amp;bootstrap)/筆記.txt" />
+        <option value="$PROJECT_DIR$/總複習/200425_Django/200505_學員管理系統(ajax&amp;bootstrap)/mysite/templates/students.html" />
+        <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/筆記.txt" />
+        <option value="$PROJECT_DIR$/框架(Django)/200508_創順面試題/題目.txt" />
         <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/資料庫/180823_數據庫操作" />
-        <option value="$PROJECT_DIR$/資料庫/200110_用戶權限.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/templates/index.html" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/app01/models.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/mysite/mysite/__init__.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200501_ORM深度查詢/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_admin操作/mysite/app01/admin.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/框架(Django)/180828_cookie&amp;session/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_Field參數.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/models.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/get_classes.html" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/update_classes.html" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/classes.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/set_teachers.html" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/add_students.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/ajax.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/ajax_start.html" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/ajax筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/students.py" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/筆記.txt" />
-        <option value="$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/get_students.html" />
+        <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/DRF/settings.py" />
+        <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/DRF/urls.py" />
+        <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/musics/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200508_創順面試題/newscrawler.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200508_創順面試題/main.py" />
+        <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200501_從無到有(DRF-Beginners-Guide)/DRF/templates/index.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/templates/index.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/200508_創順面試題/mysite/templates/content.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題/mysite/templates/index.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題/mysite/nba/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題/mysite/nba/nba_crawler.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/run.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/myscrapy/items.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/myscrapy/settings.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/myscrapy/pipelines.py" />
+        <option value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/myscrapy/myscrapy/spiders/nba.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/myscrapy/pipelines.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/run.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/myscrapy/spiders/nba.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/myscrapy/pipelines.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/run.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/myscrapy/pipelines.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/run.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/myscrapy/settings.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/myscrapy/items.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/pipelines.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/spiders/nba.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/settings.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/templates/index.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/nba_crawler.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/scrapy_run.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/apps.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index2.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/msg.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/templates/index.html" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/nba/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/nba/nba_crawler.py" />
+        <option value="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/README.md" />
       </list>
     </option>
   </component>
@@ -329,6 +386,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,96 +397,22 @@
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="nicetomeetyou" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200426_url控制" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SelfLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="總複習" type="462c0819:PsiDirectoryNode" />
-              <item name="200425_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="200504_學員管理系統" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="nicetomeetyou" type="462c0819:PsiDirectoryNode" />
+              <item name="nicetomeetyou" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/PythonWork/SelfLearn/框架(Django)/181214_CRM/MyCRM/crm/kingadmin.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -440,11 +424,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190120_Scrapy框架總整理\scrapyTotal\scrapyTotal" />
-      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190120_Scrapy框架總整理\scrapyTotal" />
-      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190211_爬蟲練習\190213_ezTravel\myscrapy" />
-      <recent name="D:\PythonWork\SelfLearn\爬蟲\190123_Scrapy源碼分析\190125_自定義TinyScrapy框架\spider" />
-      <recent name="D:\PythonWork\SelfLearn\爬蟲\190119_Scrapy框架" />
+      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\框架(Django)\200510_websocket初試\dj_dwebsocket\dj_websocket\demo" />
+      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190211_爬蟲練習\200509_nba_news" />
+      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190211_爬蟲練習" />
+      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\框架(Django)\200510_創順面試題(scrapy)\mysite\nba" />
+      <recent name="D:\Programming\WorkPlace\PythonWork\SelfLearn\爬蟲\190211_爬蟲練習\200509_nba_news\myscrapy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PythonWork\SelfLearn\框架(Django)\181214_CRM\MyCRM\kingadmin\templates\kingadmin" />
@@ -462,8 +446,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200501_模仿計時裝飾器(多層裝飾器)">
-    <configuration name="200430_模仿計時裝飾器(有參數)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.views">
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -471,12 +455,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200430_模仿計時裝飾器(有參數).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -485,7 +469,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200501_模仿計時裝飾器(多層裝飾器)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -493,12 +477,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -507,7 +491,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200502_單分派泛函數" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -515,12 +499,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_單分派泛函數.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -529,7 +513,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200502_functools.lru_cache" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -537,12 +521,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200425_裝飾器/200502_functools.lru_cache.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -551,7 +535,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200503_repr&amp;str" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SelfLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -559,34 +543,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階觀念(流暢的Python)/200503_內置函數/200503_repr&amp;str.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SelfLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -596,20 +558,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.200430_模仿計時裝飾器(有參數)" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
-      <item itemvalue="Python.200502_functools.lru_cache" />
-      <item itemvalue="Python.200502_單分派泛函數" />
-      <item itemvalue="Python.200503_repr&amp;str" />
+      <item itemvalue="Python.run (1)" />
+      <item itemvalue="Python.run (2)" />
+      <item itemvalue="Python.run (3)" />
+      <item itemvalue="Python.run (4)" />
+      <item itemvalue="Python.views" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
-        <item itemvalue="Python.200503_repr&amp;str" />
-        <item itemvalue="Python.200502_單分派泛函數" />
-        <item itemvalue="Python.200502_functools.lru_cache" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.run (2)" />
+        <item itemvalue="Python.run (4)" />
+        <item itemvalue="Python.run (3)" />
+        <item itemvalue="Python.run (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -670,7 +631,11 @@
       <workItem from="1588551854738" duration="20791000" />
       <workItem from="1588645189882" duration="18116000" />
       <workItem from="1588732718601" duration="17482000" />
-      <workItem from="1588815668744" duration="14856000" />
+      <workItem from="1588815668744" duration="16147000" />
+      <workItem from="1588859918460" duration="356000" />
+      <workItem from="1588900515624" duration="27614000" />
+      <workItem from="1588984574901" duration="27738000" />
+      <workItem from="1589071652742" duration="10436000" />
     </task>
     <servers />
   </component>
@@ -692,7 +657,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266332000" />
+    <option name="totallyTimeSpent" value="333767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,12 +672,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.19168901" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.20241287" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5010142" side_tool="true" weight="0.18632708" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43909347" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899464" weight="0.3512748" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899464" weight="0.40651557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -720,7 +685,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34517425" side_tool="true" weight="0.30169973" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" visible="true" weight="0.31161472" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.65482575" visible="true" weight="0.3045326" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
@@ -728,7 +693,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16085792" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15817694" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.18900804" />
@@ -759,343 +724,291 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180828_cookie&amp;session/mysite/mysite/urls.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/myscrapy/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/myscrapy/settings.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/run.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/myscrapy/myscrapy/spiders/nba.py" />
+    <entry file="file://$PROJECT_DIR$/爬蟲/190211_爬蟲練習/run.py" />
+    <entry file="file://$PROJECT_DIR$/爬蟲/190211_爬蟲練習/200509_nba_news/run.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/myscrapy/spiders/nba.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/nba_crawler.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/run.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/myscrapy/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題(scrapy)/mysite/nba/views.py" />
+    <entry file="das://5ad2571e-1907-4195-a1bf-77af3a84e6a4/schema/main/table/news" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/myscrapy/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/run.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/myscrapy/settings.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/myscrapy/items.py" />
+    <entry file="das://f10613b9-b537-41ab-a503-dc18eb7a85ad/schema/main/table/news" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="84">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題/mysite/nba/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding>
-            <element signature="e#640#672#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180828_cookie&amp;session/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/mysite/urls.py">
+    <entry file="file://$PROJECT_DIR$/爬蟲/190119_Scrapy框架/190119_scrapy初試/myscrapy/myscrapy/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="980">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/spiders/nba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2212">
+          <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/mysite/settings.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/myscrapy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2336">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-1092">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/180712_跌代器&amp;生成器&amp;三元表達式.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200502_cookie&amp;session/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1624">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django_ORM/Django_ORM_Field參數.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200428_ORM單表操作/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/180703_函數.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180829_請求生命週期之CBV&amp;FBV/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180829_請求生命週期之CBV&amp;FBV/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398">
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/180829_請求生命週期之CBV&amp;FBV/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1e9b9d0e-7c80-41c4-bfc6-efeded9a9743/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/04c03fce-7581-4b87-b897-a53e51cc0f36/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200429_ORM一對多操作/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/test.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200509_創順面試題/mysite/nba/nba_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-252">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://04c03fce-7581-4b87-b897-a53e51cc0f36/schema/main/table/app01_classes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200427_模板數據顯示/筆記.txt">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_創順面試題/mysite/nba/nba_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200426_url控制/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/add_classes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="280">
+          <caret line="79" column="35" lean-forward="true" selection-end-line="87" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/get_classes.html">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="140">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/前端/JavaScript/BOM(瀏覽器對象模型)/180917_BOM之window對象.html">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/scrapy_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/nba_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/run.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/前端/JavaScript/DOM(文檔對象模型)/180918_事件綁定方式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756" />
-      </provider>
-    </entry>
-    <entry file="das://04c03fce-7581-4b87-b897-a53e51cc0f36/schema/main/table/app01_teachers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://04c03fce-7581-4b87-b897-a53e51cc0f36/schema/main/table/app01_classes_ct">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/update_classes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/set_teachers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/update_students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="73" lean-forward="true" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/add_students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a82e5845-c3fa-4d47-ad47-4fdb7c3991df/schema/main/table/app01_author">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a82e5845-c3fa-4d47-ad47-4fdb7c3991df/schema/main/table/app01_books">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a82e5845-c3fa-4d47-ad47-4fdb7c3991df/schema/main/table/app01_books_authors">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/mysite/app01/views.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005010_創順面試題scrapy/mysite/nba/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200505_學員管理系統(ajax&amp;bootstrap)/mysite/templates/students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5628" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/dj_websocket/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1607">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/dj_websocket/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#646#678#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200430_ORM多對多操作/筆記.txt">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/msg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/ajax筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/ajax_start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/ajax.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="84">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="34" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#1#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/urls.py">
+    <entry file="file://$PROJECT_DIR$/前端/jQuery/180922_屬性操作.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="-1176" />
+      </provider>
+    </entry>
+    <entry file="das://c62241ec-7cd7-44f6-9675-5cfd1091620a/schema/main/table/news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/MTV概念/MTV筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django基礎指令.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-436" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200425_基礎筆記/Django創建步驟.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+    <entry file="das://4bc05c29-0866-47ed-90c9-3cdbe714639d/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/app01/views/students.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="185">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="47" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/mysite/settings.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/demo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+        <state relative-caret-position="73">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/筆記.txt">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="126" column="19" lean-forward="true" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+        <state relative-caret-position="227">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/總複習/200425_Django/200504_學員管理系統/mysite/templates/get_students.html">
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+        <state relative-caret-position="476">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="e#1708#2361#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/nba/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4bc05c29-0866-47ed-90c9-3cdbe714639d/schema/main/table/news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket/dj_websocket/templates/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django)/2005011_創順面試題/mysite/nba/nba_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2408">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

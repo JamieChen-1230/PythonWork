@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--導入css-->
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.css">
+    <style>
+        .blank_a {
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
+<div class="container blank_a">
+    <div>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>圖片</th>
+                <th>標題</th>
+                <th>上傳時間</th>
+                <th>內容</th>
+            </tr>
+            </thead>
+            <tbody id="tb">
+            <tr nid="{{ new.id }}" href="/content">
+                <td na="img_url"><img src="{{ new.img_url }}"></td>
+                <td na="title">{{ new.title }}</td>
+                <td>{{ content_obj.upload_time }}</td>
+                <td>{{ content_obj.content }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div style="text-align:center">
+    <div>
+        <iframe src="{{ content_obj.video_url }}" scrolling="no" frameborder="0" width="50%" height="430" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="margin:0px auto;"></iframe>
+    </div>
+</div>
+
+
 </body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/plugins/bootstrap/js/bootstrap.js"></script>
 </html>

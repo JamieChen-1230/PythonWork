@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--導入css-->
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+    <style>
+        .blank_a {
+            padding-top: 10px;
+        }
+        .img_a {
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container blank_a">
+    <div>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>圖片</th>
+                <th>標題</th>
+                <th>大綱</th>
+                <th>詳細</th>
+            </tr>
+            </thead>
+            <tbody id="tb">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+</body>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/plugins/bootstrap/js/bootstrap.js"></script>
+
+<script>
+    // 網頁載入後自動執行
+    window.onload = function(){
+        websockt_connect();
+    };
+
+    // 向DRF取資料
+    $.ajax({
+        method: "GET",
+        url: "api/news",
+        success: function (args) {
+            console.log(args);
+            for (var i=args.length-1; i>=0; i--) {
+                create_item(args[i]);
+            }
+        },
+        error: function(error_data){
+            console.log(error_data);
+        },
+    });
+
+    // 建立列表資訊
+    function create_item(data) {
+        var tr = document.createElement("tr");
+        $(tr).attr("nid", data.id);
+        // 圖片
+        var td_img = "<td na='img_url'><img class='img_a' src='" + data.img_url + "'></td>";
+        $(tr).append(td_img);
+        // 標題
+        var td_title = "<td na='title'>" + data.title + "</td>";
+        $(tr).append(td_title);
+        // 大綱
+        var td_outline = "<td na='outline'>" + data.outline + "</td>";
+        $(tr).append(td_outline);
+        // 按鈕
+        var btn = "<td na='content'><a class='btn btn-default' href='/content?nid=" + data.id + "' role='button'>更多</a></td>"
+        $(tr).append(btn);
+        $("#tb").append(tr);
+    }
+
+    function websockt_connect() {
+        if (window.s) {
+            window.s.close()
+        }
+        /*创建socket连接*/
+        var socket = new WebSocket("ws://" + window.location.host + "/websocket_msg");
+        socket.onopen = function () {
+            console.log('WebSocket open');//成功连接上Websocket
+        };
+        socket.onmessage = function (e) {
+            console.log('message: ' + e.data);//打印出服务端返回过来的数据
+            alert(e.data);
+            //$('#messagecontainer').text('<h1>' + e.data + '</h1>');
+        };
+        // Call onopen directly if socket is already open
+        if (socket.readyState == WebSocket.OPEN) socket.onopen();
+        window.s = socket;
+    }
+</script>
+</html>

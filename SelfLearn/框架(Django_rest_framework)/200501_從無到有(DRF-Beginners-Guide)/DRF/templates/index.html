@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p>123</p>
+
+<div class="container">
+    <div>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>歌名</th>
+{#                <th>年齡</th>#}
+{#                <th>性別</th>#}
+{#                <th>班級</th>#}
+            </tr>
+            </thead>
+            <tbody id="tb">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
 </body>
+<script src="/static/jquery-3.3.1.js"></script>
+<script>
+    var url = "http://" + window.location.host + "/api/music/";
+    console.log(url);
+    // 透過ajax從DRF頁面取數據
+    $.ajax({
+        method: "GET",
+        url: url,
+        success: function(data){
+            console.log(data);
+            console.log("success");
+            create_item(data[0]);
+        },
+        error: function(error_data){
+            console.log("error");
+        }
+    });
+    // 測試(只做了id, song)
+    function create_item(data) {
+        var tr = document.createElement("tr");
+        var td_id = document.createElement("td");
+        td_id.innerHTML = data.id;
+        $(td_id).attr('na', "nid");
+        $(tr).append(td_id);
+
+        var td_song = document.createElement("td");
+        td_song.innerHTML = data.song;
+        $(td_song).attr('na', "song");
+        $(tr).append(td_song);
+
+        $('#tb').append(tr);
+
+    }
+</script>
 </html>

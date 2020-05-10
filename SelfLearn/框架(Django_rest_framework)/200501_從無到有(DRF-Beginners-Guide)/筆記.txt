@@ -1,0 +1,13 @@
+教學：https://github.com/twtrubiks/django-rest-framework-tutorial
+到part5
+
+
+- Serializers 序列化：Serializers 序列化 是 DRF 很重要的一個地方。
+    主要功能：將 Python 結構序列化為其他格式，例如我們常用的 JSON。
+
+- REST API 全名為 RESTful API，它並不是一個新東西、新技術，它只是一個規範。
+    - GET : 讀取資源
+    - PUT : 替換資源
+    - DELETE : 刪除資源
+    - POST : 新增資源
+    - PATCH : 更新資源部份內容
