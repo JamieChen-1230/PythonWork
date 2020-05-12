@@ -1,0 +1,40 @@
+前後端分離：
+    - 後端(Django Rest Framework)：
+        ※ 永遠返回HttpResponse。
+        作用：為前端提供URL，使前端程序員能透過訪問URL獲得資料。【API(接口)的開發】
+        測試：可用postman來做測試
+
+    - 前端(Html, js等)：
+        ※ 通過Ajax來向後端取數據。
+
+
+面向對象：
+    - 封裝：
+        - 對同一種類的方法封裝到類中：
+            範例：
+                class File:
+                    文件的增刪改查方法
+                class Db:
+                    資料庫的增刪改查方法
+
+        - 把數據封裝到對象中：
+            範例：
+                class File:
+                    def __init__(self, a, b):
+                        self.a = a
+                        self.xxx = b
+                # 封裝了a和xxx數據
+                obj = File(123, 456)
+
+	
+Django中間件的五個方法：
+	- process_request
+	- process_view
+	- process_response
+	- process_exception
+	- process_render_template
+	
+
+csrf是如何實現的?
+	- 在process_view方法中
+

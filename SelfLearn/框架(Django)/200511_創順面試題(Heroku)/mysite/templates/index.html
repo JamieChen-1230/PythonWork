@@ -46,7 +46,7 @@
         url: "api/news",
         success: function (args) {
             console.log(args);
-            for (var i=0; i<args.length; i++) {
+            for (var i=args.length-1; i>=0; i--) {
                 create_item(args[i]);
             }
         },

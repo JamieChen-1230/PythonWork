@@ -1,0 +1,19 @@
+面試題：
+一、對restful api的認識：
+    其實它本質上是一個規範，讓我們寫API時，可以更好的去做區分，也更容易讓後臺去處理，
+    也讓前端工程師也更容易的去記住URL，並透過URL體現出API的操作。
+    https://www.cnblogs.com/wupeiqi/articles/7805382.html
+
+二、狀態碼有哪些：
+    200 OK - [GET]：服務器成功返回用戶請求的數據，該操作是冪等的（Idempotent）。
+    201 CREATED - [POST/PUT/ PATCH]：用戶新建或修改數據成功。
+    202 Accepted - [* ]：表示一個請求已經進入後台排隊（異步任務）
+    204 NO CONTENT - [DELETE]：用戶刪除數據成功。
+    400 INVALID REQUEST - [POST/PUT/ PATCH]：用戶發出的請求有錯誤，服務器沒有進行新建或修改數據的操作，該操作是冪等的。
+    401 Unauthorized - [* ]：表示用戶沒有權限（令牌、用戶名、密碼錯誤）。
+    403 Forbidden - [* ]表示用戶得到授權（與401錯誤相對），但是訪問是被禁止的。
+    404 NOT FOUND - [* ]：用戶發出的請求針對的是不存在的記錄，服務器沒有進行操作，該操作是冪等的。
+    406 Not Acceptable - [GET]：用戶請求的格式不可得（比如用戶請求JSON格式，但是只有XML格式）。
+    410 Gone - [GET]：用戶請求的資源被永久刪除，且不會再得到的。
+    422 Unprocesable entity - [POST/PUT/ PATCH]當創建一個對象時，發生一個驗證錯誤。
+    500 INTERNAL SERVER ERROR - [* ]：服務器發生錯誤，用戶將無法判斷發出的請求是否成功。

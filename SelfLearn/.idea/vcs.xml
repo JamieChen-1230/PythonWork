@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/mysite" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/框架(Django)/200510_websocket初試/dj_dwebsocket" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/mysite" vcs="Git" />
   </component>
 </project>
