@@ -2,8 +2,8 @@ from django.shortcuts import HttpResponse
 from django.http import JsonResponse
 from rest_framework.views import APIView
 from api import models
-from rest_framework import exceptions
-from rest_framework.authentication import BaseAuthentication
+from api.utils.permission import SVIPPermission, OtherPermission
+
 
 # 訂單資料
 ORDER_DICT = {
@@ -36,6 +36,9 @@ class AuthView(APIView):
     """
     用於用戶登入
     """
+    authentication_classes = []  # 為了不套用全局認證
+    permission_classes = []  # 為了不套用全局權限
+
     # 通常用戶登入是用post請求
     def post(self, request, *args, **kwargs):
         ret = {'code': 1000, 'msg': None}
@@ -59,27 +62,34 @@ class AuthView(APIView):
         return JsonResponse(ret)
 
 
-class Authtication(BaseAuthentication):
-    def authenticate(self, request):
-        token = request._request.GET.get('token')
-        token_obj = models.UserToken.objects.filter(token=token).first()
-        if not token_obj:
-            raise exceptions.AuthenticationFailed('用戶驗證失敗')
-        # 在rest framework內會自動將return的這兩個字段賦值給request，以供操作使用。
-        # 會賦值給(request.user, request.auth)
-        return (token_obj.user, token_obj)
-
-
 class OrderView(APIView):
     """
-    訂單相關業務
+    訂單相關業務(只讓SVIP有權限)
     """
-    # 加入認證
-    authentication_classes = [Authtication, ]
+    # permission_classes = [SVIPPermission, ]  # 不寫 => 表使用默認權限
 
     # GET：取出訂單(一項或多項)
     def get(self, request, *args, **kwargs):
-        # self.dispatch()
+        ret = {'code': 1000, 'msg': None}
+        # 之後資料庫容易出錯，最好都用try包起來。
+        try:
+            ret['data'] = ORDER_DICT
+        except Exception as e:
+            ret['code'] = 1002
+            ret['msg'] = '請求錯誤'
+
+        return JsonResponse(ret)
+
+
+class UserInfoView(APIView):
+    """
+    用戶相關業務(讓普通用戶和VIP有權限)
+    """
+    # 不使用默認權限，使用自己的OtherPermission
+    permission_classes = [OtherPermission, ]
+
+    # GET：取出(一項或多項)
+    def get(self, request, *args, **kwargs):
         ret = {'code': 1000, 'msg': None}
         # 之後資料庫容易出錯，最好都用try包起來。
         try:

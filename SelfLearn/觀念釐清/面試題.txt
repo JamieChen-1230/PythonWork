@@ -1,10 +1,10 @@
 面試題：
-一、對restful api的認識：
+- 對restful api的認識：
     其實它本質上是一個規範，讓我們寫API時，可以更好的去做區分，也更容易讓後臺去處理，
     也讓前端工程師也更容易的去記住URL，並透過URL體現出API的操作。
     https://www.cnblogs.com/wupeiqi/articles/7805382.html
 
-二、狀態碼有哪些：
+- 狀態碼有哪些：
     200 OK - [GET]：服務器成功返回用戶請求的數據，該操作是冪等的（Idempotent）。
     201 CREATED - [POST/PUT/ PATCH]：用戶新建或修改數據成功。
     202 Accepted - [* ]：表示一個請求已經進入後台排隊（異步任務）
@@ -17,3 +17,22 @@
     410 Gone - [GET]：用戶請求的資源被永久刪除，且不會再得到的。
     422 Unprocesable entity - [POST/PUT/ PATCH]當創建一個對象時，發生一個驗證錯誤。
     500 INTERNAL SERVER ERROR - [* ]：服務器發生錯誤，用戶將無法判斷發出的請求是否成功。
+
+- 何謂面向對象：
+    面向對象有三大特徵：
+        封裝：
+            把想同類型的屬性和方法封裝到類中，這樣可以簡化編程，使用者也可以僅通過外部接口來調用。
+        繼承：
+            繼承就是子類繼承父類的特徵和行為，使得子類對象具有父類的實例和方法，
+            這樣可以減少重複性代碼，且彼此的耦合度會較低，靈活度也較高。
+        多態：
+            不同的(子類)對象調用相同的(父類)方法，產生不同的結果，可以增加代碼的外部調用靈活度。
+
+- Django中間件：
+    在django中，中間件其實就是一個類，在request到來和結束後，django會在合適的時機執行中間件中相應的方法。
+
+- Django生命週期：
+    瀏覽器 -> wsgi -process_request-> 路由系統 -process_views-> 視圖函數（和ORM、Template處理完後）-process_response-> 瀏覽器
+    wsgi(web server gateway interface)：web伺服器網關街口，是python中web伺服器和web應用的一種規範。
+        - wsgiref：是Django默認實現wsgi協議的一個模塊，用來做一個socket服務端。
+        - uwsgi：也是實現wsgi協議的一個模塊，用來做socket服務端，速度比wsgiref快很多。

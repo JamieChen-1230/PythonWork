@@ -15,11 +15,11 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="db" uuid="21e625c2-fd8a-4cbb-b4b1-6472aa213709">
+    <data-source source="LOCAL" name="db" uuid="ec9f113b-d85a-4c71-ac8a-be6c6fbadea1">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Programming\WorkPlace\PythonWork\SelfLearn\框架(Django)\200511_創順面試題(Heroku)\mysite\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Programming\WorkPlace\PythonWork\SelfLearn\框架(Django_rest_framework)\200505_DRF用戶登入\mysite\db.sqlite3</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

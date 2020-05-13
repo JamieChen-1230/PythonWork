@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -108,3 +109,29 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    # 全局使用認證類(若想讓view不使用全局認證類，則在其中加入authentication_classes=[])
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        'api.utils.auth.MyAuthentication',
+    ),  # 通常不會寫到views中，而是會再另外創一個py檔(EX:auth.py)
+    # 未通過身分認證的request.user 和 request.auth 的默認值
+    'UNAUTHENTICATED_USER': None,
+    'UNAUTHENTICATED_TOKEN': None,
+
+    # 全局使用權限
+    'DEFAULT_PERMISSION_CLASSES': (
+        'api.utils.permission.SVIPPermission',
+    ),  # 通常不會寫到views中，而是會再另外創一個py檔(EX:permission.py)
+
+    # 全局使用節流器
+    'DEFAULT_THROTTLE_CLASSES': (
+        'api.utils.throttle.VisitThrottle',
+    ),  # 通常不會寫到views中，而是會再另外創一個py檔(EX:throttle.py)
+    # 使用內置的訪問節流器(SimpleRateThrottle)，需要設置訪問的頻率
+    'DEFAULT_THROTTLE_RATES': {
+        'ip': '3/m',   # ip為自定義字段，3/m表示一分鐘三次
+        'username': '10/m',
+    },  # 若繼承SimpleRateThrottle的話就必須設置
+
+}

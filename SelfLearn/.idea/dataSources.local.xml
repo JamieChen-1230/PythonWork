@@ -11,7 +11,7 @@
       <user-name>root</user-name>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
-    <data-source name="db" uuid="21e625c2-fd8a-4cbb-b4b1-6472aa213709">
+    <data-source name="db" uuid="ec9f113b-d85a-4c71-ac8a-be6c6fbadea1">
       <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
