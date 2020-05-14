@@ -15,7 +15,7 @@
     git commit -m "xxxxxxx" => 告訴Git把此文件提交到本地的版本庫(Git會將文件從Git暫存區放到本地的倉庫)
 
 把文件從版本庫刪除:
-    rm xxx.py => 刪除本地文件
+    rm xxx.py => 刪除本地文件(系統刪除指令)
     git add xxx.py => 告訴Git我想要修改此文件(Git會先放到Git暫存區)
     git commit -m "xxxxxxx" => 告訴Git把版本庫的此文件進行修改(Git會從暫存區放到倉庫)
 

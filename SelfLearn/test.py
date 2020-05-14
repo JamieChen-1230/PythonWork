@@ -27,3 +27,24 @@
 #
 # print(f1(2,3)(4))
 
+
+
+# di = {'a': 1, 'b': 2}
+# print(id(di))
+# di['a'] = 10
+# print(di, id(di))
+
+
+
+import numpy
+
+a = numpy.array([1, 2])
+print(a, id(a))
+a[0] = 3
+print(a, id(a))
+
+
+# import array
+#
+# b = array.array('d', [1, 'a'])
+# print(b)
