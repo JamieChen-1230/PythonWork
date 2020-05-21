@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e74d1b6-705c-49bd-80eb-6c66810a50e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git使用/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Git使用/筆記.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/nicetomeetyou/nicetomeetyou/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/.idea/dataSources.xml" beforeDir="false" />
@@ -134,7 +132,6 @@
       <change beforePath="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/staticfiles/rest_framework/js/prettify-min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/templates/detail_content.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/框架(Django)/200511_創順面試題(Heroku)/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念釐清/面試題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念釐清/面試題.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -256,20 +253,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="252">
+              <caret line="48" column="36" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/觀念釐清/面試題.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+            <state relative-caret-position="2772">
+              <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -380,8 +377,8 @@
         <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200505_DRF用戶登入/mysite/api/views.py" />
         <option value="$PROJECT_DIR$/框架(Django_rest_framework)/200505_DRF用戶登入/筆記.txt" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/Git使用/筆記.txt" />
         <option value="$PROJECT_DIR$/觀念釐清/面試題.txt" />
+        <option value="$PROJECT_DIR$/Git使用/筆記.txt" />
       </list>
     </option>
   </component>
@@ -420,7 +417,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -468,6 +464,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,7 +474,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PythonWork(py37)" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -704,7 +701,8 @@
       <workItem from="1589276999492" duration="271000" />
       <workItem from="1589328379250" duration="24519000" />
       <workItem from="1589369009315" duration="225000" />
-      <workItem from="1589415494391" duration="11260000" />
+      <workItem from="1589415494391" duration="11346000" />
+      <workItem from="1589505703118" duration="59000" />
     </task>
     <servers />
   </component>
@@ -726,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395293000" />
+    <option name="totallyTimeSpent" value="395438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -739,9 +737,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.26072386" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.26407507" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5010142" side_tool="true" weight="0.18632708" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1074,15 +1071,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Git使用/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="252">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/觀念釐清/面試題.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        <state relative-caret-position="2772">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
         </state>
       </provider>
     </entry>
