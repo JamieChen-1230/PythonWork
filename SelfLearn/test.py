@@ -48,3 +48,4 @@ print(a, id(a))
 #
 # b = array.array('d', [1, 'a'])
 # print(b)
+
